@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <!-- Ensure styles.css loads BEFORE blog-post.css -->
   <link rel="stylesheet" href="/assets/css/styles.css" /> 
-  <!-- blog-post.css must be the LAST stylesheet to ensure its rules take precedence -->
+  <!-- blog-post.css must be the LAST stylesheet to ensure its rules for blog content take precedence -->
   <link rel="stylesheet" href="/assets/css/blog-post.css" /> 
 </head>
 <body>
@@ -27,14 +27,17 @@
           </ul>
         </div>
       </nav>
+      <!-- Hero Section for Blog Page - NOW CONSISTENTLY INSIDE HEADER -->
+      <!-- Added hero-content wrapper for consistency with homepage structure -->
+      <section class="blog-index-hero hero-image-section">
+        <div class="hero-content">
+          <img src="/assets/images/blog/blog-hero-banner.webp" alt="Futuristic SEO Landscape" class="blog-hero hero-image"> 
+          <div class="overlay"></div> <!-- Consistent overlay from homepage -->
+          <h1 class="hero-title">Unlock Your SEO Edge</h1>
+          <p class="hero-description">Data-Driven Strategies for Maximum Growth</p>
+        </div>
+      </section>
   </header>
-
-  <!-- Hero Section HTML remains the same -->
-  <section class="blog-index-hero hero-image-section">
-    <img src="/assets/images/blog/blog-hero-banner.webp" alt="Futuristic SEO Landscape" class="blog-hero"> 
-    <h1 class="hero-title">Unlock Your SEO Edge</h1>
-    <p class="hero-description">Data-Driven Strategies for Maximum Growth</p>
-  </section>
 
   <div class="container">
     <section class="blog-section">
