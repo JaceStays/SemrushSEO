@@ -101,7 +101,6 @@ body {
 .hero-image-section {
   position: relative;
   min-height: 500px; /* Base minimum height for the hero section */
-  /* REMOVED: padding from here, it's now on the text elements */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +110,7 @@ body {
   overflow: hidden;
   margin-bottom: var(--spacing-unit) * 2;
   border-radius: var(--radius-large);
-  background-color: var(--primary-color); /* Fallback background */
+  background-color: var(--primary-color); /* Fallback background, visible if image fails to load */
 }
 
 /* The actual image inside the hero section */
@@ -471,7 +470,7 @@ body {
 
 .callout.quick-win {
   background-color: #d4edda; /* Light green */
-  border-left: 44px solid #28a745; /* Accent green for border */
+  border-left: 4px solid #28a745; /* Accent green for border */
   color: #155724;
 }
 .callout.quick-win i {
@@ -748,7 +747,111 @@ footer nav.footer-nav a:focus {
   margin-top: 1rem;
 }
 
-/* --- Media Queries / Responsive Adjustments --- */
+/* --- Blog Sections and Article Cards --- */
+.blog-section {
+  padding: var(--spacing-unit) * 2 0; /* Vertical padding for each section */
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--heading-color);
+  text-align: center;
+  margin-bottom: var(--spacing-unit) * 2;
+  padding: 0 var(--spacing-unit); /* Add some horizontal padding */
+}
+
+/* Common grid styling for both featured and all posts */
+.featured-posts-grid,
+.all-posts-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column on mobile */
+  gap: var(--spacing-unit) * 1.5; /* Spacing between cards */
+  max-width: var(--max-wrapper-width); /* Or a specific max-width if desired */
+  margin: 0 auto; /* Center the grid */
+  padding: 0 var(--spacing-unit); /* Add horizontal padding for smaller screens */
+}
+
+@media (min-width: 768px) {
+  .featured-posts-grid,
+  .all-posts-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-posts-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for featured on desktops */
+  }
+  .all-posts-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for all posts on desktops */
+    gap: var(--spacing-unit) * 2; /* More gap on larger screens */
+    padding: 0; /* Remove horizontal padding if container handles it */
+  }
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: var(--radius-large); /* Apply rounded corners to cards */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden; /* Ensures image rounded corners are respected */
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for thumbnails */
+  object-fit: cover; /* Crop to fill, maintain aspect ratio */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.blog-card-content {
+  padding: 1rem 1.2rem; /* Padding for content inside the card */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows content to expand and push read-more to bottom */
+}
+
+.blog-card-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.blog-card-content p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Allows paragraph to take up available space */
+}
+
+.blog-card-content .read-more {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: right;
+  transition: color 0.2s ease;
+  margin-top: auto; /* Pushes "Read More" to the bottom of the card content */
+}
+
+.blog-card:hover .read-more {
+  color: var(--primary-dark);
+}
+
+/* Media Queries / Responsive Adjustments */
 @media (min-width: 1600px) { /* For very large screens */
   .hero-image-section {
     min-height: 550px; /* Even taller on very large displays */
@@ -764,33 +867,22 @@ footer nav.footer-nav a:focus {
   .hero-image-section::before {
     border-radius: 0; /* Match section radius on small screens */
   }
+  /* Ensure article grid stacks on mobile */
+  .featured-posts-grid,
+  .all-posts-grid {
+    grid-template-columns: 1fr; /* Force single column on mobile */
+  }
+  .blog-card {
+    border-radius: var(--radius-default); /* Slightly smaller radius for cards on mobile */
+  }
 }
 
 @media (max-width: 480px) { /* For mobile phones */
   .hero-image-section {
     min-height: 320px; /* Further reduce for very small screens */
   }
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .hero-title {
-      font-size: clamp(1.8rem, 5vw, 2.8rem);
-  }
-
-  .hero-description {
-      font-size: clamp(1rem, 2.5vw, 1.2rem);
-  }
-
-  .blog-content { /* Was .blog-article-content */
-      padding: var(--spacing-unit); /* Reduce padding on mobile */
-  }
-
-  .newsletter-form input[type="email"] {
-      max-width: 100%; /* Full width for input field */
-  }
-
-  .newsletter-form button {
-      width: 100%; /* Full width for button */
+  /* Further reduce padding for text on very small screens */
+  .hero-title, .hero-description {
+    padding: 0 10px;
   }
 }
