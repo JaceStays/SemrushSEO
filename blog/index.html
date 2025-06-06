@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SemrushSEO Blog: Your Hub for Digital Marketing Insights</title>
+  <meta name="description" content="Explore the latest articles on SEO, digital marketing, keyword research, content strategy, and more from SemrushSEO. Your trusted source for growth." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* Specific styles for the blog index page */
+    .blog-index-hero {
+      background-image: url('/assets/images/blog/blog-hero-banner.webp'); /* Replace with your actual hero image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px; /* Adjust padding as needed */
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 300px; /* Ensure a decent height */
+    }
+
+    .blog-index-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+      z-index: 1;
+    }
+
+    .blog-index-hero h1, .blog-index-hero p {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+
+    .blog-index-hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .blog-index-hero p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .blog-section {
+      padding: 40px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .featured-posts-grid, .all-posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%; /* Ensure cards are same height */
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px; /* Fixed height for image consistency */
+      object-fit: cover;
+    }
+
+    .blog-card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .blog-card h3 {
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .blog-card p {
+      font-size: 0.95em;
+      line-height: 1.6;
+      color: #666;
+      flex-grow: 1; /* Allows paragraph to take available space */
+    }
+
+    .blog-card .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      align-self: flex-start; /* Align button to start */
+    }
+
+    .blog-card .read-more:hover {
+      background-color: #0056b3;
+    }
+
+    /* Category Filter Section */
+    .category-filter {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .category-filter button {
+      background-color: #e9ecef;
+      color: #495057;
+      border: 1px solid #ced4da;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .category-filter button:hover,
+    .category-filter button.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .blog-index-hero h1 {
+        font-size: 2.5em;
+      }
+      .blog-index-hero p {
+        font-size: 1em;
+      }
+      .section-title {
+        font-size: 2em;
+      }
+      .featured-posts-grid, .all-posts-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+      }
+    }
+    @media (max-width: 480px) {
+      .blog-index-hero {
+        padding: 50px 15px;
+      }
+      .blog-index-hero h1 {
+        font-size: 2em;
+      }
+      .section-title {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <nav class="site-navigation" aria-label="Main Navigation">
+        <div class="container">
+          <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/affiliate.html">Affiliate</a></li>
+            <li><a href="/reviews.html">Reviews</a></li>
+            <li><a href="/blog/index.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <section class="blog-index-hero">
+    <h1>Welcome to the SemrushSEO Blog</h1>
+    <p>Your ultimate resource for cutting-edge SEO strategies, digital marketing insights, and actionable guides to grow your online presence.</p>
+  </section>
+
+  <div class="container">
+    <section class="blog-section">
+      <h2 class="section-title">✨ Featured Articles</h2>
+      <div class="featured-posts-grid">
+        <div class="blog-card">
+          <img src="/assets/images/blog/thumbnails/seo-growth-hacks-2025-thumbnail.webp" alt="SEO Growth Hacks 2025" />
+          <div class="blog-card-content">
+            <h3>SEO Growth Hacks 2025: Explode Your Traffic & Rankings</h3>
+            <p>Unlock rapid growth with these cutting-edge SEO hacks for 2025. Discover how to outsmart the competition and skyrocket your organic traffic.</p>
+            <a href="/blog/seo-growth-hacks-2025-upgraded.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="/assets/images/blog/thumbnails/how-to-make-money-seo-thumbnail.webp" alt="How to Make Money with SEO" />
+          <div class="blog-card-content">
+            <h3>How to Make Money with SEO: 8 Proven Strategies</h3>
+            <p>Turn your SEO skills into a profitable venture. Explore 8 actionable strategies to generate income through search engine optimization.</p>
+            <a href="/blog/how-to-make-money-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="/assets/images/blog/thumbnails/how-to-find-keywords-thumbnail.webp" alt="How to Find Keywords" />
+          <div class="blog-card-content">
+            <h3>How to Find Untapped Keywords That Rank & Convert (2025 Guide)</h3>
+            <p>Discover how to find low-competition, high-conversion keywords to drive targeted traffic and boost your revenue in 2025.</p>
+            <a href="/blog/how-to-find-keywords.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <h2 class="section-title">All Articles</h2>
+
+      <div class="category-filter">
+        <button class="active" data-category="all">All</button>
+        <button data-category="seo-strategy">SEO Strategy</button>
+        <button data-category="keyword-research">Keyword Research</button>
+        <button data-category="content-marketing">Content Marketing</button>
+        <button data-category="tools">Tools & Reviews</button>
+        <button data-category="ecommerce">E-commerce SEO</button>
+        </div>
+
+      <div class="all-posts-grid">
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/common-seo-mistakes-thumbnail.webp" alt="Common SEO Mistakes" />
+          <div class="blog-card-content">
+            <h3>Common SEO Mistakes to Avoid in 2025 (And How to Fix Them)</h3>
+            <p>Learn to identify and correct the most common SEO errors that can tank your rankings and traffic. Don't let your efforts go to waste!</p>
+            <a href="/blog/common-seo-mistakes.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/seo-for-beginners-2025-thumbnail.webp" alt="SEO for Beginners 2025" />
+          <div class="blog-card-content">
+            <h3>SEO for Beginners 2025: Your Step-by-Step Guide</h3>
+            <p>Start your SEO journey right. This beginner's guide breaks down core concepts and provides actionable steps to build a strong foundation in 2025.</p>
+            <a href="/blog/seo-for-beginners-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="content-marketing">
+          <img src="/assets/images/blog/thumbnails/how-to-build-an-seo-blog-that-makes-money-thumbnail.webp" alt="How to Build an SEO Blog That Makes Money" />
+          <div class="blog-card-content">
+            <h3>How to Build an SEO Blog That Makes Money in 2025</h3>
+            <p>Learn the blueprint for creating a profitable SEO blog from scratch—from niche selection and content strategy to monetization models that work.</p>
+            <a href="/blog/how-to-build-an-seo-blog-that-makes-money.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/optimize-for-algorithm-shifts-2025-thumbnail.webp" alt="How to Optimize for Google Algorithm Shifts" />
+          <div class="blog-card-content">
+            <h3>How to Optimize for Google Algorithm Shifts in 2025</h3>
+            <p>Stay ahead of Google's algorithm changes. Learn strategies to adapt your SEO, maintain rankings, and even benefit from major updates in 2025.</p>
+            <a href="/blog/optimize-for-algorithm-shifts-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="tools">
+          <img src="/assets/images/blog/thumbnails/ai-tools-in-semrush-2025-thumbnail.webp" alt="Top AI Tools in Semrush 2025" />
+          <div class="blog-card-content">
+            <h3>Top AI Tools in Semrush 2025: Maximize Your SEO with AI</h3>
+            <p>Discover the powerful AI-driven features within Semrush that can automate tasks, enhance content, and supercharge your SEO strategy in 2025.</p>
+            <a href="/blog/ai-tools-in-semrush-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/seo-traffic-recovery-plan-thumbnail.webp" alt="SEO Traffic Recovery Plan" />
+          <div class="blog-card-content">
+            <h3>SEO Traffic Recovery Plan: Bounce Back from Algorithm Updates</h3>
+            <p>Lost traffic after an update? This guide outlines a step-by-step SEO recovery plan to diagnose issues and regain your rankings and organic visitors.</p>
+            <a href="/blog/seo-traffic-recovery-plan.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="content-marketing">
+          <img src="/assets/images/blog/thumbnails/ai-content-2025-helps-hurts-thumbnail.webp" alt="AI Content in 2025: Does it Help or Hurt Your SEO?" />
+          <div class="blog-card-content">
+            <h3>AI Content in 2025: Does it Help or Hurt Your SEO?</h3>
+            <p>Explore how AI-generated content impacts search engine optimization in 2025, with insights on leveraging AI effectively and avoiding pitfalls.</p>
+            <a href="/blog/ai-content-2025-helps-hurts.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/foundations-of-seo-thumbnail.webp" alt="Foundations of SEO" />
+          <div class="blog-card-content">
+            <h3>Foundations of SEO: A Comprehensive Guide for 2025</h3>
+            <p>Master the essential building blocks of search engine optimization. This guide covers core principles for lasting online success.</p>
+            <a href="/blog/foundations-of-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/how-to-rank-google-2025-thumbnail.webp" alt="How to Rank on Google 2025" />
+          <div class="blog-card-content">
+            <h3>How to Rank on Google in 2025: The Ultimate SEO Strategy</h3>
+            <p>Master the latest SEO trends, from AI optimization to E-E-A-T, and gain the competitive edge to rank higher on Google in 2025.</p>
+            <a href="/blog/how-to-rank-google-2025-upgraded.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/seo-growth-hacks-2025-thumbnail.webp" alt="SEO Growth Hacks 2025" />
+          <div class="blog-card-content">
+            <h3>SEO Growth Hacks 2025: Explode Your Traffic & Rankings</h3>
+            <p>Unlock rapid growth with these cutting-edge SEO hacks for 2025. Discover how to outsmart the competition and skyrocket your organic traffic.</p>
+            <a href="/blog/seo-growth-hacks-2025-upgraded.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="tools">
+          <img src="/assets/images/blog/thumbnails/top-cms-platforms-for-seo-thumbnail.webp" alt="Best CMS Platforms for SEO" />
+          <div class="blog-card-content">
+            <h3>Best CMS Platforms for SEO in 2025 – Ranked & Compared</h3>
+            <p>Your content management system plays a massive role in how fast you rank and how high you climb. This guide ranks the top platforms for SEO.</p>
+            <a href="/blog/best-cms-platforms-seo-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/stop-indexing-guide-builders-bloggers-thumbnail.webp" alt="How to Stop Google Indexing During Site Build" />
+          <div class="blog-card-content">
+            <h3>How to Stop Google from Indexing Your Site While You’re Still Building It (And Why)</h3>
+            <p>It’s critical to block search engines from indexing your site during development. This article shows you how to pause Google indexing.</p>
+            <a href="/blog/stop-indexing-guide-builders-bloggers.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/can-political-content-tank-your-traffic-thumbnail.webp" alt="Can Political Content Tank Your Traffic?" />
+          <div class="blog-card-content">
+            <h3>Can Political Content Tank Your Traffic?</h3>
+            <p>This guide explores how political content can tank your organic search performance—and how to protect your reach without compromising your voice.</p>
+            <a href="/blog/can-political-content-tank-your-traffic.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/politics-censorship-seo-rankings-thumbnail.webp" alt="How Politics & Global Events Impact SEO" />
+          <div class="blog-card-content">
+            <h3>How Politics & Global Events Are Quietly Shaping Search Rankings</h3>
+            <p>From content removals to algorithm shifts driven by government pressure, what ranks isn’t always about relevance anymore.</p>
+            <a href="/blog/how-politics-global-events-impact-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/todays-tariffs-seo-strategy-thumbnail.webp" alt="Today’s Tariffs and What That Means for Your SEO Strategy" />
+          <div class="blog-card-content">
+            <h3>Today’s Tariffs and What That Means for Your SEO Strategy</h3>
+            <p>Tariffs aren’t just headlines for economists — they can quietly shape your entire SEO performance.</p>
+            <a href="/blog/todays-tariffs-seo-strategy.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="tools">
+          <img src="/assets/images/blog/thumbnails/semrush-vs-ahrefs-thumbnail.webp" alt="Semrush vs. Ahrefs Comparison" />
+          <div class="blog-card-content">
+            <h3>Semrush vs. Ahrefs (2025): Which SEO Tool is Best for You?</h3>
+            <p>A detailed comparison of Semrush vs. Ahrefs to help you choose the best SEO tool for your digital marketing success.</p>
+            <a href="/blog/semrush-vs-ahrefs.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/seo-vs-sem-budget-guide-thumbnail.webp" alt="SEO vs SEM Budget Guide" />
+          <div class="blog-card-content">
+            <h3>SEO vs. SEM: Budget Guide for Maximum ROI</h3>
+            <p>Navigate the complex world of SEO vs. SEM to allocate your budget effectively for optimal return on investment.</p>
+            <a href="/blog/seo-vs-sem-budget-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/seo-myths-2025-thumbnail.webp" alt="SEO Myths 2025" />
+          <div class="blog-card-content">
+            <h3>Top 10 SEO Myths Debunked for 2025</h3>
+            <p>Separate fact from fiction. We debunk the most common SEO myths to help you focus on strategies that truly work in 2025.</p>
+            <a href="/blog/seo-myths-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="ecommerce">
+          <img src="/assets/images/blog/thumbnails/seo-for-amazon-stores-thumbnail.webp" alt="SEO for Amazon Stores" />
+          <div class="blog-card-content">
+            <h3>Mastering SEO for Amazon Stores: A Complete Guide</h3>
+            <p>Optimize your Amazon product listings and store pages to rank higher and drive more sales on the world's largest marketplace.</p>
+            <a href="/blog/seo-for-amazon-stores.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/seo-ppc-combo-strategy-thumbnail.webp" alt="SEO PPC Combo Strategy" />
+          <div class="blog-card-content">
+            <h3>The SEO & PPC Combo Strategy: Maximize Your Search Dominance</h3>
+            <p>Combine the power of SEO and PPC for a synergistic strategy that drives unparalleled visibility and traffic.</p>
+            <a href="/blog/seo-ppc-combo-strategy.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="tools">
+          <img src="/assets/images/blog/thumbnails/how-to-use-semrush-thumbnail.webp" alt="How to Use Semrush" />
+          <div class="blog-card-content">
+            <h3>How to Use Semrush: A Step-by-Step Guide for Beginners</h3>
+            <p>Unleash the full power of Semrush with this beginner-friendly, step-by-step guide to mastering its essential features.</p>
+            <a href="/blog/how-to-use-semrush.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="keyword-research">
+          <img src="/assets/images/blog/thumbnails/how-to-find-keywords-thumbnail.webp" alt="How to Find Keywords" />
+          <div class="blog-card-content">
+            <h3>How to Find Untapped Keywords That Rank & Convert (2025 Guide)</h3>
+            <p>Discover how to find low-competition, high-conversion keywords to drive targeted traffic and boost your revenue in 2025.</p>
+            <a href="/blog/how-to-find-keywords.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="tools">
+          <img src="/assets/images/blog/thumbnails/best-seo-tools-2025-thumbnail.webp" alt="Best SEO Tools 2025" />
+          <div class="blog-card-content">
+            <h3>Best SEO Tools 2025: Top Software Compared for Serious Growth</h3>
+            <p>Choosing the right SEO software can make or break your digital strategy. Dive into our comprehensive comparison of the top SEO tools.</p>
+            <a href="/blog/best-seo-tools-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="ecommerce">
+          <img src="/assets/images/blog/thumbnails/seo-for-fashion-stores-thumbnail.webp" alt="SEO for Fashion Stores" />
+          <div class="blog-card-content">
+            <h3>SEO for Fashion Stores: Drive More Online Sales</h3>
+            <p>Boost your e-commerce fashion brand's visibility with tailored SEO strategies for product pages, collections, and trend content.</p>
+            <a href="/blog/seo-for-fashion-stores.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="content-marketing">
+          <img src="/assets/images/blog/thumbnails/how-to-create-seo-content-thumbnail.webp" alt="How to Create SEO Content" />
+          <div class="blog-card-content">
+            <h3>How to Create SEO Content That Ranks & Converts</h3>
+            <p>Learn the step-by-step process of crafting high-quality, SEO-optimized content that attracts organic traffic and drives conversions.</p>
+            <a href="/blog/how-to-create-seo-content.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/how-fast-seo-campaign-thumbnail.webp" alt="How Fast SEO Campaign" />
+          <div class="blog-card-content">
+            <h3>How Fast Does SEO Work in 2025? Realistic Timelines & Tips</h3>
+            <p>Understand the realistic timelines for SEO success and what factors influence how quickly you can see results from your campaigns.</p>
+            <a href="/blog/how-fast-seo-campaign.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/how-to-make-money-seo-thumbnail.webp" alt="How to Make Money with SEO" />
+          <div class="blog-card-content">
+            <h3>How to Make Money with SEO in 2025: 8 Proven Strategies</h3>
+            <p>Turn your SEO skills into a profitable venture. Explore 8 actionable strategies to generate income through search engine optimization.</p>
+            <a href="/blog/how-to-make-money-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      </section>
+  </div>
+
+  <footer>
+    <div class="container footer-content">
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/affiliate.html">Affiliate</a></li>
+          <li><a href="/reviews.html">Reviews</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
+    </div>
+  </footer>
+  <script>
+    // Simple JavaScript for category filtering (can be expanded)
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.category-filter button');
+      const blogCards = document.querySelectorAll('.all-posts-grid .blog-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+
+          const category = this.dataset.category;
+
+          blogCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+              card.style.display = 'flex'; /* Show card */
+            } else {
+              card.style.display = 'none'; /* Hide card */
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

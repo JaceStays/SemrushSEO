@@ -1,0 +1,766 @@
+/* assets/css/blog-post.css */
+
+/* --- Variables --- */
+:root {
+  --primary-color: #0073e6; /* Semrush Blue */
+  --primary-dark: #005bb5;
+  --accent-color: #f9fafb; /* Light background for overall page */
+  --text-color: #333;
+  --text-light: #666;
+  --heading-color: #1a1a1a;
+  --border-color: #e0e0e0;
+  --radius-default: 6px; /* For general elements */
+  --radius-large: 8px; /* For main content blocks */
+  --max-content-width: 1000px; /* Maximum width for main article content */
+  --max-wrapper-width: 1200px; /* Maximum width for the entire grid wrapper */
+  --spacing-unit: 1.5rem; /* Base unit for margins and paddings */
+  --font-sans: 'Inter', sans-serif; /* Preferred body font */
+  --font-heading: 'DM Sans', sans-serif; /* Preferred heading font */
+  --white: #ffffff;
+  --grey-light: #e9ecef;
+  --background-alt: #f0f2f5; /* For alternating section backgrounds */
+}
+
+/* --- Global & Base Styles --- */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent-color);
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  line-height: 1.7;
+  overflow-x: hidden; /* Prevents horizontal scroll from animations */
+}
+
+/* A general container for centered content, used across the site */
+.container {
+  max-width: var(--max-wrapper-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit); /* Apply padding on smaller screens */
+}
+/* No padding for .container on desktop if the content inside handles it */
+@media (min-width: 1024px) {
+  .container {
+      padding: 0;
+  }
+}
+
+
+/* --- Header & Site Navigation --- */
+.site-navigation {
+  background: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Added subtle shadow */
+}
+
+.site-navigation .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navigation .logo {
+  font-family: var(--font-heading); /* Using heading font for logo */
+  font-size: 1.8rem; /* Adjusted font size for logo */
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.site-navigation .nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-unit);
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation .nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500; /* Adjusted font weight */
+  padding: 0.5rem 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.site-navigation .nav-links a:hover,
+.site-navigation .nav-links a:focus {
+  color: var(--primary-color);
+  outline: none;
+}
+
+/* --- Hero Section --- */
+.hero-image-section {
+  position: relative;
+  height: 50vh; /* Responsive height */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center;
+  text-align: center; /* Ensures text is centered within its own space */
+  color: var(--white);
+  overflow: hidden;
+  margin-bottom: var(--spacing-unit) * 2; /* Increased bottom margin */
+  border-radius: var(--radius-large); /* Rounded corners for the whole section */
+  background-color: var(--primary-color); /* Fallback background for when no image or image fails */
+}
+
+.hero-image-section .blog-hero { /* Specific class for the image itself */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; /* Allows overlay content */
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: var(--radius-large); /* Match section radius */
+}
+
+/* Overlay for readability on images */
+.hero-image-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+  border-radius: var(--radius-large);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4rem); /* Responsive font size for H1 */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  position: relative; /* Bring content above overlay */
+  z-index: 2;
+  color: var(--white); /* Ensure title is white over overlay */
+  max-width: 90%; /* Prevent too wide titles on smaller screens before wrapping */
+}
+
+.hero-description {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  max-width: 800px; /* Constrain description width */
+  margin: 0 auto 1rem;
+  opacity: 0.9;
+  position: relative; /* Bring content above overlay */
+  z-index: 2;
+  color: var(--white); /* Ensure description is white over overlay */
+}
+
+/* --- Main Article Layout (Targeting .main-content-wrapper) --- */
+.main-content-wrapper { /* Renamed from .main-article-wrapper to match HTML */
+  display: grid;
+  /* Default to single column for mobile (sidebar stacks below main content) */
+  grid-template-columns: 1fr;
+  gap: var(--spacing-unit) * 2; /* Spacing between sections when stacked */
+  /* Handled by parent .container */
+  padding: 0;
+  align-items: flex-start; /* Align top of grid items */
+
+  /* Ensure this grid takes full width of its container, and that container has max-width */
+  max-width: var(--max-wrapper-width);
+  margin: var(--spacing-unit) * 2 auto; /* Add margin here to separate from hero */
+}
+
+
+/* Desktop layout: sidebar in left column, content in right */
+@media (min-width: 1024px) {
+  .main-content-wrapper {
+      grid-template-columns: 280px 1fr; /* Fixed sidebar width, flexible content */
+      gap: var(--spacing-unit) * 3; /* More spacing between columns on desktop */
+      margin: var(--spacing-unit) * 2 auto; /* Ensure margin remains centered */
+  }
+}
+
+/* --- Sidebar (Quick Navigation / TOC) --- */
+.sidebar-card {
+  background-color: var(--background-alt);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-unit);
+  border-radius: var(--radius-large);
+  font-size: 0.95rem;
+  align-self: flex-start; /* Keeps it at the top of its grid cell */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* More pronounced shadow */
+
+  /* Sticky behavior for desktop */
+  position: sticky;
+  top: calc(var(--spacing-unit) * 2); /* Adjust based on header height + desired offset */
+  height: fit-content; /* Ensure it doesn't take full height if content is short */
+  max-height: calc(100vh - (var(--spacing-unit) * 4)); /* Ensure it fits in viewport, leave space at top/bottom */
+  overflow-y: auto; /* Scroll if content is too long for viewport */
+  width: 100%; /* Important: Takes 100% of its *grid column* not 100% of parent. */
+  box-sizing: border-box; /* Include padding/border in width calculation */
+
+  /* Explicitly place it in the first column on desktop */
+  grid-column: 1 / 2; /* Takes the first column */
+}
+
+.sidebar-card .sidebar-header { /* For "📚 Quick Navigation" title */
+  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--heading-color);
+}
+
+.sidebar-card .styled-nav { /* Styles for the <ul> inside the sidebar */
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-card .styled-nav li {
+  margin-bottom: 0.5rem; /* Tighter spacing for sidebar links */
+}
+
+.sidebar-card .styled-nav a {
+  display: block; /* Make the whole area clickable */
+  padding: 0.6rem 0.8rem;
+  background-color: var(--white); /* White background for list items */
+  border-radius: var(--radius-default);
+  border: 1px solid var(--border-color);
+  color: var(--text-color); /* Default link color */
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap; /* Prevent line breaks within link text */
+  overflow: hidden; /* Hide overflow if text is too long */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+}
+
+.sidebar-card .styled-nav a:hover {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.sidebar-card .styled-nav a.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 115, 230, 0.15);
+}
+
+/* Disable sticky and explicitly set grid column on mobile */
+@media (max-width: 1023px) {
+  .sidebar-card {
+      position: relative; /* Disable sticky on mobile */
+      top: auto;
+      margin-top: var(--spacing-unit); /* Add top margin when it stacks */
+      max-height: none; /* Remove max height limitation */
+      overflow-y: visible; /* Disable scroll on mobile */
+      grid-column: 1 / -1; /* Make it span full width on mobile */
+  }
+}
+
+
+/* --- Main Blog Article Content --- */
+.blog-content {
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: var(--spacing-unit) * 1.5; /* Generous padding */
+  width: 100%; /* Ensure it takes full available width in its grid column */
+  min-width: 0; /* Prevents content from overflowing its grid column */
+  box-sizing: border-box; /* Include padding in width calculation */
+  grid-column: 1 / -1; /* Default to full width on mobile */
+}
+
+@media (min-width: 1024px) {
+  .blog-content {
+      grid-column: 2 / 3; /* Explicitly place in the second column on desktop */
+  }
+}
+
+
+/* --- Top-of-Page Table of Contents (Mobile Only) --- */
+.table-of-contents {
+  background-color: var(--background-alt);
+  border-left: 4px solid var(--primary-color);
+  padding: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit) * 2;
+  border-radius: 0 var(--radius-large) var(--radius-large) 0; /* Rounded on the right side only */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.table-of-contents h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-of-contents li {
+  margin-bottom: 0.5rem;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.2s ease;
+  display: block;
+  padding: 0.3rem 0;
+}
+
+.table-of-contents a:hover {
+  color: var(--primary-color);
+}
+
+/* Hide on desktop, show only on mobile (under the article title) */
+@media (min-width: 1024px) {
+  .table-of-contents {
+      display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .table-of-contents {
+      display: block; /* Ensure it shows on mobile */
+  }
+}
+
+
+/* --- Article Content Styling (.blog-content) --- */
+.blog-content h2,
+.blog-content h3 {
+  font-family: var(--font-heading);
+  color: var(--heading-color);
+  line-height: 1.3;
+  margin-top: var(--spacing-unit) * 2;
+  margin-bottom: 1rem;
+}
+
+.blog-content h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  border-bottom: 2px solid var(--grey-light);
+  padding-bottom: 0.5rem;
+  margin-top: var(--spacing-unit) * 2.5; /* Extra top margin for sections */
+}
+
+.blog-content h3 {
+  font-size: clamp(1.4rem, 2.8vw, 1.8rem);
+  color: var(--primary-color); /* Emphasize subheadings */
+}
+
+.blog-content p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+/* Ensure the first list item doesn't have extra top margin */
+.blog-content ul > li:first-child,
+.blog-content ol > li:first-child {
+  margin-top: 0;
+}
+
+
+/* Lead Paragraphs */
+.lead {
+  background: var(--background-alt);
+  border-left: 4px solid var(--primary-color);
+  padding: var(--spacing-unit); /* Use consistent spacing variable */
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin: var(--spacing-unit) 0;
+  border-radius: var(--radius-default);
+}
+
+/* Images & Figures */
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-default);
+  margin: var(--spacing-unit) 0;
+  display: block; /* Remove extra space below inline images */
+  object-fit: contain; /* Ensure images fit without cropping if aspect ratio is off */
+}
+
+/* Tables */
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-unit) 0;
+  background: var(--white);
+  border-radius: var(--radius-default);
+  overflow: hidden; /* Ensures rounded corners on table */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow for tables */
+}
+
+.blog-content th,
+.blog-content td {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.blog-content th {
+  background: var(--background-alt);
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+/* --- Callout Boxes (Pro Tip, Quick Win, Important Note) --- */
+.callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: var(--radius-default);
+  margin: var(--spacing-unit) * 1.5 0; /* More vertical space */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.callout i { /* For Font Awesome icons */
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-top: 0.2rem; /* Small adjustment for vertical alignment */
+}
+
+.callout p {
+  margin: 0;
+  font-size: 1rem; /* Slightly smaller font for callouts */
+}
+
+.callout.pro-tip {
+  background-color: #e6f7ff; /* Light blue */
+  border-left: 4px solid #007bff; /* Primary blue for border */
+  color: #004085;
+}
+.callout.pro-tip i {
+  color: #007bff;
+}
+
+.callout.quick-win {
+  background-color: #d4edda; /* Light green */
+  border-left: 4px solid #28a745; /* Accent green for border */
+  color: #155724;
+}
+.callout.quick-win i {
+  color: #28a745;
+}
+
+.callout.important-note {
+  background-color: #fff3cd; /* Light yellow */
+  border-left: 4px solid #ffc107; /* Warning yellow for border */
+  color: #856404;
+}
+.callout.important-note i {
+  color: #ffc107;
+}
+
+/* --- Contrast Boxes / Quote Blocks --- */
+.contrast-box {
+  background-color: var(--background-alt);
+  padding: var(--spacing-unit);
+  border-radius: var(--radius-large);
+  border-left: 5px solid var(--primary-color);
+  margin: var(--spacing-unit) * 2 0; /* More vertical space */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contrast-box h4 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.contrast-box ul {
+  list-style: disc;
+  margin-left: 1.2rem;
+  padding: 0;
+}
+
+.quote-block {
+  background-color: var(--white);
+  border-left: 5px solid var(--primary-color); /* Consistent with primary brand color */
+  padding: var(--spacing-unit);
+  margin: var(--spacing-unit) * 2 0;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  border-radius: 0 var(--radius-large) var(--radius-large) 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.quote-block cite {
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* --- Background Color Alternations --- */
+.section-alt-bg {
+  background-color: var(--background-alt);
+  /* Extend background to edge of .blog-content */
+  /* Adjust margin based on current padding of .blog-content */
+  margin: 0 calc(-1 * var(--spacing-unit) * 1.5);
+  padding: var(--spacing-unit) * 1.5; /* Add padding back to content */
+  border-radius: 0; /* Remove border radius if extending full width */
+}
+/* Adjust padding for .section-alt-bg on smaller screens if .container is applied within */
+@media (max-width: 768px) {
+  .section-alt-bg {
+      /* Ensure it still aligns with the article's side padding */
+      margin: 0 calc(-1 * var(--spacing-unit));
+      padding: var(--spacing-unit) * 1.5 var(--spacing-unit);
+  }
+}
+
+
+/* --- Section Dividers --- */
+.section-divider {
+  height: 60px; /* Adjust height of separator */
+  background-image: url('/assets/images/separator-wave.svg'); /* Example SVG or pattern */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* Or '100% 100%' if it's a solid pattern */
+  margin: var(--spacing-unit) * 3 0; /* More vertical space for separation */
+  opacity: 0.6;
+}
+
+/* --- Newsletter Signup CTA --- */
+.newsletter-cta {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-unit) * 2;
+  text-align: center;
+  border-radius: var(--radius-large);
+  margin-top: var(--spacing-unit) * 3;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.newsletter-cta h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.newsletter-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: var(--radius-default);
+  width: 100%;
+  max-width: 350px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  background-color: var(--primary-dark); /* Darker blue for button */
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-default);
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--text-color); /* Even darker on hover */
+  transform: translateY(-2px);
+}
+
+/* --- CTA Buttons (General) --- */
+.button, .cta-btn { /* Unified styling for general buttons */
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-default);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  cursor: pointer;
+  border: none; /* Ensure no default button border */
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.primary-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* --- Floating CTA Button --- */
+.floating-cta {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--primary-color); /* Use primary color */
+  color: var(--white);
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 90;
+  white-space: nowrap;
+}
+
+.floating-cta:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustment for floating CTA */
+@media (max-width: 768px) {
+  .floating-cta {
+      bottom: 1rem;
+      right: 1rem;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+  }
+}
+
+
+/* --- Scroll-triggered Fade-in Animation --- */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in.fade-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* --- Footer --- */
+footer {
+  background: var(--heading-color); /* Dark background */
+  color: var(--white);
+  padding: var(--spacing-unit) * 2 0;
+  text-align: center;
+  margin-top: var(--spacing-unit) * 4; /* Clear space above footer */
+}
+
+footer .footer-content {
+  max-width: var(--max-wrapper-width); /* Consistent container width */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer nav.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer nav.footer-nav a {
+  text-decoration: none;
+  color: var(--white);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+footer nav.footer-nav a:hover,
+footer nav.footer-nav a:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.copyright-info {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+/* --- Media Queries / Responsive Adjustments --- */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .hero-title {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+  }
+
+  .hero-description {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+  }
+
+  .blog-content { /* Was .blog-article-content */
+      padding: var(--spacing-unit); /* Reduce padding on mobile */
+  }
+
+  .newsletter-form input[type="email"] {
+      max-width: 100%; /* Full width for input field */
+  }
+
+  .newsletter-form button {
+      width: 100%; /* Full width for button */
+  }
+}
