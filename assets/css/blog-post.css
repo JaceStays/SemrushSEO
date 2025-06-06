@@ -101,7 +101,7 @@ body {
 .hero-image-section {
   position: relative;
   /* Adjust height for taller banner. Using a combination of min-height and padding for flexibility. */
-  min-height: 450px; /* Base minimum height for the hero section */
+  min-height: 500px; /* UPDATED: Base minimum height for the hero section */
   padding: 120px 20px; /* Increased padding top/bottom for more vertical space */
   display: flex;
   flex-direction: column; /* Stack children vertically */
