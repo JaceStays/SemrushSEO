@@ -656,8 +656,6 @@ header {
     font-size: 1.5em;
 }
 
-//* Add or modify this section in your assets/css/styles.css file */
-
 /* Global CTA Section */
 .global-cta-section {
   background-color: var(--primary-color, #007bff); /* Ensure a distinct background */
