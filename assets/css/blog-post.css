@@ -910,3 +910,8 @@ footer nav.footer-nav a:focus {
     padding: 0.6rem 1rem !important; /*  */
   }
 }
+/* Fix nav spacing on blog page */
+nav {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
