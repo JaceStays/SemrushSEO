@@ -8,181 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>
-    /* Specific styles for the blog index page */
-    .blog-index-hero {
-      background-image: url('/assets/images/blog/blog-hero-banner.webp'); /* Replace with your actual hero image */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 80px 20px; /* Adjust padding as needed */
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 300px; /* Ensure a decent height */
-    }
-
-    .blog-index-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
-      z-index: 1;
-    }
-
-    .blog-index-hero h1, .blog-index-hero p {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      margin: 0 auto 20px auto;
-    }
-
-    .blog-index-hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    .blog-index-hero p {
-      font-size: 1.2em;
-      opacity: 0.9;
-    }
-
-    .blog-section {
-      padding: 40px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 40px;
-      color: #333;
-    }
-
-    .featured-posts-grid, .all-posts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .blog-card {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      height: 100%; /* Ensure cards are same height */
-    }
-
-    .blog-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .blog-card img {
-      width: 100%;
-      height: 200px; /* Fixed height for image consistency */
-      object-fit: cover;
-    }
-
-    .blog-card-content {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-
-    .blog-card h3 {
-      font-size: 1.5em;
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .blog-card p {
-      font-size: 0.95em;
-      line-height: 1.6;
-      color: #666;
-      flex-grow: 1; /* Allows paragraph to take available space */
-    }
-
-    .blog-card .read-more {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 15px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      align-self: flex-start; /* Align button to start */
-    }
-
-    .blog-card .read-more:hover {
-      background-color: #0056b3;
-    }
-
-    /* Category Filter Section */
-    .category-filter {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .category-filter button {
-      background-color: #e9ecef;
-      color: #495057;
-      border: 1px solid #ced4da;
-      padding: 10px 20px;
-      margin: 5px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 1em;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .category-filter button:hover,
-    .category-filter button.active {
-      background-color: #007bff;
-      color: white;
-      border-color: #007bff;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .blog-index-hero h1 {
-        font-size: 2.5em;
-      }
-      .blog-index-hero p {
-        font-size: 1em;
-      }
-      .section-title {
-        font-size: 2em;
-      }
-      .featured-posts-grid, .all-posts-grid {
-        grid-template-columns: 1fr; /* Stack columns on smaller screens */
-      }
-    }
-    @media (max-width: 480px) {
-      .blog-index-hero {
-        padding: 50px 15px;
-      }
-      .blog-index-hero h1 {
-        font-size: 2em;
-      }
-      .section-title {
-        font-size: 1.8em;
-      }
-    }
-  </style>
+  <!-- IMPORTANT: This links to the external CSS file that now contains your hero styles -->
+  <link rel="stylesheet" href="/assets/css/blog-post.css" /> 
 </head>
 <body>
   <header>
@@ -201,9 +28,11 @@
       </nav>
   </header>
 
-  <section class="blog-index-hero">
-    <h1>Welcome to the SemrushSEO Blog</h1>
-    <p>Your ultimate resource for cutting-edge SEO strategies, digital marketing insights, and actionable guides to grow your online presence.</p>
+  <!-- UPDATED HERO SECTION HTML STRUCTURE FOR TEXT OVERLAY -->
+  <!-- The image is now set as a background-image in blog-post.css -->
+  <section class="blog-index-hero hero-image-section">
+    <h1 class="hero-title">Unlock Your SEO Edge in 2025</h1>
+    <p class="hero-description">Data-Driven Strategies for Maximum Growth</p>
   </section>
 
   <div class="container">
@@ -379,7 +208,6 @@
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
-          <!-- CORRECTED IMAGE PATH HERE -->
           <img src="/assets/images/blog/thumbnails/seo-vs-paid-ads-thumbnail.webp" alt="SEO vs SEM Budget Guide" />
           <div class="blog-card-content">
             <h3>SEO vs. SEM: Budget Guide for Maximum ROI</h3>
