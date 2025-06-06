@@ -112,8 +112,9 @@ body {
   text-align: center !important; /*  */
   color: var(--white) !important; /*  */
   overflow: hidden !important; /*  */
-  margin-top: 0 !important; /*  */
-  margin-bottom: calc(var(--spacing-unit) * 2) !important; /*  */
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 120px !important;
   border-radius: 0 !important; /*  */
   background-color: var(--primary-color) !important; /*  */
 }
