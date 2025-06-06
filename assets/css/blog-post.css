@@ -1,5 +1,10 @@
 /* assets/css/blog-post.css */
 
+/* Universal Box-Sizing (Crucial for consistent layouts) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* --- Variables --- */
 :root {
   --primary-color: #0073e6; /* Semrush Blue */
@@ -27,7 +32,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0; /* Ensure no default body margin */
   padding: 0;
   background-color: var(--accent-color);
   font-family: var(--font-sans);
@@ -98,7 +103,7 @@ body {
 }
 
 /* --- Hero Section --- */
-.hero-image-section {
+.blog-index-hero { /* Targeted specifically for the blog index hero */
   position: relative;
   min-height: 500px; /* Base minimum height for the hero section */
   display: flex;
@@ -108,13 +113,14 @@ body {
   text-align: center;
   color: var(--white);
   overflow: hidden;
-  margin-bottom: var(--spacing-unit) * 2;
-  border-radius: var(--radius-large);
+  margin-top: 0; /* Ensure no extra space above hero */
+  margin-bottom: var(--spacing-unit) * 2; /* Space below hero */
+  /* REMOVED border-radius here for full-width */
   background-color: var(--primary-color); /* Fallback background, visible if image fails to load */
 }
 
 /* The actual image inside the hero section */
-.hero-image-section .blog-hero { /* This targets the <img> tag now */
+.blog-index-hero .blog-hero { /* This targets the <img> tag now */
   position: absolute; /* Position the image absolutely within its parent */
   top: 0;
   left: 0;
@@ -123,12 +129,12 @@ body {
   object-fit: cover; /* Makes the image cover the area without stretching, cropping if necessary */
   z-index: 0; /* Place behind the overlay */
   display: block;
-  border-radius: var(--radius-large); /* Apply border-radius to the image as well */
+  /* REMOVED border-radius here for full-width */
 }
 
 
 /* Overlay for readability on images */
-.hero-image-section::before {
+.blog-index-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -137,7 +143,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay for vibrancy */
   z-index: 1; /* Keep above the image */
-  border-radius: var(--radius-large); /* Apply border-radius to the overlay */
+  /* REMOVED border-radius here for full-width */
 }
 
 .hero-title,
@@ -410,7 +416,6 @@ body {
   border-radius: var(--radius-default);
   margin: var(--spacing-unit) 0;
   display: block; /* Remove extra space below inline images */
-  /* Removed: object-fit: contain; - allowing natural scaling */
 }
 
 /* Tables */
@@ -851,22 +856,59 @@ footer nav.footer-nav a:focus {
   color: var(--primary-dark);
 }
 
+/* --- Category Filter Buttons --- */
+.category-filter {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to next line */
+    justify-content: center;
+    gap: 0.75rem; /* Space between buttons */
+    margin-bottom: var(--spacing-unit) * 1.5;
+    padding: 0 var(--spacing-unit); /* Add padding for small screens */
+}
+
+.category-filter button {
+    background-color: var(--white);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px; /* Pill shape */
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* Prevent buttons from shrinking too much */
+}
+
+.category-filter button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 115, 230, 0.2);
+}
+
+.category-filter button.active {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    border-color: var(--primary-dark);
+    box-shadow: 0 4px 12px rgba(0, 115, 230, 0.3);
+    font-weight: 600;
+}
+
+
 /* Media Queries / Responsive Adjustments */
 @media (min-width: 1600px) { /* For very large screens */
-  .hero-image-section {
+  .blog-index-hero {
     min-height: 550px; /* Even taller on very large displays */
   }
 }
 
 @media (max-width: 768px) { /* For tablets and smaller */
-  .hero-image-section {
+  .blog-index-hero {
     min-height: 380px; /* Slightly reduce height for smaller devices */
-    border-radius: 0; /* Remove border-radius on small screens for full edge-to-edge */
+    /* No border-radius needed here, as parent removed it */
   }
-  .hero-image-section .blog-hero,
-  .hero-image-section::before {
-    border-radius: 0; /* Match section radius on small screens */
-  }
+  /* Removed empty ruleset for .blog-index-hero .blog-hero, .blog-index-hero::before */
+  
   /* Ensure article grid stacks on mobile */
   .featured-posts-grid,
   .all-posts-grid {
@@ -875,14 +917,21 @@ footer nav.footer-nav a:focus {
   .blog-card {
     border-radius: var(--radius-default); /* Slightly smaller radius for cards on mobile */
   }
+  .section-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem); /* Adjust title size */
+  }
 }
 
 @media (max-width: 480px) { /* For mobile phones */
-  .hero-image-section {
+  .blog-index-hero {
     min-height: 320px; /* Further reduce for very small screens */
   }
   /* Further reduce padding for text on very small screens */
   .hero-title, .hero-description {
     padding: 0 10px;
+  }
+  .category-filter button {
+    font-size: 0.9rem; /* Slightly smaller font for very small buttons */
+    padding: 0.6rem 1rem;
   }
 }
