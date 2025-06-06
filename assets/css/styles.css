@@ -656,48 +656,63 @@ header {
     font-size: 1.5em;
 }
 
-/* --- Global Call to Action Section --- */
+//* Add or modify this section in your assets/css/styles.css file */
+
+/* Global CTA Section */
 .global-cta-section {
-    background: linear-gradient(135deg, var(--brand-primary), var(--brand-dark));
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 60px auto;
-    max-width: 1000px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-.global-cta-section h2 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
-.global-cta-section p {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 40px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.9;
-}
-.global-cta-section .global-cta-button {
-    background-color: var(--warning-color); /* Bright yellow/orange for contrast */
-    color: var(--text-dark);
-    border: 1px solid var(--warning-color);
-    padding: 18px 40px;
-    font-size: 1.3em;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.global-cta-section .global-cta-button:hover {
-    background-color: #e0a800;
-    border-color: #e0a800;
-    color: var(--text-dark);
-    transform: translateY(-2px);
+  background-color: var(--primary-color, #007bff); /* Ensure a distinct background */
+  color: white; /* Change text color to white for readability */
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px; /* Add some rounded corners for aesthetics */
+  margin-bottom: 40px; /* Consistent spacing */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
+.global-cta-section h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: white; /* Explicitly set heading color to white */
+}
+
+.global-cta-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  color: white; /* Explicitly set paragraph color to white */
+  opacity: 0.9; /* Slightly reduce opacity for a softer look */
+}
+
+.global-cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--accent-color, #ffc107); /* Use an accent color for the button */
+  color: #333; /* Darker text for the button */
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.global-cta-button:hover {
+  background-color: #e0a800; /* Darker accent on hover */
+  transform: translateY(-2px);
+}
+
+/* Ensure these CSS variables are defined, perhaps at the top of your styles.css */
+/* Example:
+:root {
+  --primary-color: #007bff;
+  --accent-color: #ffc107;
+  --text-dark: #333;
+  --text-light: #666;
+  --background-light: #f8f9fa;
+  --background-dark: #343a40;
+}
+*/
 
 /* --- Footer --- */
 footer {
