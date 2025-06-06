@@ -910,8 +910,18 @@ footer nav.footer-nav a:focus {
     padding: 0.6rem 1rem !important; /*  */
   }
 }
-/* Fix nav spacing on blog page */
-nav {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+/* Final header/hero spacing fix */
+.blog-index-hero.hero-image-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.blog-index-hero + .blog-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Also ensure no default margin above blog-section */
+.blog-section {
+  margin-top: 0 !important;
 }
