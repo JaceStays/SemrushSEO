@@ -8,6 +8,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const faders = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+      faders.forEach(el => observer.observe(el));
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -27,14 +51,17 @@
   </header>
 
   <main>
+    <div class="fade-in">
     <section class="hero hero-homepage">
       <div class="hero-content">
         <h1>Unlock Your SEO Potential: Rank Higher, Drive Traffic, Grow Your Business.</h1>
         <p>Get unbiased reviews of the best SEO tools, actionable guides, and expert strategies to outrank competitors and dominate your niche in 2025.</p>
-        <a href="#seo-sem-overview" class="button primary-button hero-cta">Explore SEO Solutions</a>
+        <a href="#seo-sem-overview" class="button primary-button hero-cta" style="box-shadow: 0 0 0 0 rgba(0,0,0,0); transition: all 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)'" onmouseout="this.style.boxShadow='0 0 0 0 rgba(0,0,0,0)'">Explore SEO Solutions</a>
       </div>
     </section>
+    </div>
 
+    <div class="fade-in">
     <section id="seo-sem-overview" class="seo-sem-overview">
       <div class="container">
         <h2>SEO & SEM: The Pillars of Digital Dominance</h2>
@@ -61,7 +88,9 @@
         </div>
       </div>
     </section>
+    </div>
 
+    <div class="fade-in">
     <section id="deep-dive-content" class="deep-dive-content">
       <div class="container">
         <h2>Deep Dive: Actionable Insights for Every SEO Level</h2>
@@ -71,20 +100,20 @@
 
         <div class="grid-posts">
           <div class="post-preview">
-            <img src="/assets/images/seo/find-keywords.jpg" alt="How to Find Keywords" class="post-image" />
+            <img src="/assets/images/seo/find-keywords.jpg" alt="How to Find Keywords" class="post-image" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
             <h3>How to Find Untapped Keywords That Rank & Convert</h3>
             <p>Discover the secret to low-competition, high-conversion keywords to drive targeted traffic and boost your revenue in 2025.</p>
             <a href="/blog/how-to-find-keywords.html" class="read-more-link">Read More →</a>
           </div>
           <div class="post-preview">
             <!-- CORRECTED IMAGE PATH HERE -->
-            <img src="/assets/images/blog/thumbnails/how-to-make-money-seo-thumbnail.webp" alt="How to Make Money with SEO" class="post-image" />
+            <img src="/assets/images/blog/thumbnails/how-to-make-money-seo-thumbnail.webp" alt="How to Make Money with SEO" class="post-image" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
             <h3>How to Make Money with SEO: 8 Proven Strategies</h3>
             <p>Turn your SEO skills into a profitable venture. Explore 8 actionable strategies to generate income through search engine optimization.</p>
             <a href="/blog/how-to-make-money-seo.html" class="read-more-link">Read More →</a>
           </div>
           <div class="post-preview">
-            <img src="/assets/images/seo/seo-beginners.jpg" alt="SEO Beginner's Guide" class="post-image" />
+            <img src="/assets/images/seo/seo-beginners.jpg" alt="SEO Beginner's Guide" class="post-image" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
             <h3>SEO Beginner's Guide: Foundations to Rank Higher</h3>
             <p>Start your SEO journey with this comprehensive guide covering all the fundamental concepts and strategies for beginners.</p>
             <a href="/blog/seo-beginners-guide.html" class="read-more-link">Read More →</a>
@@ -95,7 +124,9 @@
         </div>
       </div>
     </section>
+    </div>
 
+    <div class="fade-in">
     <section id="tool-cards-section" class="tool-cards-section">
       <div class="container">
         <h2>Discover the Tools That Power SEO Success</h2>
@@ -104,25 +135,25 @@
         </p>
         <div class="tool-card-grid">
           <a href="/reviews.html" class="tool-card">
-            <img src="/assets/icons/wrench-icon.png" alt="SEO Tools" class="tool-icon">
+            <img src="/assets/icons/wrench-icon.png" alt="SEO Tools" class="tool-icon" role="img">
             <h3>SEO Tool Reviews</h3>
             <p>Unbiased reviews of the best SEO software and platforms on the market.</p>
             <span class="tool-card-link">Explore Reviews →</span>
           </a>
           <a href="/blog/how-to-find-keywords.html" class="tool-card">
-            <img src="/assets/icons/keyword-icon.png" alt="Keyword Research" class="tool-icon">
+            <img src="/assets/icons/keyword-icon.png" alt="Keyword Research" class="tool-icon" role="img">
             <h3>Keyword Research</h3>
             <p>Master the art of finding high-value keywords to drive targeted traffic.</p>
             <span class="tool-card-link">Learn Keyword Strategy →</span>
           </a>
           <a href="/blog/how-to-create-seo-content.html" class="tool-card">
-            <img src="/assets/icons/guide-icon.png" alt="SEO Guides" class="tool-icon">
+            <img src="/assets/icons/guide-icon.png" alt="SEO Guides" class="tool-icon" role="img">
             <h3>Content Optimization</h3>
             <p>Craft compelling content that ranks high and converts your audience.</p>
             <span class="tool-card-link">Read Content Guides →</span>
           </a>
           <a href="/blog/how-to-make-money-seo.html" class="tool-card">
-            <img src="/assets/icons/money-icon.png" alt="SEO Monetization" class="tool-icon">
+            <img src="/assets/icons/money-icon.png" alt="SEO Monetization" class="tool-icon" role="img">
             <h3>SEO Monetization</h3>
             <p>Turn your website's SEO traffic into a profitable revenue stream.</p>
             <span class="tool-card-link">Discover Monetization →</span>
@@ -130,7 +161,9 @@
         </div>
       </div>
     </section>
+    </div>
 
+    <div class="fade-in">
     <section id="about-section" class="about-section">
       <div class="container">
         <h2>Our Mission: Empowering Your SEO Journey</h2>
@@ -142,7 +175,9 @@
         </p>
       </div>
     </section>
+    </div>
 
+    <div class="fade-in">
     <section id="comparison-section" class="comparison-section">
       <div class="container">
         <h2>Why Semrush is the All-in-One SEO Solution</h2>
@@ -215,7 +250,9 @@
         </div>
       </div>
     </section>
+    </div>
 
+    <div class="fade-in">
     <section class="global-cta-section">
       <div class="container">
         <h2>Ready to Transform Your SEO?</h2>
@@ -223,22 +260,40 @@
         <a href="/contact.html" class="button primary-button global-cta-button">Get in Touch!</a>
       </div>
     </section>
+    </div>
   </main>
 
-  <footer>
-    <div class="container footer-content">
-      <nav class="footer-nav" aria-label="Footer Navigation">
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
+  <!-- [everything above remains unchanged] -->
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-logo">
+      <a href="/index.html" aria-label="SemrushSEO Home">SemrushSEO</a>
     </div>
-  </footer>
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/affiliate.html">Affiliate</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-affiliate-disclaimer">
+      <p>This site contains affiliate links. If you purchase through them, we may earn a commission—at no extra cost to you. We only recommend tools we trust.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="#" aria-label="Follow on Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Follow on LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2025 SemrushSEO.review. Built for performance. Powered by clarity.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

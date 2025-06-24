@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
+  <!-- Link blog-post.css last for article-specific styles, including hero adjustments -->
+  <link rel="stylesheet" href="/assets/css/blog-post.css" />
 </head>
 <body>
 <header>
@@ -27,10 +29,12 @@
 </header>
 
 <main>
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/algorithm-shifts-seo-hero.webp');">
+<!-- Hero section for this specific blog post. Removed 'hero-image-section' to avoid homepage style conflicts. -->
+<section class="hero blog-post-article-hero" style="background-image: url('/assets/images/digital-marketing/algorithm-shifts-seo-hero.webp');">
   <div class="hero-content">
     <h1>How to Optimize for Algorithm Shifts in 2025 – SEO That Moves With Google</h1>
-      </div>
+  </div>
+  <div class="hero-overlay"></div> <!-- Added an explicit overlay div for styling -->
 </section>
 
 <div class="container">
@@ -65,7 +69,8 @@
       <hr/>
 
       <section id="understand-google-targeting">
-        <h2>1. Step 1: Understand What Google Is Really Targeting <i class="fab fa-google icon-inline"></i></h2>
+        <!-- FIXED: Removed erroneous 'G' and added icon correctly -->
+        <h2>1. Step 1: Understand What Google Is Really Targeting. <i class="fab fa-google icon-inline"></i></h2>
         <p>Google’s 2025 algorithm updates aim to:</p>
         <ul>
             <li>❌ Downrank AI-generated, low-effort content</li>
