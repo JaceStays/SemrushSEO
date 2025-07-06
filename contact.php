@@ -1,5 +1,3 @@
-
-
 <?php include 'header.php'; ?>
 
 <main class="contact-page">
@@ -19,21 +17,4 @@
   </section>
 </main>
 
-<footer>
-  <div class="container footer-grid">
-    <div class="footer-logo">
-      <a href="/index.php" aria-label="SemrushSEO Home">SemrushSEO</a>
-    </div>
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.php">Home</a></li>
-        <li><a href="/affiliate.php">Affiliate</a></li>
-        <li><a href="/reviews.php">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.php">About</a></li>
-        <li><a href="/contact.php" aria-current="page">Contact</a></li>
-      </ul>
-    </nav>
-    <p>© 2025 SemrushSEO.review. All rights reserved.</p>
-  </div>
-</footer>
+<?php include 'footer.php'; ?>
