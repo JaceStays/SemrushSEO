@@ -927,3 +927,11 @@ footer {
         gap: 10px;
     }
 }
+
+/* --- Remove dark overlay on blog index hero --- */
+.blog-index-hero.hero-image-section::before {
+  display: none !important;
+  background: none !important;
+  content: none !important;
+  opacity: 0 !important;
+}

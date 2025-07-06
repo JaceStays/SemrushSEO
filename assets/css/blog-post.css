@@ -893,3 +893,14 @@ footer nav.footer-nav a:focus {
     padding: 0.6rem 1rem !important;
   }
 }
+
+
+/* --- Override blog index hero overlay --- */
+.blog-index-hero::before,
+.blog-index-hero .hero-overlay,
+.blog-index-hero .overlay {
+  display: none !important;
+  background: none !important;
+  content: none !important;
+  opacity: 0 !important;
+}

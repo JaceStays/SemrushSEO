@@ -1,3 +1,6 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hybrid SEO + PPC Strategy 2025: Maximize Your Search Visibility</title>
   <meta name="description" content="Unlock exponential growth with a unified SEO and PPC strategy in 2025. Learn how combining organic and paid search efforts can boost traffic, conversions, and brand dominance on Google." />
+  <link rel="canonical" href="https://semrushseo.review/blog/seo-ppc-combo-strategy.php" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -18,7 +22,7 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="/affiliate.html">Affiliate</a></li>
           <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/blog/index.php">Blog</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -215,20 +219,6 @@
 <div class="affiliate-disclaimer">
   <p><strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. If you click through and make a purchase, we may earn a small commission at no extra cost to you. This helps keep the content free and high quality. Thank you!</p>
 </div>
-<footer>
-  <div class="container footer-content">
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
-  </div>
-</footer>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.php"); ?>
 </body>
 </html>

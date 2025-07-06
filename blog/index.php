@@ -1,3 +1,6 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,11 +36,11 @@
       </nav>
   </header>
 
-  <!-- Hero Section HTML remains the same -->
-  <section class="blog-index-hero hero-image-section">
-    <img src="/assets/images/blog/blog-hero-banner.webp" alt="Futuristic SEO Landscape" class="blog-hero"> 
-    <h1 class="hero-title">Unlock Your SEO Edge</h1>
-    <p class="hero-description">Data-Driven Strategies for Maximum Growth</p>
+  <section class="blog-index-hero hero-image-section" style="background-image: url('/assets/images/blog/blog-hero-banner.webp'); background-size: cover; background-position: bottom center; background-repeat: no-repeat; width: 100vw; margin-left: calc(-50vw + 50%); padding: 100px 20px; text-align: center; color: #fff; text-shadow: 0 0 20px rgba(0,0,0,0.9); background-color: transparent; margin-top: 0; padding-top: 0;">
+    <div style="position: relative; z-index: 1;">
+      <h1 class="hero-title" style="font-size: 2.75rem; margin-bottom: 16px;">Unlock Your SEO Edge</h1>
+      <p class="hero-description" style="font-size: 1.25rem;">Data-Driven Strategies for Maximum Growth</p>
+    </div>
   </section>
 
   <div class="container">
@@ -49,7 +52,7 @@
           <div class="blog-card-content">
             <h3>SEO Growth Hacks 2025: Explode Your Traffic & Rankings</h3>
             <p>Unlock rapid growth with these cutting-edge SEO hacks for 2025. Discover how to outsmart the competition and skyrocket your organic traffic.</p>
-            <a href="/blog/seo-growth-hacks-2025-upgraded.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-growth-hacks-2025-upgraded.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card">
@@ -57,7 +60,7 @@
           <div class="blog-card-content">
             <h3>How to Make Money with SEO: 8 Proven Strategies</h3>
             <p>Turn your SEO skills into a profitable venture. Explore 8 actionable strategies to generate income through search engine optimization.</p>
-            <a href="/blog/how-to-make-money-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-make-money-seo.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card">
@@ -65,7 +68,7 @@
           <div class="blog-card-content">
             <h3>How to Find Untapped Keywords That Rank & Convert (2025 Guide)</h3>
             <p>Discover how to find low-competition, high-conversion keywords to drive targeted traffic and boost your revenue in 2025.</p>
-            <a href="/blog/how-to-find-keywords.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-find-keywords.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -89,7 +92,7 @@
           <div class="blog-card-content">
             <h3>Common SEO Mistakes to Avoid in 2025 (And How to Fix Them)</h3>
             <p>Learn to identify and correct the most common SEO errors that can tank your rankings and traffic. Don't let your efforts go to waste!</p>
-            <a href="/blog/common-seo-mistakes.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/common-seo-mistakes.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -97,7 +100,7 @@
           <div class="blog-card-content">
             <h3>SEO for Beginners 2025: Your Step-by-Step Guide</h3>
             <p>Start your SEO journey right. This beginner's guide breaks down core concepts and provides actionable steps to build a strong foundation in 2025.</p>
-            <a href="/blog/seo-for-beginners-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-for-beginners-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="content-marketing">
@@ -105,7 +108,7 @@
           <div class="blog-card-content">
             <h3>How to Build an SEO Blog That Makes Money in 2025</h3>
             <p>Learn the blueprint for creating a profitable SEO blog from scratch—from niche selection and content strategy to monetization models that work.</p>
-            <a href="/blog/how-to-build-an-seo-blog-that-makes-money.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-build-an-seo-blog-that-makes-money.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -113,7 +116,7 @@
           <div class="blog-card-content">
             <h3>How to Optimize for Google Algorithm Shifts in 2025</h3>
             <p>Stay ahead of Google's algorithm changes. Learn strategies to adapt your SEO, maintain rankings, and even benefit from major updates in 2025.</p>
-            <a href="/blog/optimize-for-algorithm-shifts-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/optimize-for-algorithm-shifts-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="tools">
@@ -121,7 +124,7 @@
           <div class="blog-card-content">
             <h3>Top AI Tools in Semrush 2025: Maximize Your SEO with AI</h3>
             <p>Discover the powerful AI-driven features within Semrush that can automate tasks, enhance content, and supercharge your SEO strategy in 2025.</p>
-            <a href="/blog/ai-tools-in-semrush-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/ai-tools-in-semrush-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -129,7 +132,7 @@
           <div class="blog-card-content">
             <h3>SEO Traffic Recovery Plan: Bounce Back from Algorithm Updates</h3>
             <p>Lost traffic after an update? This guide outlines a step-by-step SEO recovery plan to diagnose issues and regain your rankings and organic visitors.</p>
-            <a href="/blog/seo-traffic-recovery-plan.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-traffic-recovery-plan.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="content-marketing">
@@ -137,7 +140,7 @@
           <div class="blog-card-content">
             <h3>AI Content in 2025: Does it Help or Hurt Your SEO?</h3>
             <p>Explore how AI-generated content impacts search engine optimization in 2025, with insights on leveraging AI effectively and avoiding pitfalls.</p>
-            <a href="/blog/ai-content-2025-helps-hurts.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/ai-content-2025-helps-hurts.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -145,7 +148,7 @@
           <div class="blog-card-content">
             <h3>Foundations of SEO: A Comprehensive Guide for 2025</h3>
             <p>Master the essential building blocks of search engine optimization. This guide covers core principles for lasting online success.</p>
-            <a href="/blog/foundations-of-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/foundations-of-seo.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -153,7 +156,7 @@
           <div class="blog-card-content">
             <h3>How to Rank on Google in 2025: The Ultimate SEO Strategy</h3>
             <p>Master the latest SEO trends, from AI optimization to E-E-A-T, and gain the competitive edge to rank higher on Google in 2025.</p>
-            <a href="/blog/how-to-rank-google-2025-upgraded.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-rank-google-2025-upgraded.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -161,7 +164,7 @@
           <div class="blog-card-content">
             <h3>SEO Growth Hacks 2025: Explode Your Traffic & Rankings</h3>
             <p>Unlock rapid growth with these cutting-edge SEO hacks for 2025. Discover how to outsmart the competition and skyrocket your organic traffic.</p>
-            <a href="/blog/seo-growth-hacks-2025-upgraded.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-growth-hacks-2025-upgraded.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="tools">
@@ -169,7 +172,7 @@
           <div class="blog-card-content">
             <h3>Best CMS Platforms for SEO in 2025 – Ranked & Compared</h3>
             <p>Your content management system plays a massive role in how fast you rank and how high you climb. This guide ranks the top platforms for SEO.</p>
-            <a href="/blog/best-cms-platforms-seo-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/best-cms-platforms-seo-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -177,7 +180,7 @@
           <div class="blog-card-content">
             <h3>How to Stop Google from Indexing Your Site While You’re Still Building It (And Why)</h3>
             <p>It’s critical to block search engines from indexing your site during development. This article shows you how to pause Google indexing.</p>
-            <a href="/blog/stop-indexing-guide-builders-bloggers.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/stop-indexing-guide-builders-bloggers.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -185,7 +188,7 @@
           <div class="blog-card-content">
             <h3>Can Political Content Tank Your Traffic?</h3>
             <p>This guide explores how political content can tank your organic search performance—and how to protect your reach without compromising your voice.</p>
-            <a href="/blog/can-political-content-tank-your-traffic.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/can-political-content-tank-your-traffic.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -193,7 +196,7 @@
           <div class="blog-card-content">
             <h3>How Politics & Global Events Are Quietly Shaping Search Rankings</h3>
             <p>From content removals to algorithm shifts driven by government pressure, what ranks isn’t always about relevance anymore.</p>
-            <a href="/blog/how-politics-global-events-impact-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-politics-global-events-impact-seo.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -201,7 +204,7 @@
           <div class="blog-card-content">
             <h3>Today’s Tariffs and What That Means for Your SEO Strategy</h3>
             <p>Tariffs aren’t just headlines for economists — they can quietly shape your entire SEO performance.</p>
-            <a href="/blog/todays-tariffs-seo-strategy.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/todays-tariffs-seo-strategy.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="tools">
@@ -209,7 +212,7 @@
           <div class="blog-card-content">
             <h3>Semrush vs. Ahrefs (2025): Which SEO Tool is Best for You?</h3>
             <p>A detailed comparison of Semrush vs. Ahrefs to help you choose the best SEO tool for your digital marketing success.</p>
-            <a href="/blog/semrush-vs-ahrefs.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/semrush-vs-ahrefs.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -217,7 +220,7 @@
           <div class="blog-card-content">
             <h3>SEO vs. SEM: Budget Guide for Maximum ROI</h3>
             <p>Navigate the complex world of SEO vs. SEM to allocate your budget effectively for optimal return on investment.</p>
-            <a href="/blog/seo-vs-sem-budget-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-vs-sem-budget-guide.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -225,7 +228,7 @@
           <div class="blog-card-content">
             <h3>Top 10 SEO Myths Debunked for 2025</h3>
             <p>Separate fact from fiction. We debunk the most common SEO myths to help you focus on strategies that truly work in 2025.</p>
-            <a href="/blog/seo-myths-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-myths-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="ecommerce">
@@ -233,7 +236,7 @@
           <div class="blog-card-content">
             <h3>Mastering SEO for Amazon Stores: A Complete Guide</h3>
             <p>Optimize your Amazon product listings and store pages to rank higher and drive more sales on the world's largest marketplace.</p>
-            <a href="/blog/seo-for-amazon-stores.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-for-amazon-stores.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -241,7 +244,7 @@
           <div class="blog-card-content">
             <h3>The SEO & PPC Combo Strategy: Maximize Your Search Dominance</h3>
             <p>Combine the power of SEO and PPC for a synergistic strategy that drives unparalleled visibility and traffic.</p>
-            <a href="/blog/seo-ppc-combo-strategy.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-ppc-combo-strategy.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="tools">
@@ -249,7 +252,7 @@
           <div class="blog-card-content">
             <h3>How to Use Semrush: A Step-by-Step Guide for Beginners</h3>
             <p>Unleash the full power of Semrush with this beginner-friendly, step-by-step guide to mastering its essential features.</p>
-            <a href="/blog/how-to-use-semrush.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-use-semrush.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="keyword-research">
@@ -257,7 +260,7 @@
           <div class="blog-card-content">
             <h3>How to Find Untapped Keywords That Rank & Convert (2025 Guide)</h3>
             <p>Discover how to find low-competition, high-conversion keywords to drive targeted traffic and boost your revenue in 2025.</p>
-            <a href="/blog/how-to-find-keywords.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-find-keywords.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="tools">
@@ -265,7 +268,7 @@
           <div class="blog-card-content">
             <h3>Best SEO Tools 2025: Top Software Compared for Serious Growth</h3>
             <p>Choosing the right SEO software can make or break your digital strategy. Dive into our comprehensive comparison of the top SEO tools.</p>
-            <a href="/blog/best-seo-tools-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/best-seo-tools-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="ecommerce">
@@ -273,7 +276,7 @@
           <div class="blog-card-content">
             <h3>SEO for Fashion Stores: Drive More Online Sales</h3>
             <p>Boost your e-commerce fashion brand's visibility with tailored SEO strategies for product pages, collections, and trend content.</p>
-            <a href="/blog/seo-for-fashion-stores.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-for-fashion-stores.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="content-marketing">
@@ -281,7 +284,7 @@
           <div class="blog-card-content">
             <h3>How to Create SEO Content That Ranks & Converts</h3>
             <p>Learn the step-by-step process of crafting high-quality, SEO-optimized content that attracts organic traffic and drives conversions.</p>
-            <a href="/blog/how-to-create-seo-content.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-create-seo-content.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -289,7 +292,7 @@
           <div class="blog-card-content">
             <h3>How Fast Does SEO Work in 2025? Realistic Timelines & Tips</h3>
             <p>Understand the realistic timelines for SEO success and what factors influence how quickly you can see results from your campaigns.</p>
-            <a href="/blog/how-fast-seo-campaign.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-fast-seo-campaign.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -297,7 +300,7 @@
           <div class="blog-card-content">
             <h3>How to Make Money with SEO in 2025: 8 Proven Strategies</h3>
             <p>Turn your SEO skills into a profitable venture. Explore 8 actionable strategies to generate income through search engine optimization.</p>
-            <a href="/blog/how-to-make-money-seo.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-make-money-seo.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -305,24 +308,7 @@
       </section>
   </div>
 
-  <footer>
-    <div class="container footer-content">
-      <nav class="footer-nav" aria-label="Footer Navigation">
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
-    </div>
-    <p class="footer-affiliate-disclaimer">
-      This site contains affiliate links. If you purchase through them, we may earn a commission—at no extra cost to you. We only recommend tools we trust.
-    </p>
-  </footer>
+  <?php include(__DIR__ . '/../footer.php'); ?>
   <script>
     // Simple JavaScript for category filtering (can be expanded)
     document.addEventListener('DOMContentLoaded', function() {
@@ -351,3 +337,14 @@
   </script>
 </body>
 </html>
+  <style>
+    /* Remove any future overlay or ::before darkening for hero-image-section */
+    .hero-image-section::before,
+    .hero-image-section .hero-overlay,
+    .hero-image-section .overlay {
+      display: none !important;
+      content: none !important;
+      background: none !important;
+      opacity: 0 !important;
+    }
+  </style>

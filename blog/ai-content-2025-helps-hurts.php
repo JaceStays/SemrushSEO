@@ -1,3 +1,6 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Content in 2025 – When It Helps You and When It Hurts You</title>
   <meta name="description" content="Explore when AI-generated content can boost your SEO and when it risks penalties in 2025. Learn how to use AI wisely with Semrush to scale content output and improve rankings without hurting your domain authority." />
+  <link rel="canonical" href="https://semrushseo.review/blog/ai-content-2025-helps-hurts.php" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -18,7 +22,7 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="/affiliate.html">Affiliate</a></li>
           <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/blog/index.php">Blog</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -213,24 +217,8 @@
   </div>
 </div>
 
-<footer>
-  <div class="container footer-content">
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
-    <p class="footer-affiliate-disclaimer">
-      This site contains affiliate links. If you purchase through them, we may earn a commission—at no extra cost to you. We only recommend tools we trust.
-    </p>
-  </div>
-</footer>
+</main>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
 </body>
 </html><!DOCTYPE html>
 <html lang="en">
@@ -512,7 +500,7 @@
         <li><a href="/index.html">Home</a></li>
         <li><a href="/affiliate.html">Affiliate</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/blog/index.php">Blog</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>

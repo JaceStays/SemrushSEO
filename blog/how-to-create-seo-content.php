@@ -1,3 +1,6 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to Create SEO Content That Actually Ranks in 2025</title>
   <meta name="description" content="Create high-ranking SEO content in 2025 with this expert guide. Learn content planning, keyword targeting, formatting, AI tools, and optimization best practices to dominate Google." />
+  <link rel="canonical" href="https://semrushseo.review/blog/how-to-create-seo-content.php" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -18,7 +22,7 @@
         <li><a href="/index.html">Home</a></li>
         <li><a href="/affiliate.html">Affiliate</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/blog/index.php">Blog</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
@@ -209,23 +213,6 @@
   </div>
 </main>
 
-<footer>
-  <div class="container footer-content">
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>© 2025 SemrushSEO.review — Powered by Content That Converts</p>
-    <p class="footer-affiliate-disclaimer">
-    This site contains affiliate links. If you purchase through them, we may earn a commission—at no extra cost to you. We only recommend tools we trust.
-  </p>
-  </div>
-</footer>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php'); ?>
 </body>
 </html>

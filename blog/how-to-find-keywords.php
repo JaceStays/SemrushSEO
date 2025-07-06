@@ -1,3 +1,6 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to Find Untapped Keywords That Rank & Convert (2025 Guide)</title>
   <meta name="description" content="Discover how to find untapped keywords with low competition and high conversion potential. Learn to rank faster and drive targeted traffic to your site in 2025." />
+  <link rel="canonical" href="https://semrushseo.review/blog/how-to-find-keywords.php" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -18,7 +22,7 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="/affiliate.html">Affiliate</a></li>
           <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/blog/index.php">Blog</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -229,20 +233,6 @@
     <p><strong>Disclaimer:</strong> Some of the links on this page are affiliate links. That means if you click and purchase, we may earn a small commission at no extra cost to you. We only recommend tools we truly believe in.</p>
   </div>
 </section>
-<footer>
-  <div class="container footer-content">
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
-  </div>
-</footer>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.php"); ?>
 </body>
 </html>

@@ -1,3 +1,6 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Today’s Tariffs and What That Means for Your SEO Strategy</title>
   <meta name="description" content="This piece is designed to rank for keywords like “tariffs SEO impact,” “global trade and search rankings,” “eCommerce tariffs SEO,” and “digital tax effects on SEO strategy.” It’s educational, timely, and aligns with affiliate prompts to Semrush as the tool to monitor and adjust." />
+  <link rel="canonical" href="https://semrushseo.review/blog/todays-tariffs-seo-strategy.php" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -18,7 +22,7 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="/affiliate.html">Affiliate</a></li>
           <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/blog/index.php">Blog</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -232,20 +236,6 @@
 <div class="affiliate-disclaimer">
   <p><strong>Affiliate Disclaimer:</strong> Some links on this page may be affiliate links. That means if you click and purchase, we may earn a small commission at no extra cost to you. We only recommend tools we genuinely trust.</p>
 </div>
-<footer>
-  <div class="container footer-content">
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
-  </div>
-</footer>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
 </body>
 </html>
