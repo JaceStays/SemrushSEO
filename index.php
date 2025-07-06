@@ -34,21 +34,7 @@
   </script>
 </head>
 <body>
-  <header>
-      <nav class="site-navigation">
-        <div class="container">
-          <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-          <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/affiliate.html">Affiliate</a></li>
-            <li><a href="/reviews.html">Reviews</a></li>
-            <li><a href="/blog/index.php">Blog</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-  </header>
+  <?php include 'header.php'; ?>
 
   <main>
     <div class="fade-in">
@@ -134,7 +120,7 @@
           Navigating the world of SEO tools can be overwhelming. We cut through the noise with in-depth reviews and recommendations for the software that truly makes a difference in keyword research, site auditing, competitor analysis, and more.
         </p>
         <div class="tool-card-grid">
-          <a href="/reviews.html" class="tool-card">
+          <a href="/reviews.php" class="tool-card">
             <img src="/assets/icons/wrench-icon.png" alt="SEO Tools" class="tool-icon" role="img">
             <h3>SEO Tool Reviews</h3>
             <p>Unbiased reviews of the best SEO software and platforms on the market.</p>
@@ -246,7 +232,7 @@
           </tbody>
         </table>
         <div class="text-center" style="margin-top:20px;">
-          <a href="/affiliate.html" class="button primary-button">Try Semrush Free Today →</a>
+          <a href="/affiliate.php" class="button primary-button">Try Semrush Free Today →</a>
         </div>
       </div>
     </section>
@@ -257,7 +243,7 @@
       <div class="container">
         <h2>Ready to Transform Your SEO?</h2>
         <p>Whether you're looking for the perfect tool, need expert guidance, or want to dive into monetization, we've got you covered. Reach out and let's supercharge your online presence.</p>
-        <a href="/contact.html" class="button primary-button global-cta-button">Get in Touch!</a>
+        <a href="/contact.php" class="button primary-button global-cta-button">Get in Touch!</a>
       </div>
     </section>
     </div>
@@ -270,16 +256,16 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-logo">
-      <a href="/index.html" aria-label="SemrushSEO Home">SemrushSEO</a>
+      <a href="/index.php" aria-label="SemrushSEO Home">SemrushSEO</a>
     </div>
     <nav class="footer-nav" aria-label="Footer Navigation">
       <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/index.php">Home</a></li>
+        <li><a href="/affiliate.php">Affiliate</a></li>
+        <li><a href="/reviews.php">Reviews</a></li>
         <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/about.php">About</a></li>
+        <li><a href="/contact.php">Contact</a></li>
       </ul>
     </nav>
     <div class="footer-affiliate-disclaimer">
