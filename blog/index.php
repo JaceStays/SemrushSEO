@@ -20,23 +20,9 @@ header('Content-Type: text/html; charset=UTF-8');
     <link rel="stylesheet" href="/assets/css/blog-post.css" /> 
   </head>
 <body>
-  <header>
-      <nav class="site-navigation" aria-label="Main Navigation">
-        <div class="container">
-          <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-          <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/affiliate.html">Affiliate</a></li>
-            <li><a href="/reviews.html">Reviews</a></li>
-            <li><a href="/blog/index.html">Blog</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-  </header>
+  <?php include(__DIR__ . '/../header.php'); ?>
 
-  <section class="blog-index-hero hero-image-section" style="background-image: url('/assets/images/blog/blog-hero-banner.webp'); background-size: cover; background-position: bottom center; background-repeat: no-repeat; width: 100vw; margin-left: calc(-50vw + 50%); padding: 100px 20px; text-align: center; color: #fff; text-shadow: 0 0 20px rgba(0,0,0,0.9); background-color: transparent; margin-top: 0; padding-top: 0;">
+  <section class="blog-index-hero hero-image-section" style="background-image: url('/assets/images/blog/blog-hero-banner.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat; width: 100vw; height: auto; aspect-ratio: 1920 / 472; margin: 0; text-align: center; color: #fff; text-shadow: 0 0 20px rgba(0,0,0,0.9); background-color: transparent;">
     <div style="position: relative; z-index: 1;">
       <h1 class="hero-title" style="font-size: 2.75rem; margin-bottom: 16px;">Unlock Your SEO Edge</h1>
       <p class="hero-description" style="font-size: 1.25rem;">Data-Driven Strategies for Maximum Growth</p>
