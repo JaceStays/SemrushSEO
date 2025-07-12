@@ -31,12 +31,24 @@ header('Content-Type: text/html; charset=UTF-8');
 </header>
 
 <main>
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-vs-paid-ads.jpg');">
-    <div class="hero-content">
-      <h1>SEO vs. Paid Ads (PPC): Which is Best for Your Business in 2025?</h1>
-      <p>Organic search or paid advertising? This ultimate guide dissects SEO and PPC, comparing their costs, benefits, and ideal use cases to help you make an informed decision for your digital marketing strategy.</p>
-    </div>
-  </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-vs-paid-ads.jpg');">
+  <div class="hero-content">
+    <h1>SEO vs. Paid Ads (PPC): Which is Best for Your Business in 2025?</h1>
+    <p class="subtitle">Organic search or paid advertising? This ultimate guide dissects SEO and PPC, comparing their costs, benefits, and ideal use cases to help you make an informed decision for your digital marketing strategy.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
   <div class="container">
     <div class="blog-content-wrapper"> <aside class="quick-navigation" aria-label="Quick Navigation Sidebar"> <nav>

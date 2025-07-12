@@ -15,12 +15,24 @@ header('Content-Type: text/html; charset=UTF-8');
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
   <main>
-    <section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/seo-tools-comparison.jpg');">
-        <div class="hero-content">
-            <h1>Best SEO Tools Compared for 2025: Unlock Your Growth Potential</h1>
-            <p>Choosing the right SEO software can make or break your digital strategy. Dive into our comprehensive comparison of the top SEO tools for serious growth and rankings in 2025.</p>
-        </div>
-    </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/seo-tools-comparison.jpg');">
+  <div class="hero-content">
+    <h1>Best SEO Tools Compared for 2025: Unlock Your Growth Potential</h1>
+    <p class="subtitle">Choosing the right SEO software can make or break your digital strategy. Dive into our comprehensive comparison of the top SEO tools for serious growth and rankings in 2025.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
     <div class="container">
       <div class="blog-content-wrapper"> <aside class="quick-navigation" aria-label="Quick Navigation Sidebar"> <nav>

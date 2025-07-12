@@ -11,20 +11,33 @@ header('Content-Type: text/html; charset=UTF-8');
   <link rel="canonical" href="https://semrushseo.review/blog/seo-for-beginners-2025.php" />
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/blog-post.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
 </head>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
-<main>
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-beginners-guide.webp');">
-    <div class="hero-content">
-      <h1>SEO for Beginners in 2025: A Complete Guide to Ranking and Growing Online</h1>
-      <p>New to SEO? Learn the basics of how search engines work and exactly what to do to start ranking higher, driving organic traffic, and growing your site in 2025 — the right way.</p>
-    </div>
-  </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/placeholder-hero.webp');">
+  <div class="hero-content">
+    <h1>SEO for Beginners in 2025: A Complete Guide to Ranking and Growing Online</h1>
+    <p class="subtitle">New to SEO? Learn the basics of how search engines work and exactly what to do to start ranking higher, driving organic traffic, and growing your site in 2025 — the right way.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
-  <div class="container">
+<div class="container">
     <div class="blog-content-wrapper">
       <aside class="quick-navigation" aria-label="Quick Navigation Sidebar">
         <nav>

@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header" class="site-header">
   <nav class="site-navigation" aria-label="Main Navigation">
     <div class="container">
       <a href="/index.php" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>

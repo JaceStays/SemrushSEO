@@ -31,12 +31,24 @@ header('Content-Type: text/html; charset=UTF-8');
 </header>
 
 <main>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/generic-hero.webp');">
   <div class="hero-content">
     <h1>Today’s Tariffs and What That Means for Your SEO Strategy</h1>
-    <p>Tariffs aren’t just headlines for economists — they can quietly shape your entire SEO performance. Whether you’re running an international eCommerce store, dropshipping products, or managing content that relies on global traffic, shifting tariffs and trade regulations can change what you rank for, where you rank, and how fast your revenue grows. Let’s break down what today’s trade climate means for your site and how to adapt — before your competition does.</p>
+    <p class="subtitle">Tariffs aren’t just headlines for economists — they can quietly shape your entire SEO performance. Whether you’re running an international eCommerce store, dropshipping products, or managing content that relies on global traffic, shifting tariffs and trade regulations can change what you rank for, where you rank, and how fast your revenue grows. Let’s break down what today’s trade climate means for your site and how to adapt — before your competition does.</p>
   </div>
 </section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
 <div class="container">
   <div class="blog-content-wrapper">

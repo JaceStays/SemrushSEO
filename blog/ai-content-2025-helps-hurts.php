@@ -10,13 +10,24 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/ai-content-helps-hurts-hero.webp');">
-    <div class="hero-content">
-      <h1>AI Content in 2025 – When It Helps You and When It Hurts You</h1>
-      <p>AI-generated content is everywhere in 2025. But here’s the truth: not all AI content is good for SEO. Used correctly, it can scale your output, improve your rankings, and drive conversions. Used carelessly, it can <strong>tank your traffic, hurt your domain authority, and trigger Google penalties</strong>.</p>
-      <p>This article breaks down when AI content helps, when it hurts, and how to use Semrush to make sure you’re always on the winning side.</p>
-    </div>
-  </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/ai-content-helps-hurts-hero.webp');">
+  <div class="hero-content">
+    <h1>AI Content in 2025 – When It Helps You and When It Hurts You</h1>
+    <p class="subtitle">AI-generated content is everywhere in 2025. But here’s the truth: not all AI content is good for SEO. Used correctly, it can scale your output, improve your rankings, and drive conversions. Used carelessly, it can <strong>tank your traffic, hurt your domain authority, and trigger Google penalties</strong>. This article breaks down when AI content helps, when it hurts, and how to use Semrush to make sure you’re always on the winning side.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
   <div class="container">
     <div class="blog-content-wrapper">

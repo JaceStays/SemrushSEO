@@ -17,12 +17,24 @@ header('Content-Type: text/html; charset=UTF-8');
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-growth-hacks-2025.webp');">
-    <div class="hero-content">
-      <h1>15 Game-Changing SEO Growth Hacks for 2025</h1>
-      <p>Discover what’s actually moving the needle this year — from real-time SERP shifts to AI-powered content strategies.</p>
-    </div>
-  </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-growth-hacks-2025.webp');">
+  <div class="hero-content">
+    <h1>15 Game-Changing SEO Growth Hacks for 2025</h1>
+    <p class="subtitle">Discover what’s actually moving the needle this year — from real-time SERP shifts to AI-powered content strategies.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
   <div class="container">
     <div class="blog-content-wrapper">

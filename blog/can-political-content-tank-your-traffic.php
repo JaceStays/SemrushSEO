@@ -18,13 +18,24 @@ header('Content-Type: text/html; charset=UTF-8');
 </header>
 
 <main>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/political-traffic-tank.webp');">
   <div class="hero-content">
     <h1>Can Political Content Tank Your Traffic?</h1>
-    <p>We’re in an era where <strong>your website’s traffic can be influenced not just by SEO tactics—but by your content’s politics</strong>. Whether you're covering policy, global issues, or just expressing opinions in blog posts, you may be unknowingly triggering algorithmic suppression, geofencing, or trust score downgrades.</p>
-    <p>This guide explores how political content can tank your organic search performance—and how to protect your reach without compromising your voice.</p>
+    <p class="subtitle">We’re in an era where <strong>your website’s traffic can be influenced not just by SEO tactics—but by your content’s politics</strong>. Whether you're covering policy, global issues, or just expressing opinions in blog posts, you may be unknowingly triggering algorithmic suppression, geofencing, or trust score downgrades. This guide explores how political content can tank your organic search performance—and how to protect your reach without compromising your voice.</p>
   </div>
 </section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
 <div class="container">
   <div class="blog-content-wrapper">

@@ -31,13 +31,24 @@ header('Content-Type: text/html; charset=UTF-8');
 </header>
 
 <main>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/stop-early-indexing-hero.webp');">
   <div class="hero-content">
-    <h1>How to Keep Your Site from Getting Indexed Too Early – A Guide for Builders & Bloggers</h1>
-    <p>Launching a new website? Wait before letting Google index it. If your content isn’t ready, it could get crawled, ranked, and cached — flaws and all. That first impression can affect your long-term SEO performance.</p>
-    <p>This guide explains how to safely block search engine bots during development and how to control indexing once your site is ready to go live. Includes setup tips for major CMS platforms like WordPress, Shopify, Squarespace, Webflow, and more.</p>
+    <h1>Stop Indexing Your Site Too Early: A Guide for Builders & Bloggers</h1>
+    <p class="subtitle">Launching soon? Don’t let Google index your unfinished site! Avoid costly SEO mistakes by controlling when and how search engines discover your content. This guide explains how to safely block search engine bots during development and how to control indexing once your site is ready to go live. Includes setup tips for major CMS platforms like WordPress, Shopify, Squarespace, Webflow, and more.</p>
   </div>
 </section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
 <div class="container">
   <div class="blog-content-wrapper">

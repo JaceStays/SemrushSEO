@@ -1,9 +1,124 @@
-/* assets/css/blog-post.css */
+
+/* === DIAGNOSTIC HERO VISIBILITY DEBUG === */
+.hero-wrapper {
+  margin-bottom: 40px !important;
+}
+.hero-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  opacity: 1 !important;
+  filter: none !important;
+  z-index: 10 !important;
+}
+
+
+.hero-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 370px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 32px;
+  left: 48px;
+  z-index: 10;
+  color: white;
+  max-width: 90%;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+.hero-text h1.blog-title {
+  font-size: 2.8rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-text .hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    bottom: 24px;
+    left: 24px;
+  }
+  .hero-text h1.blog-title {
+    font-size: 2rem;
+  }
+  .hero-text .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+header {
+  border-bottom: none !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  background-color: white !important;
+}
+
+header {
+  border-bottom: none !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  background-color: #fff !important;
+}
+
+.blog-title-wrapper {
+  max-width: 960px !important;
+  margin: 0 auto !important;
+  padding: 32px 24px 0 24px !important;
+  text-align: center !important;
+}
+
+.quick-nav, .blog-content-section {
+  padding-top: 40px !important;
+}
+
+body {
+  scroll-padding-top: 100px !important;
+}
+
+img[src*="placeholder-hero"] {
+  filter: grayscale(100%) !important;
+  opacity: 0.65 !important;
+}
+
+@media (max-width: 600px) {
+  .blog-title-wrapper h1 {
+    font-size: 2rem !important;
+    padding: 0 8px !important;
+  }
+  .blog-title-wrapper {
+    padding: 20px 8px 0 8px !important;
+  }
+}
 
 /* Universal Box-Sizing (Crucial for consistent layouts) */
 *, *::before, *::after {
   box-sizing: border-box !important;
 }
+
+/* Remove any border below the header globally */
+header, .site-header, .main-header {
+  border-bottom: none !important;
+}
+
 
 /* --- Variables --- */
 :root {

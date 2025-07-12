@@ -15,12 +15,24 @@ header('Content-Type: text/html; charset=UTF-8');
 </head>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/placeholders/seo-timeline-2025-intro.webp');">
   <div class="hero-content">
     <h1>How Fast Does SEO Work in 2025? Realistic Timelines & Tips</h1>
-    <p>How long does it take for SEO to work in 2025? Learn what to expect, what affects ranking speed, and how to accelerate results using proven strategies and Semrush tools.</p>
+    <p class="subtitle">How long does it take for SEO to work in 2025? Learn what to expect, what affects ranking speed, and how to accelerate results using proven strategies and Semrush tools.</p>
   </div>
 </section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 <div class="container">
   <div class="blog-content-wrapper">
     <aside class="quick-navigation" aria-label="Quick Navigation Sidebar">

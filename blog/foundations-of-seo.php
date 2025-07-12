@@ -17,12 +17,24 @@ header('Content-Type: text/html; charset=UTF-8');
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-beginners.jpg');">
-    <div class="hero-content">
-      <h1>Foundations of SEO: How to Rank Smarter in 2025</h1>
-      <p>Explore the core principles of search engine optimization and discover modern strategies to grow organic visibility in today’s competitive landscape.</p>
-    </div>
-  </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-beginners.jpg');">
+  <div class="hero-content">
+    <h1>Foundations of SEO: How to Rank Smarter in 2025</h1>
+    <p class="subtitle">Explore the core principles of search engine optimization and discover modern strategies to grow organic visibility in today’s competitive landscape.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
   <div class="container">
     <div class="blog-content-wrapper"> <aside class="quick-navigation" aria-label="Quick Navigation Sidebar"> <nav>

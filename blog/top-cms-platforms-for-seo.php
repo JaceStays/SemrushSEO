@@ -31,13 +31,24 @@ header('Content-Type: text/html; charset=UTF-8');
 </header>
 
 <main>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/top-cms-platforms-seo.webp');">
   <div class="hero-content">
-    <h1>Top CMS Platforms for SEO in 2025 – Ranked & Compared</h1>
-    <p>Not all CMS platforms are created equal—especially when it comes to SEO. Whether you’re building a content site, eCommerce store, or local service hub, your content management system plays a massive role in <strong>how fast you rank and how high you climb</strong>.</p>
-    <p>This guide ranks the top CMS platforms for SEO in 2025 based on <strong>technical flexibility, speed, indexing control, plugin availability, and clean code output</strong>.</p>
+    <h1>Top CMS Platforms for SEO in 2025</h1>
+    <p class="subtitle">Not all CMS platforms are created equal—especially when it comes to SEO. Whether you’re building a content site, eCommerce store, or local service hub, your content management system plays a massive role in <strong>how fast you rank and how high you climb</strong>. This guide ranks the top CMS platforms for SEO in 2025 based on <strong>technical flexibility, speed, indexing control, plugin availability, and clean code output</strong>.</p>
   </div>
 </section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
 <div class="container">
   <div class="blog-content-wrapper">

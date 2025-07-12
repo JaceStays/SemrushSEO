@@ -222,10 +222,24 @@ header {
 }
 
 /* --- Blog Post Specific Hero (If different from main hero) --- */
-.hero.blog-post-hero { /* Example for individual blog post hero */
-  min-height: 250px; /* Slightly smaller hero for post pages */
+.hero.blog-post-hero { /* Uniform height for all blog post hero sections */
+  height: 390px;
   padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
 }
+/*
+  BLOG POST HERO HEIGHT:
+  Adjust the height for all blog post hero sections here:
+  .hero.blog-post-hero { height: 390px; }
+*/
+
+.hero.blog-post-hero .hero-content {
+  margin-top: 40px; /* Move hero text overlay down. Adjust as needed. */
+}
+
 .hero.blog-post-hero .hero-content h1 {
   font-size: 2.8rem; /* Adjusted size for blog post titles */
   margin-bottom: 15px;

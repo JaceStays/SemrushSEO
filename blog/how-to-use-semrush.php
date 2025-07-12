@@ -17,12 +17,24 @@ header('Content-Type: text/html; charset=UTF-8');
 
 
 <main>
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/semrush-roi-hero.webp');">
-    <div class="hero-content">
-      <h1>How to Use Semrush for Maximum ROI: A Step-by-Step Guide</h1>
-      <p>Unlock the full power of Semrush to boost rankings, drive traffic, and outperform competitors with this comprehensive guide for 2025.</p>
-    </div>
-  </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/semrush-roi-hero.webp');">
+  <div class="hero-content">
+    <h1>How to Use Semrush for Maximum ROI: A Step-by-Step Guide</h1>
+    <p class="subtitle">Unlock the full power of Semrush to boost rankings, drive traffic, and outperform competitors with this comprehensive guide for 2025.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
   <div class="container">
     <div class="blog-content-wrapper"> <aside class="quick-navigation" aria-label="Quick Navigation Sidebar"> <nav>

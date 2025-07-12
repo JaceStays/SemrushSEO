@@ -19,13 +19,24 @@ header('Content-Type: text/html; charset=UTF-8');
 
 
 <main>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/politics-global-events-seo-hero.webp');">
   <div class="hero-content">
     <h1>How Politics & Global Events Impact SEO — From Rankings to Reach</h1>
-    <p>SEO is often seen as a neutral, technical discipline — keywords, links, and meta tags. But in today’s interconnected world, global politics and real-time events are quietly rewriting the rules of visibility, reach, and organic growth.</p>
-    <p>This article explores how political shifts, censorship, trade policy, wars, and global crises affect everything from ranking algorithms to domain visibility — and what you can do to adapt using tools like Semrush.</p>
+    <p class="subtitle">SEO is often seen as a neutral, technical discipline — keywords, links, and meta tags. But in today’s interconnected world, global politics and real-time events are quietly rewriting the rules of visibility, reach, and organic growth. This article explores how political shifts, censorship, trade policy, wars, and global crises affect everything from ranking algorithms to domain visibility — and what you can do to adapt using tools like Semrush.</p>
   </div>
 </section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
 <div class="container">
   <div class="blog-content-wrapper">

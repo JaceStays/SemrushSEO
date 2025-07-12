@@ -31,12 +31,24 @@ header('Content-Type: text/html; charset=UTF-8');
 </header>
 
 <main>
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-sem-budget-hero.webp');">
-    <div class="hero-content">
-      <h1>SEO vs SEM Budget Toolkit: How to Allocate Your Marketing Spend in 2025</h1>
-      <p>Stop guessing and start optimizing! This comprehensive guide provides actionable insights and strategies to help you effectively budget for SEO and SEM, ensuring maximum ROI for your digital marketing efforts.</p>
-    </div>
-  </section>
+<!--
+  Blog Post Hero Section Template
+  Usage: Copy and paste this block at the top of your blog post, directly after the header include.
+  Adjust the background-image, title, and subtitle per post.
+  Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
+-->
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-sem-budget-hero.webp');">
+  <div class="hero-content">
+    <h1>SEO vs SEM Budget Toolkit: How to Allocate Your Marketing Spend in 2025</h1>
+    <p class="subtitle">Stop guessing and start optimizing! This comprehensive guide provides actionable insights and strategies to help you effectively budget for SEO and SEM, ensuring maximum ROI for your digital marketing efforts.</p>
+  </div>
+</section>
+<!--
+  To adjust the hero height for all blog posts, edit in styles.css:
+  .hero.blog-post-hero { height: 390px; }
+  To move the text overlay up/down, edit:
+  .hero.blog-post-hero .hero-content { margin-top: 40px; }
+-->
 
   <div class="container">
     <div class="blog-content-wrapper"> <aside class="quick-navigation" aria-label="Quick Navigation Sidebar"> <nav>
