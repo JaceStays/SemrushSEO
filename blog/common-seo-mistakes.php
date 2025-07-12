@@ -9,26 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>10 Common SEO Mistakes to Avoid in 2025: Fix Your Rankings!</title>
   <meta name="description" content="Learn about the 10 most common SEO mistakes that can hurt your rankings and traffic, and how to fix them for better search engine performance in 2025." />
   <link rel="canonical" href="https://semrushseo.review/blog/common-seo-mistakes.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/common-seo-mistakes.webp');">
@@ -298,14 +284,11 @@ header('Content-Type: text/html; charset=UTF-8');
         <h2>🎯 Final Thoughts – Fix These Mistakes &amp; Boost Your Rankings</h2>
         <p>Avoiding these 10 common SEO mistakes will not only help improve your search rankings and organic traffic but also lead to better user experience and higher conversions. Consistent analysis, optimization, and adapting to algorithm changes are key. With the right tools like Semrush, you can empower your website for long-term SEO success.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">🚀 Try Semrush Free for 7 Days!</a>
+          <a href="/affiliate.php" class="button primary-button">🚀 Try Semrush Free for 7 Days!</a>
         </p>
         <p class="text-center">💡 Need help? Drop your SEO questions below!</p>
-      </section>
-    </article>
   </div>
 </div>
-
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

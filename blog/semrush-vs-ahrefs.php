@@ -9,26 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>Semrush vs. Ahrefs (2025): Which SEO Tool is Best for You?</title>
   <meta name="description" content="Detailed comparison of Semrush vs. Ahrefs for 2025. Discover which SEO tool is right for your needs based on keyword research, backlink analysis, site audits, pricing, and more." />
   <link rel="canonical" href="https://semrushseo.review/blog/semrush-vs-ahrefs.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/analytics/search-traffic-sources.webp');">
@@ -222,7 +208,7 @@ header('Content-Type: text/html; charset=UTF-8');
         <ul>
           <li>Semrush typically includes PPC analysis and a wider range of content marketing tools across all its plans, offering more value for diverse digital marketing needs.</li>
           <li>Ahrefs is generally more affordable at the entry-level for pure SEO and backlink tracking but lacks integrated PPC insights.</li>
-          <li>Semrush offers a <a href="/affiliate.html" target="_blank" rel="noopener noreferrer">7-day free trial</a> for you to test its full capabilities, whereas Ahrefs typically does not offer a free trial, though they may have occasional short trial offers.</li>
+          <li>Semrush offers a <a href="/affiliate.php" target="_blank" rel="noopener noreferrer">7-day free trial</a> for you to test its full capabilities, whereas Ahrefs typically does not offer a free trial, though they may have occasional short trial offers.</li>
         </ul>
         <div class="callout winner-note">
             <i class="fas fa-trophy"></i>
@@ -262,7 +248,7 @@ header('Content-Type: text/html; charset=UTF-8');
         </ul>
         <p>Many advanced SEO professionals even use both tools for complementary insights. However, if you have to pick one, consider your overall digital marketing goals.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">🚀 Experience Semrush for Free – Start Your Trial Now!</a>
+          <a href="/affiliate.php" class="button primary-button">🚀 Experience Semrush for Free – Start Your Trial Now!</a>
         </p>
         <p class="text-center">Which tool do you prefer, and why? Share your thoughts in the comments below!</p>
       </section>
@@ -276,6 +262,6 @@ header('Content-Type: text/html; charset=UTF-8');
     </div>
   </section>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

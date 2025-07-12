@@ -9,26 +9,10 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>Best SEO Tools 2025: Top Software Compared for Serious Growth</title>
   <meta name="description" content="Discover the best SEO tools for 2025, including Semrush, Ahrefs, Moz, and SpyFu, to boost your rankings and drive traffic." />
   <link rel="canonical" href="https://semrushseo.review/blog/best-seo-tools-2025.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
 </head>
 <body>
-  <header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
   <main>
     <section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/seo-tools-comparison.jpg');">
@@ -173,6 +157,6 @@ header('Content-Type: text/html; charset=UTF-8');
     </div>
   </main>
 
-  <?php include($_SERVER['DOCUMENT_ROOT'] . "/components/footer.php"); ?>
+  <?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

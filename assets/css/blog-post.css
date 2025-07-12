@@ -31,13 +31,16 @@ html {
   scroll-behavior: smooth !important;
 }
 
+main.blog-main, .blog-content, .blog-section, .blog-index-hero, .featured-posts-grid, .all-posts-grid, .blog-card {
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
 body {
   margin: 0 !important;
   padding: 0 !important;
   background-color: var(--accent-color) !important;
-  font-family: var(--font-sans) !important;
-  color: var(--text-color) !important;
-  line-height: 1.7 !important;
   overflow-x: hidden !important;
 }
 
@@ -55,35 +58,12 @@ body {
 }
 
 
-/* --- Header & Site Navigation --- */
-/* IMPORTANT: These rules for .site-navigation are intentionally minimalistic here.
-   The main transparent/fixed/scrolled behavior should be managed by styles.css.
-   If styles.css isn't doing that, those rules would need to be added there.
-*/
-.site-navigation {
-  z-index: 1000 !important; /* Ensure nav is always on top */
-  background-color: var(--white) !important; /* Force white background for article pages */
-  border-bottom: 1px solid var(--border-color) !important; /* Add border */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important; /* Add shadow */
-  position: relative !important; /* Ensure it doesn't float over the hero on article pages */
-  padding: 0.75rem 0 !important; /* Standard padding */
-}
-
-.site-navigation .nav-links a {
-  color: var(--text-color) !important; /* Default for solid nav */
-}
-
-.site-navigation .nav-links a:hover,
-.site-navigation .nav-links a:focus {
-  color: var(--primary-color) !important;
-  outline: none !important;
-}
 
 
 /* --- Specific Blog Article Hero Section (blog-post-article-hero) --- */
 .blog-post-article-hero {
   position: relative !important;
-  min-height: 400px !important; /* Adjust height for article hero */
+  min-height: 400px !important; /* Standard desktop hero height */
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -91,13 +71,32 @@ body {
   text-align: center !important;
   color: var(--white) !important;
   overflow: hidden !important;
-  margin-top: 0 !important; /* Ensures no gap under header */
-  margin-bottom: calc(var(--spacing-unit) * 2) !important; /* Spacing below the hero */
-  border-radius: 0 !important; /* Ensure full width, no rounded corners */
-  background-size: cover !important; /* Ensure background image covers the area */
-  background-position: center !important; /* Center the background image */
-  background-repeat: no-repeat !important; /* Prevent repeating */
+  margin-top: 0 !important;
+  margin-bottom: calc(var(--spacing-unit) * 2) !important;
+  border-radius: 0 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
+
+.blog-post-article-hero img, .blog-post-article-hero picture img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+@media (max-width: 1024px) {
+  .blog-post-article-hero {
+    min-height: 300px !important;
+  }
+}
+@media (max-width: 480px) {
+  .blog-post-article-hero {
+    min-height: 250px !important;
+  }
+}
+
 
 .blog-post-article-hero .hero-content {
     position: relative !important;
@@ -895,12 +894,49 @@ footer nav.footer-nav a:focus {
 }
 
 
-/* --- Override blog index hero overlay --- */
+
+/* --- Blog Index Hero Section Styles --- */
+.blog-index-hero {
+  position: relative !important;
+  min-height: 472px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-image: url('/assets/images/blog/blog-hero-banner.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  margin: 0 !important;
+  width: 100% !important;
+  aspect-ratio: 1920 / 472 !important;
+}
+
+.blog-index-hero .hero-content {
+  text-align: center !important;
+  color: var(--white) !important;
+  z-index: 2 !important;
+  padding: var(--spacing-unit) !important;
+}
+
+.blog-index-hero .hero-title {
+  font-family: var(--font-heading) !important;
+  font-size: clamp(2.5rem, 6vw, 4rem) !important;
+  margin: 0 0 1rem 0 !important;
+  color: var(--white) !important;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+.blog-index-hero .hero-description {
+  font-size: 1.25rem !important;
+  color: var(--white) !important;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
 .blog-index-hero::before,
 .blog-index-hero .hero-overlay,
 .blog-index-hero .overlay {
   display: none !important;
-  background: none !important;
   content: none !important;
+  background: none !important;
   opacity: 0 !important;
 }

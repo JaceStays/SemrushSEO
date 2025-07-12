@@ -9,60 +9,45 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>How to Optimize for Algorithm Shifts in 2025 – SEO That Moves With Google</title>
   <meta name="description" content="Learn how to build an SEO strategy that thrives through Google's frequent algorithm shifts in 2025. This guide covers diagnosing changes, strengthening E-E-A-T, avoiding AI penalties, and using Semrush to adapt and outperform competitors." />
   <link rel="canonical" href="https://semrushseo.review/blog/optimize-for-algorithm-shifts-2025.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <!-- Link blog-post.css last for article-specific styles, including hero adjustments -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/blog-post.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
 <!-- Hero section for this specific blog post. Removed 'hero-image-section' to avoid homepage style conflicts. -->
-<section class="hero blog-post-article-hero" style="background-image: url('/assets/images/digital-marketing/algorithm-shifts-seo-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/algorithm-shifts-seo-hero.webp');">
   <div class="hero-content">
-    <h1>How to Optimize for Algorithm Shifts in 2025 – SEO That Moves With Google</h1>
+    <h1>How to Optimize for Algorithm Shifts in 2025</h1>
+    <p class="subtitle">SEO That Moves With Google</p>
   </div>
-  <div class="hero-overlay"></div> <!-- Added an explicit overlay div for styling -->
 </section>
 
 <div class="container">
   <div class="blog-content-wrapper">
     <aside class="quick-navigation" aria-label="Quick Navigation Sidebar">
-      <nav>
-        <div class="sidebar-header">
-          <h3>📚 Quick Navigation – Algorithm Shifts</h3>
-        </div>
-        <ul class="styled-nav">
-          <li><a href="#introduction">🧭 Introduction</a></li>
-          <li><a href="#understand-google-targeting">1. Step 1: Understand What Google Is Really Targeting</a></li>
-          <li><a href="#semrush-sensor-monitor">2. Step 2: Use Semrush Sensor to Monitor Volatility</a></li>
-          <li><a href="#track-historical-performance">3. Step 3: Track Historical Performance to Spot Shifts</a></li>
-          <li><a href="#strengthen-eeat">4. Step 4: Strengthen EEAT with Author Pages & Structured Data</a></li>
-          <li><a href="#avoid-ai-spam-penalties">5. Step 5: Avoid AI Spam Penalties</a></li>
-          <li><a href="#monitor-competitor-reactions">6. Step 6: Monitor Competitor Reactions in Real Time</a></li>
-          <li><a href="#build-content-clusters">7. Step 7: Build Resilient Content Clusters</a></li>
-          <li><a href="#leverage-core-web-vitals">8. Step 8: Leverage Core Web Vitals & Page Experience Signals</a></li>
-          <li><a href="#document-changes">9. Step 9: Document Changes for Fast Pivots</a></li>
-          <li><a href="#final-thoughts">🎯 Final Thoughts – Adapt or Disappear</a></li>
-        </ul>
-      </nav>
-    </aside>
+  <nav>
+    <div class="sidebar-header">
+      <h3>📚 Quick Navigation</h3>
+    </div>
+    <ul class="styled-nav">
+      <li><a href="#introduction"><span class="icon">🧭</span> Introduction</a></li>
+      <li><a href="#understand-google-targeting"><span class="icon">🔍</span> 1. Understand What Google Is Really Targeting</a></li>
+      <li><a href="#semrush-sensor-monitor"><span class="icon">📈</span> 2. Use Semrush Sensor to Monitor Volatility</a></li>
+      <li><a href="#track-historical-performance"><span class="icon">⏳</span> 3. Track Historical Performance to Spot Shifts</a></li>
+      <li><a href="#strengthen-eeat"><span class="icon">🧑‍💼</span> 4. Strengthen EEAT with Author Pages & Structured Data</a></li>
+      <li><a href="#avoid-ai-spam-penalties"><span class="icon">🚫</span> 5. Avoid AI Spam Penalties</a></li>
+      <li><a href="#monitor-competitor-reactions"><span class="icon">👀</span> 6. Monitor Competitor Reactions in Real Time</a></li>
+      <li><a href="#build-content-clusters"><span class="icon">🗂️</span> 7. Build Resilient Content Clusters</a></li>
+      <li><a href="#leverage-core-web-vitals"><span class="icon">⚡</span> 8. Leverage Core Web Vitals & Page Experience Signals</a></li>
+      <li><a href="#document-changes"><span class="icon">📝</span> 9. Document Changes for Fast Pivots</a></li>
+      <li><a href="#final-thoughts"><span class="icon">🎯</span> Final Thoughts – Adapt or Disappear</a></li>
+    </ul>
+  </nav>
+</aside>
 
     <article class="blog-content-section">
       <section id="introduction">
@@ -74,7 +59,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
       <section id="understand-google-targeting">
         <!-- FIXED: Removed erroneous 'G' and added icon correctly -->
-        <h2>1. Step 1: Understand What Google Is Really Targeting. <i class="fab fa-google icon-inline"></i></h2>
+        <h2>Step 1: Understand What Google Is Really Targeting. <span class="icon-inline google-logo-svg" style="vertical-align:middle;display:inline-block;width:1.2em;height:1.2em;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g><path fill="#4285F4" d="M43.6 20.5h-1.8V20H24v8h11.3c-1.2 3.2-4.2 5.5-7.8 5.5-4.7 0-8.5-3.8-8.5-8.5s3.8-8.5 8.5-8.5c2.1 0 4 .7 5.5 2l6.4-6.4C36.5 9.7 32.5 8 28 8c-8.8 0-16 7.2-16 16s7.2 16 16 16c7.9 0 15.2-5.7 15.2-16 0-1.1-.1-2.1-.3-3z"/><path fill="#34A853" d="M6.3 14.1l6.6 4.8C14.5 16.1 18.8 13 24 13c2.1 0 4 .7 5.5 2l6.4-6.4C36.5 9.7 32.5 8 28 8c-6.1 0-11.4 3.4-14.3 8.1z"/><path fill="#FBBC05" d="M24 44c4.5 0 8.5-1.5 11.3-4.1l-6.1-5.1c-1.7 1.1-4 1.7-6.4 1.7-3.6 0-6.6-2.3-7.8-5.5l-6.6 5.1C12.6 40.6 17.9 44 24 44z"/><path fill="#EA4335" d="M43.6 20.5h-1.8V20H24v8h11.3c-.5 1.3-1.3 2.5-2.3 3.4v2.8h3.7c2.2-2 3.5-5 3.5-8.2 0-1.1-.1-2.1-.3-3z"/></g></svg></span></h2>
         <p>Google’s 2025 algorithm updates aim to:</p>
         <ul>
             <li>❌ Downrank AI-generated, low-effort content</li>
@@ -93,7 +78,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="semrush-sensor-monitor">
-        <h2>2. Step 2: Use Semrush Sensor to Monitor Volatility <i class="fas fa-chart-line icon-inline"></i></h2>
+        <h2>Step 2: Use Semrush Sensor to Monitor Volatility <i class="fas fa-chart-line icon-inline"></i></h2>
         <p>The <a href="https://www.semrush.com/sensor/" target="_blank" rel="noopener noreferrer">Semrush Sensor</a> shows SERP volatility by industry and region.</p>
         <ul>
             <li>📈 Spike = algorithm update likely occurred</li>
@@ -107,7 +92,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="track-historical-performance">
-        <h2>3. Step 3: Track Historical Performance to Spot Shifts <i class="fas fa-clock-rotate-left icon-inline"></i></h2>
+        <h2>Step 3: Track Historical Performance to Spot Shifts <i class="fas fa-clock-rotate-left icon-inline"></i></h2>
         <p>Use Semrush’s <strong>Position Tracking</strong> and <strong>Organic Traffic Insights</strong> to view:</p>
         <ul>
             <li>Which pages dropped after specific updates</li>
@@ -122,7 +107,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="strengthen-eeat">
-        <h2>4. Step 4: Strengthen EEAT with Author Pages & Structured Data <i class="fas fa-user-check icon-inline"></i></h2>
+        <h2>Step 4: Strengthen EEAT with Author Pages & Structured Data <i class="fas fa-user-check icon-inline"></i></h2>
         <p>To survive Google’s future, your content must prove:</p>
         <ul>
             <li>You’re a real person with relevant experience</li>
@@ -138,7 +123,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="avoid-ai-spam-penalties">
-        <h2>5. Step 5: Avoid AI Spam Penalties <i class="fas fa-ban icon-inline"></i></h2>
+        <h2>Step 5: Avoid AI Spam Penalties <i class="fas fa-ban icon-inline"></i></h2>
         <p>Semrush’s <a href="https://www.semrush.com/content-marketing/seo-writing-assistant/" target="_blank" rel="noopener noreferrer">SEO Writing Assistant</a> checks for originality, tone, and helpfulness.</p>
         <ul>
             <li>Rewrite low-value pages to include personal experience or unique data</li>
@@ -153,7 +138,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="monitor-competitor-reactions">
-        <h2>6. Step 6: Monitor Competitor Reactions in Real Time <i class="fas fa-eye icon-inline"></i></h2>
+        <h2>Step 6: Monitor Competitor Reactions in Real Time <i class="fas fa-eye icon-inline"></i></h2>
         <p>Use <a href="https://www.semrush.com/gap/keyword/" target="_blank" rel="noopener noreferrer">Keyword Gap</a> and <a href="https://www.semrush.com/backlinks/" target="_blank" rel="noopener noreferrer">Backlink Analytics</a> to monitor who’s recovering — and how:</p>
         <ul>
             <li>Which new keywords are emerging?</li>
@@ -167,7 +152,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="build-content-clusters">
-        <h2>7. Step 7: Build Resilient Content Clusters <i class="fas fa-sitemap icon-inline"></i></h2>
+        <h2>Step 7: Build Resilient Content Clusters <i class="fas fa-sitemap icon-inline"></i></h2>
         <p>Google favors organized, topic-based clusters that answer related questions. Use:</p>
         <ul>
             <li><a href="https://www.semrush.com/topic-research/" target="_blank" rel="noopener noreferrer">Topic Research</a> to identify clusters</li>
@@ -182,7 +167,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="leverage-core-web-vitals">
-        <h2>8. Step 8: Leverage Core Web Vitals & Page Experience Signals <i class="fas fa-tachometer-alt icon-inline"></i></h2>
+        <h2>Step 8: Leverage Core Web Vitals & Page Experience Signals <i class="fas fa-tachometer-alt icon-inline"></i></h2>
         <p>Technical performance is part of SEO. Run the <a href="https://www.semrush.com/siteaudit/" target="_blank" rel="noopener noreferrer">Site Audit Tool</a> and optimize:</p>
         <ul>
             <li>Largest Contentful Paint (LCP) under 2.5s</li>
@@ -197,7 +182,7 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="document-changes">
-        <h2>9. Step 9: Document Changes for Fast Pivots <i class="fas fa-book icon-inline"></i></h2>
+        <h2>Step 9: Document Changes for Fast Pivots <i class="fas fa-book icon-inline"></i></h2>
         <p>After each update, note:</p>
         <ul>
             <li>What content dropped — and why you think it did</li>
@@ -216,15 +201,13 @@ header('Content-Type: text/html; charset=UTF-8');
         <h2>🎯 Final Thoughts – Adapt or Disappear</h2>
         <p>Google isn’t punishing you — it’s testing how useful you are. Semrush gives you the diagnostics and strategic data to move fast, fix smart, and build search equity that lasts beyond the next shake-up.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">👉 Start Your Semrush 7-Day Free Trial and optimize for what’s next — not what’s outdated.</a>
+          <a href="/affiliate.php" class="button primary-button">👉 Start Your Semrush 7-Day Free Trial and optimize for what’s next — not what’s outdated.</a>
         </p>
       </section>
     </article>
   </div>
 </div>
 
-<footer>
-<?php include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php'); ?>
-</footer>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

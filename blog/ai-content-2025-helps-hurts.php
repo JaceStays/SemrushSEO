@@ -1,70 +1,49 @@
 <?php
-header('Content-Type: text/html; charset=UTF-8');
+  $pageTitle = "AI Content in 2025 – When It Helps You and When It Hurts You";
+  $pageDescription = "Explore when AI-generated content can boost your SEO and when it risks penalties in 2025. Learn how to use AI wisely with Semrush to scale content output and improve rankings without hurting your domain authority.";
+  $canonicalUrl = "https://semrushseo.review/blog/ai-content-2025-helps-hurts.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Content in 2025 – When It Helps You and When It Hurts You</title>
-  <meta name="description" content="Explore when AI-generated content can boost your SEO and when it risks penalties in 2025. Learn how to use AI wisely with Semrush to scale content output and improve rankings without hurting your domain authority." />
-  <link rel="canonical" href="https://semrushseo.review/blog/ai-content-2025-helps-hurts.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-</head>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/ai-content-helps-hurts-hero.webp');">
-  <div class="hero-content">
-    <h1>AI Content in 2025 – When It Helps You and When It Hurts You</h1>
-    <p>AI-generated content is everywhere in 2025. But here’s the truth: not all AI content is good for SEO. Used correctly, it can scale your output, improve your rankings, and drive conversions. Used carelessly, it can <strong>tank your traffic, hurt your domain authority, and trigger Google penalties</strong>.</p>
-    <p>This article breaks down when AI content helps, when it hurts, and how to use Semrush to make sure you’re always on the winning side.</p>
-  </div>
-</section>
+  <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/ai-content-helps-hurts-hero.webp');">
+    <div class="hero-content">
+      <h1>AI Content in 2025 – When It Helps You and When It Hurts You</h1>
+      <p>AI-generated content is everywhere in 2025. But here’s the truth: not all AI content is good for SEO. Used correctly, it can scale your output, improve your rankings, and drive conversions. Used carelessly, it can <strong>tank your traffic, hurt your domain authority, and trigger Google penalties</strong>.</p>
+      <p>This article breaks down when AI content helps, when it hurts, and how to use Semrush to make sure you’re always on the winning side.</p>
+    </div>
+  </section>
 
-<div class="container">
-  <div class="blog-content-wrapper">
-    <aside class="quick-navigation" aria-label="Quick Navigation Sidebar">
-      <nav>
-        <div class="sidebar-header">
-          <h3>📚 Quick Navigation – AI Content Pros & Cons</h3>
-        </div>
-        <ul class="styled-nav">
-          <li><a href="#introduction">🧭 Introduction</a></li>
-          <li><a href="#rise-of-ai">1. The Rise of AI in Content Creation</a></li>
-          <li><a href="#when-ai-helps">2. When AI Content Helps Your SEO</a></li>
-          <li><a href="#when-ai-hurts">3. When AI Content Hurts Your SEO</a></li>
-          <li><a href="#google-approach">4. Google’s Approach to AI Content in 2025</a></li>
-          <li><a href="#semrush-vs-generic">5. Semrush vs Generic AI Writers</a></li>
-          <li><a href="#scale-not-automate">6. Use AI to Scale – But Don’t Automate Blindly</a></li>
-          <li><a href="#final-thoughts">🎯 Final Thoughts – AI Is a Weapon. Use It Wisely.</a></li>
-        </ul>
-      </nav>
-    </aside>
+  <div class="container">
+    <div class="blog-content-wrapper">
+      <aside class="quick-navigation" aria-label="Quick Navigation Sidebar">
+        <nav>
+          <div class="sidebar-header">
+            <h3>📚 Quick Navigation – AI Content Pros & Cons</h3>
+          </div>
+          <ul class="styled-nav">
+            <li><a href="#introduction">🧭 Introduction</a></li>
+            <li><a href="#rise-of-ai">1. The Rise of AI in Content Creation</a></li>
+            <li><a href="#when-ai-helps">2. When AI Content Helps Your SEO</a></li>
+            <li><a href="#when-ai-hurts">3. When AI Content Hurts Your SEO</a></li>
+            <li><a href="#google-approach">4. Google’s Approach to AI Content in 2025</a></li>
+            <li><a href="#semrush-vs-generic">5. Semrush vs Generic AI Writers</a></li>
+            <li><a href="#scale-not-automate">6. Use AI to Scale – But Don’t Automate Blindly</a></li>
+            <li><a href="#final-thoughts">🎯 Final Thoughts – AI Is a Weapon. Use It Wisely.</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <article class="blog-content-section">
-      <section id="introduction">
-        <h2>🧭 Introduction</h2>
-        <p>AI-generated content is everywhere in 2025. But here’s the truth: not all AI content is good for SEO. Used correctly, it can scale your output, improve your rankings, and drive conversions. Used carelessly, it can <strong>tank your traffic, hurt your domain authority, and trigger Google penalties</strong>.</p>
-        <p>This article breaks down when AI content helps, when it hurts, and how to use Semrush to make sure you’re always on the winning side.</p>
-      </section>
+      <article class="blog-content-section">
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>AI-generated content is everywhere in 2025. But here’s the truth: not all AI content is good for SEO. Used correctly, it can scale your output, improve your rankings, and drive conversions. Used carelessly, it can <strong>tank your traffic, hurt your domain authority, and trigger Google penalties</strong>.</p>
+          <p>This article breaks down when AI content helps, when it hurts, and how to use Semrush to make sure you’re always on the winning side.</p>
+        </section>
       <hr/>
 
       <section id="rise-of-ai">
@@ -206,21 +185,20 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="final-thoughts">
-        <h2>🎯 Final Thoughts – AI Is a Weapon. Use It Wisely.</h2>
+        <h2>Final Thoughts – AI Is a Weapon. Use It Wisely.</h2>
         <p>AI is here to stay. But in SEO, it’s not about who uses AI — it’s about <strong>how well</strong> you use it. With Semrush’s tools, you get AI that’s trained on rankings, not just words.</p>
         <p>Want to generate content that actually ranks? Use <strong>Semrush ContentShake, Writing Assistant, and Keyword Magic Tool</strong> together — and watch how much faster you grow.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">👉 Try Semrush Free for 7 Days and build better content, smarter.</a>
+          <a href="/affiliate.php" class="button primary-button">👉 Try Semrush Free for 7 Days and build better content, smarter.</a>
         </p>
       </section>
     </article>
   </div>
 </div>
 
-</main>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
 </body>
-</html><!DOCTYPE html>
+</html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -235,14 +213,14 @@ header('Content-Type: text/html; charset=UTF-8');
 <header>
     <nav class="site-navigation">
       <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
+        <a href="/index.php" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
         <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/index.php">Home</a></li>
+          <li><a href="/affiliate.php">Affiliate</a></li>
+          <li><a href="/reviews.php">Reviews</a></li>
+          <li><a href="/blog/index.php">Blog</a></li>
+          <li><a href="/about.php">About</a></li>
+          <li><a href="/contact.php">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -482,31 +460,18 @@ header('Content-Type: text/html; charset=UTF-8');
       <hr/>
 
       <section id="conclusion">
-        <h2>🎯 Conclusion: AI + Semrush = Strategic SEO Power</h2>
+        <h2>Conclusion: AI + Semrush = Strategic SEO Power</h2>
         <p>AI is no longer about automating content for speed—it’s about amplifying strategy. If you want to dominate organic search in 2025, you need tools that combine AI with real SEO firepower.</p>
         <p><strong>That’s where Semrush wins</strong>: ContentShake, Keyword Magic, Writing Assistant, and the Site Audit tool all help you scale responsibly and smartly.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">👉 Try Semrush Free for 7 Days — and start building better content, faster.</a>
+          <a href="/affiliate.php" class="button primary-button">👉 Try Semrush Free for 7 Days — and start building better content, faster.</a>
         </p>
       </section>
     </article>
   </div>
 </div>
 
-<footer>
-  <div class="container footer-content">
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>© 2025 SemrushSEO.review — Your Trusted SEO Resource</p>
-  </div>
-</footer>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
 </body>
+</html>
 </html>

@@ -1,31 +1,38 @@
-<?php
-header('Content-Type: text/html; charset=UTF-8');
-?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SemrushSEO Blog: Your Hub for Digital Marketing Insights</title>
-    <meta name="description" content="Explore the latest articles on SEO, digital marketing, keyword research, content strategy, and more from SemrushSEO. Your trusted source for growth." />
-    
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    
-    <!-- Global styles (nav, fonts, layout) -->
-    <link rel="stylesheet" href="/assets/css/styles.css" /> 
-  
-    <!-- Blog-specific overrides (hero spacing, article layout, etc.) -->
-    <link rel="stylesheet" href="/assets/css/blog-post.css" /> 
-  </head>
+<head>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
+  <link rel="stylesheet" href="/assets/css/blog-post.css" />
+  <style>
+    /* Remove any future overlay or ::before darkening for hero-image-section */
+    .hero-image-section::before,
+    .hero-image-section .hero-overlay,
+    .hero-image-section .overlay {
+      display: none !important;
+      content: none !important;
+      background: none !important;
+      opacity: 0 !important;
+    }
+  </style>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
 <body>
-  <?php include(__DIR__ . '/../header.php'); ?>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
-  <section class="blog-index-hero hero-image-section" style="background-image: url('/assets/images/blog/blog-hero-banner.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat; width: 100vw; height: auto; aspect-ratio: 1920 / 472; margin: 0; text-align: center; color: #fff; text-shadow: 0 0 20px rgba(0,0,0,0.9); background-color: transparent;">
-    <div style="position: relative; z-index: 1;">
-      <h1 class="hero-title" style="font-size: 2.75rem; margin-bottom: 16px;">Unlock Your SEO Edge</h1>
-      <p class="hero-description" style="font-size: 1.25rem;">Data-Driven Strategies for Maximum Growth</p>
+  <section class="blog-index-hero hero-image-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Unlock Your SEO Edge</h1>
+      <p class="hero-description">Data-Driven Strategies for Maximum Growth</p>
     </div>
   </section>
 
@@ -38,7 +45,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <div class="blog-card-content">
             <h3>SEO Growth Hacks 2025: Explode Your Traffic & Rankings</h3>
             <p>Unlock rapid growth with these cutting-edge SEO hacks for 2025. Discover how to outsmart the competition and skyrocket your organic traffic.</p>
-            <a href="/blog/seo-growth-hacks-2025-upgraded.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-growth-hacks-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card">
@@ -142,7 +149,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <div class="blog-card-content">
             <h3>How to Rank on Google in 2025: The Ultimate SEO Strategy</h3>
             <p>Master the latest SEO trends, from AI optimization to E-E-A-T, and gain the competitive edge to rank higher on Google in 2025.</p>
-            <a href="/blog/how-to-rank-google-2025-upgraded.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/how-to-rank-google-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
@@ -150,7 +157,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <div class="blog-card-content">
             <h3>SEO Growth Hacks 2025: Explode Your Traffic & Rankings</h3>
             <p>Unlock rapid growth with these cutting-edge SEO hacks for 2025. Discover how to outsmart the competition and skyrocket your organic traffic.</p>
-            <a href="/blog/seo-growth-hacks-2025-upgraded.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/seo-growth-hacks-2025.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="blog-card" data-category="tools">
@@ -294,43 +301,21 @@ header('Content-Type: text/html; charset=UTF-8');
       </section>
   </div>
 
-  <?php include(__DIR__ . '/../footer.php'); ?>
+</section>
+
   <script>
-    // Simple JavaScript for category filtering (can be expanded)
-    document.addEventListener('DOMContentLoaded', function() {
-      const filterButtons = document.querySelectorAll('.category-filter button');
-      const blogCards = document.querySelectorAll('.all-posts-grid .blog-card');
-
-      filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          // Remove active class from all buttons
-          filterButtons.forEach(btn => btn.classList.remove('active'));
-          // Add active class to clicked button
-          this.classList.add('active');
-
-          const category = this.dataset.category;
-
-          blogCards.forEach(card => {
-            if (category === 'all' || card.dataset.category === category) {
-              card.style.display = 'flex'; /* Show card */
-            } else {
-              card.style.display = 'none'; /* Hide card */
-            }
-          });
+    document.addEventListener("DOMContentLoaded", function () {
+      const faders = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
         });
-      });
+      }, { threshold: 0.1 });
+      faders.forEach(el => observer.observe(el));
     });
   </script>
-</body>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/footer.php'; ?>
+  </body>
 </html>
-  <style>
-    /* Remove any future overlay or ::before darkening for hero-image-section */
-    .hero-image-section::before,
-    .hero-image-section .hero-overlay,
-    .hero-image-section .overlay {
-      display: none !important;
-      content: none !important;
-      background: none !important;
-      opacity: 0 !important;
-    }
-  </style>

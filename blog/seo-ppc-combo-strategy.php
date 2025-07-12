@@ -9,26 +9,14 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>Hybrid SEO + PPC Strategy 2025: Maximize Your Search Visibility</title>
   <meta name="description" content="Unlock exponential growth with a unified SEO and PPC strategy in 2025. Learn how combining organic and paid search efforts can boost traffic, conversions, and brand dominance on Google." />
   <link rel="canonical" href="https://semrushseo.review/blog/seo-ppc-combo-strategy.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
+
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/analytics/search-traffic-sources.webp');">
@@ -206,7 +194,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>In the dynamic world of digital marketing, the lines between organic and paid search are blurring. A hybrid SEO + PPC strategy isn't just an option in 2025; it's a necessity for any business serious about dominating the search landscape. By unifying your keyword strategies, optimizing for conversions, leveraging data feedback loops, and ensuring comprehensive SERP domination, you unlock unprecedented levels of visibility, traffic, and ROI.</p>
           <p>Stop thinking of SEO and PPC as competing forces. Start seeing them as powerful allies working in concert to achieve your ultimate business goals. The brands that master this synergy will be the ones that truly thrive in the coming years.</p>
           <p class="text-center">
-            <a href="/affiliate.html" class="button primary-button">🚀 Ready to implement a powerful hybrid SEO + PPC strategy? Explore Semrush's integrated toolkit to manage both channels seamlessly!</a>
+            <a href="/affiliate.php" class="button primary-button">🚀 Ready to implement a powerful hybrid SEO + PPC strategy? Explore Semrush's integrated toolkit to manage both channels seamlessly!</a>
           </p>
           <p class="text-center">What's your biggest challenge in combining SEO and PPC? Share your thoughts below!</p>
         </section>
@@ -215,10 +203,6 @@ header('Content-Type: text/html; charset=UTF-8');
   </main>
 </div>
 
-
-<div class="affiliate-disclaimer">
-  <p><strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. If you click through and make a purchase, we may earn a small commission at no extra cost to you. This helps keep the content free and high quality. Thank you!</p>
-</div>
-<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

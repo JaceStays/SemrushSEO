@@ -9,26 +9,14 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>No Traffic? Now What? A Step-by-Step SEO Recovery Plan Using Semrush</title>
   <meta name="description" content="Lost website traffic? This comprehensive, step-by-step SEO recovery plan outlines how to use Semrush to diagnose issues, optimize your strategy, and rebuild organic traffic effectively." />
   <link rel="canonical" href="https://semrushseo.review/blog/seo-traffic-recovery-plan.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
+
 
 <main>
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/seo-recovery-plan-hero.webp');">
@@ -247,13 +235,10 @@ header('Content-Type: text/html; charset=UTF-8');
         <h2>🎯 Final Thoughts – No Traffic Isn’t the End</h2>
         <p>Zero traffic doesn’t mean failure. It’s feedback — and an opportunity to pivot smarter. With Semrush, you’re not guessing. You’re diagnosing, fixing, and rebuilding with data in your hands.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">👉 Start Your 7-Day Free Trial with Semrush and get your SEO recovery underway — no more guesswork, no more stuck.</a>
+          <a href="/affiliate.php" class="button primary-button">👉 Start Your 7-Day Free Trial with Semrush and get your SEO recovery underway — no more guesswork, no more stuck.</a>
         </p>
-      </section>
-    </article>
-  </div>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

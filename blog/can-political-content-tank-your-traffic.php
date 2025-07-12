@@ -9,25 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>Can Political Content Tank Your Traffic?</title>
   <meta name="description" content="Discover how your website's traffic can be impacted by political content, leading to algorithmic suppression or deindexing. Learn strategies to protect your SEO reach without compromising your voice." />
   <link rel="canonical" href="https://semrushseo.review/blog/can-political-content-tank-your-traffic.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 </header>
 
 <main>
@@ -167,13 +154,13 @@ header('Content-Type: text/html; charset=UTF-8');
         <p>If your traffic is crashing and you publish political content—even tangentially—it’s time to look closer.</p>
         <p>With Semrush, you can <strong>spot deindexing early, monitor keyword drops by region, and track flagged pages</strong> before they cripple your traffic.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">🧠 Don’t wait until you’re invisible. Try Semrush Free for 7 Days</a>
+          <a href="/affiliate.php" class="button primary-button">🧠 Don’t wait until you’re invisible. Try Semrush Free for 7 Days</a>
         </p>
       </section>
     </article>
   </div>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

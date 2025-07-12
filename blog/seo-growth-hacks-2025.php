@@ -9,26 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>15 Game-Changing SEO Growth Hacks for 2025</title>
   <meta name="description" content="Dominate organic traffic in 2025 with these elite SEO growth hacks. Backed by data and powered by Semrush tools.">
   <link rel="canonical" href="https://semrushseo.review/blog/seo-growth-hacks-2025.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-  <nav class="site-navigation" aria-label="Main Navigation">
-    <div class="container">
-      <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-growth-hacks-2025.webp');">
@@ -215,13 +201,13 @@ header('Content-Type: text/html; charset=UTF-8');
         <section id="final">
           <h2>🚀 Final Thoughts</h2>
           <p>In 2025, SEO growth hacking is about working smarter, not harder. Use these strategies alongside Semrush’s powerful toolkit to uncover data-backed opportunities that your competitors miss.</p>
-          <p class="text-center"><a href="/affiliate.html" class="button primary-button">🔥 Start Using Semrush — Get Free Trial</a></p>
+          <p class="text-center"><a href="/affiliate.php" class="button primary-button">🔥 Start Using Semrush — Get Free Trial</a></p>
         </section>
       </article>
     </div>
   </div>
 </main>
 
-  <?php include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
+  <?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

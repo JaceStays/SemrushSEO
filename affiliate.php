@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  <?php include 'header.php'; ?>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
   <main>
     <section class="hero hero-homepage" style="background-image: url('/assets/images/heroes/semrush-transformation-hero.jpg');">
@@ -106,20 +106,6 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-content">
-      <nav class="footer-nav" aria-label="Footer Navigation">
-        <ul>
-          <li><a href="/index.php">Home</a></li>
-          <li><a href="/affiliate.php">Affiliate</a></li>
-          <li><a href="/reviews.php">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.php">About</a></li>
-          <li><a href="/contact.php">Contact</a></li>
-        </ul>
-      </nav>
-      <p>© 2025 SemrushSEO.review. All rights reserved. Your Trusted SEO Resource</p>
-    </div>
-  </footer>
+  <?php include 'footer.php'; ?>
 </body>
 </html>

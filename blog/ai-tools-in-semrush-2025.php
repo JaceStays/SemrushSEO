@@ -9,27 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>The AI Tools Built Into Semrush — And How to Use Them to Win SEO in 2025</title>
   <meta name="description" content="Discover Semrush's advanced built-in AI tools for SEO. Learn how AI assists with content creation, keyword strategy, site audits, and competitor analysis to help you win SEO in 2025." />
   <link rel="canonical" href="https://semrushseo.review/blog/ai-tools-in-semrush-2025.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
-
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 <main>
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/ai-tools-semrush-hero.webp');">
   <div class="hero-content">
@@ -231,6 +216,6 @@ header('Content-Type: text/html; charset=UTF-8');
   </div>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

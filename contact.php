@@ -1,4 +1,15 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact SemrushSEO</title>
+  <meta name="description" content="Contact SemrushSEO for support, partnership, or feedback. We're here to help you succeed in digital marketing." />
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
+  <!-- Page-specific styles/scripts can go here -->
+</head>
+<body>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main class="contact-page">
   <section class="hero hero-contact" style="background-color: #f5f5f5; padding: 80px 20px 40px 20px; text-align: center;">
@@ -17,4 +28,4 @@
   </section>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/footer.php'; ?>

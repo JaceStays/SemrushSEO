@@ -9,26 +9,14 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>How to Build an SEO Blog That Makes Money (2025 Guide)</title>
   <meta name="description" content="Learn how to create a profitable SEO blog from scratch in 2025. This guide covers niche selection, setup, keyword strategy, monetization, and scaling for income." />
   <link rel="canonical" href="https://semrushseo.review/blog/how-to-build-an-seo-blog-that-makes-money.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
+
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-blog-build-hero.webp');">
@@ -147,7 +135,7 @@ header('Content-Type: text/html; charset=UTF-8');
             <li><strong>Case Studies</strong> – (e.g., "How I Grew My Blog to $10,000/month in 6 Months")</li>
             <li><strong>Trending Topics &amp; News Articles</strong> (for timely traffic boosts)</li>
           </ul>
-          <p>✅ Also read: <a href="/blog/seo-traffic-recovery-plan.html">No Traffic? Now What – A Full SEO Recovery Plan Using Semrush</a></p>
+          <p>✅ Also read: <a href="/blog/seo-traffic-recovery-plan.php">No Traffic? Now What – A Full SEO Recovery Plan Using Semrush</a></p>
           <p>✅ You might also like: <a href="/blog/ai-tools-in-semrush-2025.html">The AI Tools Built Into Semrush – And How to Use Them in 2025</a></p>
           <div class="callout quick-win">
               <i class="fas fa-bolt"></i>
@@ -246,7 +234,7 @@ header('Content-Type: text/html; charset=UTF-8');
               <p><strong>Quick Win:</strong> Integrate <a href="https://www.hotjar.com/" target="_blank" rel="noopener noreferrer">heatmaps (Hotjar, Crazy Egg)</a> to analyze user behavior (scroll depth, clicks) and optimize your layout and content for better engagement.</p>
           </div>
           <p>For those ready to go even further, try running regular A/B tests on your headlines, featured images, and CTAs. Use advanced analytics tools to segment your audience by device, referral source, or user intent, and tailor your content and offers accordingly. The more you optimize, the faster your blog will grow—and the more income you’ll generate.</p>
-          <p>✅ Want to stay ahead of Google’s changes? Don’t miss: <a href="/blog/optimize-for-algorithm-shifts-2025.html">How to Optimize for Algorithm Shifts in 2025</a></p>
+          <p>✅ Want to stay ahead of Google’s changes? Don’t miss: <a href="/blog/optimize-for-algorithm-shifts-2025.php">How to Optimize for Algorithm Shifts in 2025</a></p>
         </section>
         <hr/>
 
@@ -256,20 +244,13 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>Don't be afraid to start small, learn as you go, and leverage powerful tools like Semrush to streamline your efforts. The digital world is constantly evolving, and a well-optimized blog can be a stable source of passive income for years to come.</p>
           <p class="text-center"><strong>What’s your biggest blogging challenge? Drop a comment below!</strong></p>
           <p class="text-center">
-            <a href="/affiliate.html" class="button primary-button">🚀 Start Your SEO Blog with Semrush – Get Your Free Trial!</a>
+            <a href="/affiliate.php" class="button primary-button">🚀 Start Your SEO Blog with Semrush – Get Your Free Trial!</a>
           </p>
         </section>
 
-        <section class="global-cta-section"> <h3>🚀 Ready to Start Your SEO Blog?</h3>
-          <p>Get started with the right tools and training. Tap into Semrush, pick a niche, and begin creating content that ranks and earns.</p>
-          <p class="text-center">
-            <a href="/affiliate.html" class="button primary-button global-cta-button">Access Semrush Free Trial Now!</a> </p>
-        </section>
-      </article>
-    </div>
-  </main>
 </div>
+</main>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

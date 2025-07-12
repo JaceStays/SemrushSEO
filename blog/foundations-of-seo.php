@@ -9,26 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>Foundations of SEO: A Beginner's Guide to Ranking in 2025</title>
   <meta name="description" content="Discover the core principles and key pillars of SEO success. Learn how to rank smarter in 2025 with this beginner's guide to search engine optimization." />
   <link rel="canonical" href="https://semrushseo.review/blog/foundations-of-seo.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-beginners.jpg');">
@@ -125,11 +111,11 @@ header('Content-Type: text/html; charset=UTF-8');
           <h2>Further Reading <i class="fas fa-book-open icon-inline"></i></h2>
           <p>Dive deeper into specific SEO topics with these related articles on our blog:</p>
           <ul>
-            <li><a href="/blog/seo-vs-sem-budget-guide.html">SEO vs. SEM: A Comprehensive Budget Guide</a></li>
-            <li><a href="/blog/seo-ppc-combo-strategy.html">Unlocking Growth: The Hybrid SEO + PPC Strategy</a></li>
-            <li><a href="/blog/how-to-find-keywords.html">How to Find Keywords for SEO: A Step-by-Step Guide</a></li>
-            <li><a href="/blog/seo-beginners-guide.html">SEO for Beginners: A Simple Guide to Ranking on Google</a></li>
-            <li><a href="/blog/how-to-use-semrush.html">How to Use Semrush for Maximum ROI</a></li>
+            <li><a href="/blog/seo-vs-sem-budget-guide.php">SEO vs. SEM: A Comprehensive Budget Guide</a></li>
+            <li><a href="/blog/seo-ppc-combo-strategy.php">Unlocking Growth: The Hybrid SEO + PPC Strategy</a></li>
+            <li><a href="/blog/how-to-find-keywords.php">How to Find Keywords for SEO: A Step-by-Step Guide</a></li>
+            <li><a href="/blog/seo-beginners-guide.php">SEO for Beginners: A Simple Guide to Ranking on Google</a></li>
+            <li><a href="/blog/how-to-use-semrush.php">How to Use Semrush for Maximum ROI</a></li>
           </ul>
         </section>
       </article>
@@ -137,8 +123,6 @@ header('Content-Type: text/html; charset=UTF-8');
   </div>
 </main>
 
-<footer>
-  <?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.php"); ?>
-</footer>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

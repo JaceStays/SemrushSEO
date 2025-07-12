@@ -8,27 +8,13 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to Use Semrush for Maximum ROI: A Step-by-Step Guide</title>
   <meta name="description" content="Unlock the full potential of Semrush with this step-by-step guide. Learn how to use Semrush for keyword research, competitor analysis, content optimization, and more to maximize your SEO ROI." />
-  <link rel="canonical" href="https://semrushseo.review/blog/how-to-use-semrush.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/semrush-roi-hero.webp');">
@@ -64,7 +50,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>This step-by-step guide will walk you through the essential features and workflows within Semrush, showing you how to efficiently boost your keyword rankings, drive targeted organic traffic, analyze your competitors, and ultimately outperform them. We’ll go far beyond the basics, sharing advanced affiliate SEO strategies, data-backed tactics, and actionable use cases so you can maximize your earnings and dominate your niche—whether you’re running a blog, authority site, or ecommerce business. Get ready to turn Semrush into a profit machine for your business.</p>
           <div class="callout affiliate-tip">
               <i class="fas fa-bolt"></i>
-              <p><strong>Affiliate Marketer’s Angle:</strong> Throughout this guide, look for tips specifically designed to help you convert more traffic and boost commissions. Plus, don’t miss our internal recommendations for deep-dive posts, like <a href="/blog/seo-traffic-recovery-plan.html">No Traffic? Now What?</a> and <a href="/blog/ai-content-2025-helps-hurts.html">AI Content in 2025</a> for next-level strategies.</p>
+              <p><strong>Affiliate Marketer’s Angle:</strong> Throughout this guide, look for tips specifically designed to help you convert more traffic and boost commissions. Plus, don’t miss our internal recommendations for deep-dive posts, like <a href="/blog/seo-traffic-recovery-plan.php">No Traffic? Now What?</a> and <a href="/blog/ai-content-2025-helps-hurts.php">AI Content in 2025</a> for next-level strategies.</p>
           </div>
         </section>
         <hr/>
@@ -73,7 +59,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <h2>1. Step 1: Set Up Your Semrush Account for Success <i class="fas fa-user-plus icon-inline"></i></h2>
           <p>The first step to unlocking Semrush’s power is to properly set up your account and projects. This foundation ensures you’re collecting and tracking the right data from day one, giving you a clear picture of your website’s SEO health and performance. Many marketers skip this, but it’s critical: data-driven decisions start with accurate tracking and configuration.</p>
           <ul>
-            <li><strong>Sign up for a <a href="/affiliate.html" target="_blank" rel="noopener noreferrer">7-day free trial</a>:</strong> If you haven’t yet, claim your trial. You’ll get access to all premium features—perfect for evaluating how Semrush fits your workflow. Pro tip: Use this trial to audit your entire site, uncover hidden issues, and set up your first campaigns risk-free.</li>
+            <li><strong>Sign up for a <a href="/affiliate.php" target="_blank" rel="noopener noreferrer">7-day free trial</a>:</strong> If you haven’t yet, claim your trial. You’ll get access to all premium features—perfect for evaluating how Semrush fits your workflow. Pro tip: Use this trial to audit your entire site, uncover hidden issues, and set up your first campaigns risk-free.</li>
             <li><strong>Set Up Your First Project:</strong> Head to the <a href="https://www.semrush.com/dashboard/" target="_blank" rel="noopener noreferrer">Dashboard</a> and create a new Project by adding your website. Projects are the hub for all your site’s analytics, audits, and tracking in Semrush. For affiliate sites, consider setting up separate projects for each major property or niche to keep insights organized.</li>
             <li><strong>Configure the <a href="https://www.semrush.com/features/site-audit/" target="_blank" rel="noopener noreferrer">Site Audit</a> Tool:</strong> Run a comprehensive audit to scan for over 140+ technical and on-page issues. Pay close attention to crawlability, HTTPS implementation, and Core Web Vitals—Google now weights these heavily for rankings and user experience.</li>
             <li><strong>Leverage <a href="https://www.semrush.com/analytics/overview/domain/" target="_blank" rel="noopener noreferrer">Domain Overview</a>:</strong> Get a bird’s-eye view of your organic performance, top keywords, and main competitors. Use this as your baseline to measure all future improvements and ROI from your SEO efforts.</li>
@@ -110,7 +96,7 @@ header('Content-Type: text/html; charset=UTF-8');
           </div>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Affiliate Marketer’s Insight:</strong> Use the Keyword Magic Tool’s “Questions” tab to find buyer-intent queries like “is [product] worth it?” or “how to use [product].” Articles targeting these queries can rank quickly and drive high-converting visitors. Want more on this? Read <a href="/blog/seo-traffic-recovery-plan.html">No Traffic? Now What?</a> for strategies to turn low-traffic keywords into commission goldmines.</p>
+            <p><strong>Affiliate Marketer’s Insight:</strong> Use the Keyword Magic Tool’s “Questions” tab to find buyer-intent queries like “is [product] worth it?” or “how to use [product].” Articles targeting these queries can rank quickly and drive high-converting visitors. Want more on this? Read <a href="/blog/seo-traffic-recovery-plan.php">No Traffic? Now What?</a> for strategies to turn low-traffic keywords into commission goldmines.</p>
           </div>
           <div class="callout data-proof">
             <i class="fas fa-chart-bar"></i>
@@ -139,7 +125,7 @@ header('Content-Type: text/html; charset=UTF-8');
           </div>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Affiliate Marketer’s Insight:</strong> Use Organic Research to find affiliate pages driving the most traffic to your competitors. Analyze their structure, content depth, and calls-to-action. Then, one-up them with better data, visuals, and unique insights. For more on exploiting content gaps, check out <a href="/blog/ai-content-2025-helps-hurts.html">AI Content in 2025</a> for how to scale content production and stay ahead of the curve.</p>
+            <p><strong>Affiliate Marketer’s Insight:</strong> Use Organic Research to find affiliate pages driving the most traffic to your competitors. Analyze their structure, content depth, and calls-to-action. Then, one-up them with better data, visuals, and unique insights. For more on exploiting content gaps, check out <a href="/blog/ai-content-2025-helps-hurts.php">AI Content in 2025</a> for how to scale content production and stay ahead of the curve.</p>
           </div>
           <div class="callout data-proof">
             <i class="fas fa-chart-bar"></i>
@@ -168,7 +154,7 @@ header('Content-Type: text/html; charset=UTF-8');
           </div>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Affiliate Marketer’s Insight:</strong> Use the SEO Writing Assistant’s plagiarism checker to ensure your reviews are unique—duplicate content can tank rankings and commissions. For more content scaling tips, see <a href="/blog/ai-content-2025-helps-hurts.html">AI Content in 2025</a> for the latest on AI-assisted writing workflows.</p>
+            <p><strong>Affiliate Marketer’s Insight:</strong> Use the SEO Writing Assistant’s plagiarism checker to ensure your reviews are unique—duplicate content can tank rankings and commissions. For more content scaling tips, see <a href="/blog/ai-content-2025-helps-hurts.php">AI Content in 2025</a> for the latest on AI-assisted writing workflows.</p>
           </div>
           <div class="callout data-proof">
             <i class="fas fa-chart-bar"></i>
@@ -197,7 +183,7 @@ header('Content-Type: text/html; charset=UTF-8');
           </div>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Affiliate Marketer’s Insight:</strong> Use Semrush’s “Lost Backlinks” report to quickly reclaim valuable links that have disappeared (e.g., after a site redesign). Reclaiming just one high-authority link can move you up several positions for lucrative affiliate keywords. For more on link-building outreach, see our upcoming post on <a href="/blog/affiliate-link-building.html">Affiliate Link Building</a> (coming soon).</p>
+            <p><strong>Affiliate Marketer’s Insight:</strong> Use Semrush’s “Lost Backlinks” report to quickly reclaim valuable links that have disappeared (e.g., after a site redesign). Reclaiming just one high-authority link can move you up several positions for lucrative affiliate keywords. For more on link-building outreach, see our upcoming post on <a href="/blog/affiliate-link-building.php">Affiliate Link Building</a> (coming soon).</p>
           </div>
           <div class="callout data-proof">
             <i class="fas fa-chart-bar"></i>
@@ -226,7 +212,7 @@ header('Content-Type: text/html; charset=UTF-8');
           </div>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Affiliate Marketer’s Insight:</strong> Use Semrush’s ad copy database to find angles and unique selling points that resonate with buyers. Incorporate these into your reviews and comparison tables for higher conversion rates. Want more on hybrid paid + organic strategies? Check out our post <a href="/blog/affiliate-ppc-seo-combo.html">Affiliate PPC + SEO Combo</a> (coming soon).</p>
+            <p><strong>Affiliate Marketer’s Insight:</strong> Use Semrush’s ad copy database to find angles and unique selling points that resonate with buyers. Incorporate these into your reviews and comparison tables for higher conversion rates. Want more on hybrid paid + organic strategies? Check out our post <a href="/blog/affiliate-ppc-seo-combo.php">Affiliate PPC + SEO Combo</a> (coming soon).</p>
           </div>
           <div class="callout data-proof">
             <i class="fas fa-chart-bar"></i>
@@ -255,7 +241,7 @@ header('Content-Type: text/html; charset=UTF-8');
           </div>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Affiliate Marketer’s Insight:</strong> Use Position Tracking’s “Cannibalization” report to spot when multiple pages are competing for the same keyword. Consolidate or differentiate content to maximize rankings and earnings. For more on troubleshooting traffic drops, read <a href="/blog/seo-traffic-recovery-plan.html">No Traffic? Now What?</a>.</p>
+            <p><strong>Affiliate Marketer’s Insight:</strong> Use Position Tracking’s “Cannibalization” report to spot when multiple pages are competing for the same keyword. Consolidate or differentiate content to maximize rankings and earnings. For more on troubleshooting traffic drops, read <a href="/blog/seo-traffic-recovery-plan.php">No Traffic? Now What?</a>.</p>
           </div>
           <div class="callout data-proof">
             <i class="fas fa-chart-bar"></i>
@@ -274,10 +260,10 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>Don't be overwhelmed by its depth—start with these core steps, dedicate time to learning its interface, and leverage its powerful insights. With Semrush in your toolkit, you're well-equipped to dominate the search landscape in 2025 and beyond. And remember, the best results come from consistent, data-driven action—refine your strategy as you go, and always be on the lookout for new opportunities using Semrush’s ever-evolving feature set.</p>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Internal Link:</strong> Ready to take your affiliate SEO to the next level? Don’t miss our deep-dive on <a href="/blog/seo-traffic-recovery-plan.html">No Traffic? Now What?</a> for advanced troubleshooting and growth tactics.</p>
+            <p><strong>Internal Link:</strong> Ready to take your affiliate SEO to the next level? Don’t miss our deep-dive on <a href="/blog/seo-traffic-recovery-plan.php">No Traffic? Now What?</a> for advanced troubleshooting and growth tactics.</p>
           </div>
           <p class="text-center">
-            <a href="/affiliate.html" class="button primary-button">🚀 Unlock Your Digital Growth with Semrush – Start Your Free Trial!</a>
+            <a href="/affiliate.php" class="button primary-button">🚀 Unlock Your Digital Growth with Semrush – Start Your Free Trial!</a>
           </p>
           <p class="text-center">What's your favorite Semrush feature? Share in the comments below!</p>
         </section>
@@ -294,7 +280,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>This workflow ensures that you're moving strategically from ideation to execution—and back to optimization. It’s how real SEO pros run lean, high-ROI campaigns.</p>
           <div class="callout affiliate-tip">
             <i class="fas fa-bolt"></i>
-            <p><strong>Affiliate Marketer’s Insight:</strong> By automating this workflow (using VA teams or content SOPs), you can scale content production 3–5x faster without sacrificing quality. For a step-by-step SOP template, check our <a href="/blog/affiliate-content-sop.html">Affiliate Content SOP Guide</a> (coming soon).</p>
+            <p><strong>Affiliate Marketer’s Insight:</strong> By automating this workflow (using VA teams or content SOPs), you can scale content production 3–5x faster without sacrificing quality. For a step-by-step SOP template, check our <a href="/blog/affiliate-content-sop.php">Affiliate Content SOP Guide</a> (coming soon).</p>
           </div>
           <div class="callout data-proof">
             <i class="fas fa-chart-bar"></i>
@@ -306,7 +292,6 @@ header('Content-Type: text/html; charset=UTF-8');
   </main>
 </div>
 
-</footer>
-<?php include '../../footer.php'; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

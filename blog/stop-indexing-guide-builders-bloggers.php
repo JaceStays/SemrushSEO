@@ -9,12 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>How to Keep Your Site from Getting Indexed Too Early – A Guide for Builders & Bloggers</title>
   <meta name="description" content="Learn how to safely prevent search engines from indexing your website during development. This guide covers robots.txt, noindex meta tags, password protection, and CMS-specific settings for WordPress, Shopify, Webflow, and more." />
   <link rel="canonical" href="https://semrushseo.review/blog/stop-indexing-guide-builders-bloggers.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
-<header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
     <nav class="site-navigation">
       <div class="container">
         <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
@@ -229,6 +229,6 @@ Disallow:</code></pre>
 </div>
 
 </div>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

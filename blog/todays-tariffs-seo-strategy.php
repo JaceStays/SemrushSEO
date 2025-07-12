@@ -9,12 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>Today’s Tariffs and What That Means for Your SEO Strategy</title>
   <meta name="description" content="This piece is designed to rank for keywords like “tariffs SEO impact,” “global trade and search rankings,” “eCommerce tariffs SEO,” and “digital tax effects on SEO strategy.” It’s educational, timely, and aligns with affiliate prompts to Semrush as the tool to monitor and adjust." />
   <link rel="canonical" href="https://semrushseo.review/blog/todays-tariffs-seo-strategy.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
     <nav class="site-navigation">
       <div class="container">
         <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
@@ -236,6 +236,6 @@ header('Content-Type: text/html; charset=UTF-8');
 <div class="affiliate-disclaimer">
   <p><strong>Affiliate Disclaimer:</strong> Some links on this page may be affiliate links. That means if you click and purchase, we may earn a small commission at no extra cost to you. We only recommend tools we genuinely trust.</p>
 </div>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

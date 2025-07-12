@@ -9,26 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>SEO for Beginners in 2025: A Complete Guide to Ranking and Growing Online</title>
   <meta name="description" content="Learn SEO from scratch in 2025. This beginner’s guide walks you through everything from keywords to on-page SEO, backlinks, and modern ranking strategies using Semrush.">
   <link rel="canonical" href="https://semrushseo.review/blog/seo-for-beginners-2025.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-  <nav class="site-navigation" aria-label="Main Navigation">
-    <div class="container">
-      <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-beginners-guide.webp');">
@@ -189,7 +175,7 @@ header('Content-Type: text/html; charset=UTF-8');
         <hr/>
 
         <section class="text-center">
-          <a href="/affiliate.html" class="button primary-button">🚀 Start Your SEO Journey Today with a Free Semrush Trial</a>
+          <a href="/affiliate.php" class="button primary-button">🚀 Start Your SEO Journey Today with a Free Semrush Trial</a>
           <p class="small-text">No card required. Instant access to keyword tools, audits, and more.</p>
         </section>
 
@@ -198,6 +184,6 @@ header('Content-Type: text/html; charset=UTF-8');
   </div>
 </main>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

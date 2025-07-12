@@ -9,12 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>SEO vs. Paid Ads (PPC): Which is Best for Your Business in 2025?</title>
   <meta name="description" content="Struggling to choose between SEO and Paid Ads? This comprehensive guide breaks down the pros, cons, costs, and benefits of organic search vs. PPC to help you decide the best strategy for your business in 2025." />
   <link rel="canonical" href="https://semrushseo.review/blog/seo-vs-paid-ads.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
     <nav class="site-navigation">
       <div class="container">
         <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
@@ -247,11 +247,10 @@ header('Content-Type: text/html; charset=UTF-8');
       </article>
     </div>
   </main>
-</div>
 
 <div class="affiliate-disclaimer">
   <p><strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. If you click through and make a purchase, we may earn a small commission at no extra cost to you. This helps keep the content free and high quality. Thank you!</p>
 </div>
-<?php include($_SERVER['DOCUMENT_ROOT'].'/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

@@ -9,27 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>How to Find Untapped Keywords That Rank & Convert (2025 Guide)</title>
   <meta name="description" content="Discover how to find untapped keywords with low competition and high conversion potential. Learn to rank faster and drive targeted traffic to your site in 2025." />
   <link rel="canonical" href="https://semrushseo.review/blog/how-to-find-keywords.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
-
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/find-keywords.jpg');">
     <div class="hero-content">
@@ -219,7 +204,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>🚀 Finding hidden keywords with low competition and high commercial intent is your shortcut to faster rankings, less competition, and significantly more conversions. By combining diligent keyword research, high-quality content creation, and strategic promotion, you can unlock a powerful stream of highly qualified traffic for your website.</p>
           <p>Don't just chase volume; chase value. Start implementing these strategies today and watch your organic traffic and revenue grow!</p>
           <p class="text-center">
-            <a href="/affiliate.html" class="button primary-button">💡 Find Your Untapped Keywords with Semrush – Start Free Trial!</a>
+            <a href="/affiliate.php" class="button primary-button">💡 Find Your Untapped Keywords with Semrush – Start Free Trial!</a>
           </p>
           <p class="text-center">What's your favorite method for finding untapped keywords? Share in the comments below!</p>
         </section>
@@ -228,11 +213,6 @@ header('Content-Type: text/html; charset=UTF-8');
   </main>
 </div>
 
-<section class="affiliate-disclaimer">
-  <div class="container">
-    <p><strong>Disclaimer:</strong> Some of the links on this page are affiliate links. That means if you click and purchase, we may earn a small commission at no extra cost to you. We only recommend tools we truly believe in.</p>
-  </div>
-</section>
-<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

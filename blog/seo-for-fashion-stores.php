@@ -9,26 +9,13 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>SEO for Fashion Stores in 2025: The Complete Growth Strategy</title>
   <meta name="description" content="Outrank the competition in 2025 with our expert SEO guide for fashion brands and eCommerce stores.">
   <link rel="canonical" href="https://semrushseo.review/blog/seo-for-fashion-stores.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-  <nav class="site-navigation" aria-label="Main Navigation">
-    <div class="container">
-      <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/fashion-store-seo.webp');">
@@ -175,13 +162,13 @@ header('Content-Type: text/html; charset=UTF-8');
         <section id="final-thoughts">
           <h2>Final Thoughts <i class="fas fa-check-circle icon-inline"></i></h2>
           <p>Fashion SEO in 2025 is a hybrid of art and data. With the right keyword strategy, visual optimization, and content planning, your brand can drive sustained organic revenue. Don’t treat SEO like an afterthought — it’s your most valuable compounding traffic source.</p>
-          <p class="text-center"><a href="/affiliate.html" class="button primary-button">👗 Ready to grow your fashion brand with Semrush? Start your free trial now.</a></p>
+          <p class="text-center"><a href="/affiliate.php" class="button primary-button">👗 Ready to grow your fashion brand with Semrush? Start your free trial now.</a></p>
         </section>
       </article>
     </div>
   </div>
 </main>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

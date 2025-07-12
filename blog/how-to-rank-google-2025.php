@@ -8,27 +8,15 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to Rank on Google in 2025: The Ultimate SEO Strategy</title>
   <meta name="description" content="Master the latest SEO techniques to rank on Google in 2025. Learn how to align with AI search, E-E-A-T, Core Web Vitals, and more." />
-  <link rel="canonical" href="https://semrushseo.review/blog/how-to-rank-google-2025.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>How to Rank on Google in 2025: The Ultimate SEO Strategy</title>
+  <meta name="description" content="Master the latest SEO techniques to rank on Google in 2025. Learn how to align with AI search, E-E-A-T, Core Web Vitals, and more." />
+  <link rel="canonical" href="https://semrushseo.review/blog/how-to-rank-google-2025.php" />
 </head>
 <body>
-<header>
-  <nav class="site-navigation" aria-label="Main Navigation">
-    <div class="container">
-      <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/google-ranking-strategy.webp');">
     <div class="hero-content">
@@ -244,7 +232,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>Ranking on Google in 2025 requires a holistic and adaptive SEO strategy. It’s no longer enough to just stuff keywords; you must prioritize user intent, deliver exceptional experiences, build genuine authority, and leverage the latest AI tools responsibly. By focusing on these nine key areas, you'll be well-equipped to navigate the evolving search landscape and secure top rankings.</p>
           <p>Stay agile, continuously learn, and use powerful tools like Semrush to give your SEO efforts the edge they need. The future of search is exciting, and with the right approach, your website can thrive.</p>
           <p class="text-center">
-            <a href="/affiliate.html" class="button primary-button">🚀 Elevate Your Rankings with Semrush – Start Your Free Trial!</a>
+            <a href="/affiliate.php" class="button primary-button">🚀 Elevate Your Rankings with Semrush – Start Your Free Trial!</a>
           </p>
           <p class="text-center">What's your biggest SEO challenge for 2025? Share your thoughts below!</p>
         </section>
@@ -255,6 +243,6 @@ header('Content-Type: text/html; charset=UTF-8');
 
 </div>
 
-<?php include '../../footer.php'; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

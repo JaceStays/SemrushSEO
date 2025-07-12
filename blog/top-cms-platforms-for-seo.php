@@ -9,12 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>Top CMS Platforms for SEO in 2025 – Ranked & Compared</title>
   <meta name="description" content="Discover the top CMS platforms for SEO in 2025. Ranked and compared by technical flexibility, speed, and features, this guide helps you choose the best content management system for ranking high on Google." />
   <link rel="canonical" href="https://semrushseo.review/blog/top-cms-platforms-for-seo.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
     <nav class="site-navigation">
       <div class="container">
         <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
@@ -189,6 +189,6 @@ header('Content-Type: text/html; charset=UTF-8');
 <div class="affiliate-disclaimer">
   <p><strong>Affiliate Disclaimer:</strong> Some links on this page may be affiliate links. That means if you click and purchase, we may earn a small commission at no extra cost to you. We only recommend tools we genuinely trust.</p>
 </div>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

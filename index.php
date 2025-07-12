@@ -34,7 +34,7 @@
   </script>
 </head>
 <body>
-  <?php include 'header.php'; ?>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
   <main>
     <div class="fade-in">
@@ -102,11 +102,11 @@
             <img src="/assets/images/seo/seo-beginners.jpg" alt="SEO Beginner's Guide" class="post-image" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
             <h3>SEO Beginner's Guide: Foundations to Rank Higher</h3>
             <p>Start your SEO journey with this comprehensive guide covering all the fundamental concepts and strategies for beginners.</p>
-            <a href="/blog/seo-beginners-guide.php" class="read-more-link">Read More →</a>
+            <a href="/blog/seo-for-beginners-2025.php" class="read-more-link">Read More →</a>
           </div>
         </div>
         <div class="text-center" style="margin-top: 40px;">
-          <a href="/blog/index.php" class="button primary-button">View All Guides & Articles</a>
+          <a href="/blog-index.php" class="button primary-button">View All Guides & Articles</a>
         </div>
       </div>
     </section>
@@ -249,37 +249,6 @@
     </div>
   </main>
 
-  <!-- [everything above remains unchanged] -->
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-logo">
-      <a href="/index.php" aria-label="SemrushSEO Home">SemrushSEO</a>
-    </div>
-    <nav class="footer-nav" aria-label="Footer Navigation">
-      <ul>
-        <li><a href="/index.php">Home</a></li>
-        <li><a href="/affiliate.php">Affiliate</a></li>
-        <li><a href="/reviews.php">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.php">About</a></li>
-        <li><a href="/contact.php">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="footer-affiliate-disclaimer">
-      <p>This site contains affiliate links. If you purchase through them, we may earn a commission—at no extra cost to you. We only recommend tools we trust.</p>
-    </div>
-    <div class="footer-socials">
-      <a href="#" aria-label="Follow on Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" aria-label="Follow on LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="#" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="footer-copy">
-      <p>&copy; 2025 SemrushSEO.review. Built for performance. Powered by clarity.</p>
-    </div>
-  </div>
-</footer>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/footer.php'; ?>
 </body>
 </html>

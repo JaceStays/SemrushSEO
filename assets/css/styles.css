@@ -658,13 +658,22 @@ header {
 
 /* Global CTA Section */
 .global-cta-section {
-  background-color: var(--primary-color, #007bff); /* Ensure a distinct background */
-  color: white; /* Change text color to white for readability */
+  background:
+    linear-gradient(135deg, #007bff 0%, #3399ff 100%),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230066cc' fill-opacity='0.03'%3E%3Ccircle cx='20' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
   text-align: center;
-  padding: 60px 20px;
-  border-radius: 12px; /* Add some rounded corners for aesthetics */
-  margin-bottom: 40px; /* Consistent spacing */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  padding: 30px 10px;
+  border-radius: 12px;
+  margin-top: -60px; /* Pull up into section above */
+  margin-bottom: -40px; /* Pull down into footer */
+  position: relative;
+  z-index: 20;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .global-cta-section h2 {
@@ -729,7 +738,7 @@ footer {
     gap: 20px;
 }
 .footer-nav {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .footer-nav ul {
     list-style: none;
@@ -759,7 +768,7 @@ footer {
 .footer-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   gap: 20px;
 }
@@ -804,7 +813,20 @@ footer {
 
 .footer-socials a {
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #0077ff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #005bb5;
+  transform: scale(1.1);
 }
 
 .footer-copy {
@@ -881,7 +903,12 @@ footer {
         font-size: 0.9rem;
     }
     .global-cta-section {
-        padding: 60px 20px;
+        background: linear-gradient(135deg, #007bff 0%, #3399ff 100%);
+        padding: 40px 10px;
+        margin-top: -40px;
+        margin-bottom: -40px;
+        transform: none;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     }
     .global-cta-section h2 {
         font-size: 2.2rem;
@@ -934,4 +961,33 @@ footer {
   background: none !important;
   content: none !important;
   opacity: 0 !important;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* --- Force uniform spacing after header across all pages --- */
+header + .hero,
+header + .hero-image-section,
+header + section.hero,
+header + .blog-index-hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.blog-index-hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }

@@ -9,26 +9,12 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>SEO for Amazon Stores in 2025: Rank, Convert, Dominate</title>
   <meta name="description" content="Master Amazon SEO in 2025. Learn how to optimize product listings, boost visibility, and increase conversions using cutting-edge SEO strategies.">
   <link rel="canonical" href="https://semrushseo.review/blog/seo-for-amazon-stores.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-  <nav class="site-navigation" aria-label="Main Navigation">
-    <div class="container">
-      <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/affiliate.html">Affiliate</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/blog/index.php">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
 <main>
   <section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/amazon-store-seo.webp');">
@@ -175,13 +161,13 @@ header('Content-Type: text/html; charset=UTF-8');
         <section id="final-thoughts">
           <h2>Final Thoughts <i class="fas fa-trophy icon-inline"></i></h2>
           <p>Amazon SEO in 2025 is precision work. It blends keyword strategy, UX optimization, and conversion science. With the right tools and execution, your store can go from invisible to bestseller.</p>
-          <p class="text-center"><a href="/affiliate.html" class="button primary-button">🛒 Start Your Free Semrush Trial and Dominate Amazon Rankings</a></p>
+          <p class="text-center"><a href="/affiliate.php" class="button primary-button">🛒 Start Your Free Semrush Trial and Dominate Amazon Rankings</a></p>
         </section>
       </article>
     </div>
   </div>
 </main>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

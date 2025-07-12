@@ -9,26 +9,14 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>How Politics & Global Events Impact SEO — From Rankings to Reach</title>
   <meta name="description" content="Explore how global politics, censorship, trade policy, and crises are impacting SEO rankings and online reach. Learn how to adapt your strategy and use tools like Semrush to stay visible in a changing world." />
   <link rel="canonical" href="https://semrushseo.review/blog/how-politics-global-events-impact-seo.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
+
 
 <main>
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/politics-global-events-seo-hero.webp');">
@@ -221,7 +209,7 @@ header('Content-Type: text/html; charset=UTF-8');
         <p>Politics and global events are no longer background noise — they are shaping the search landscape. From takedowns to trade sanctions to biased algorithms, your SEO strategy needs to adapt in real time.</p>
         <p><strong>Semrush isn’t just a keyword tool. It’s your radar for visibility risk, content compliance, and global SERP changes.</strong></p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">👉 Try Semrush Free for 7 Days and protect your traffic before it disappears.</a>
+          <a href="/affiliate.php" class="button primary-button">👉 Try Semrush Free for 7 Days and protect your traffic before it disappears.</a>
         </p>
       </section>
     </article>
@@ -229,7 +217,5 @@ header('Content-Type: text/html; charset=UTF-8');
 </div>
 
 </body>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/footer.php'); ?>
-</html>
-</body>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </html>

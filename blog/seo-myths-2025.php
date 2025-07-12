@@ -8,24 +8,13 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top 10 SEO Myths Debunked in 2025: Stop Wasting Your Efforts!</title>
   <meta name="description" content="Separate fact from fiction! Discover the top 10 outdated SEO myths that can sabotage your rankings in 2025. Learn what truly works and how to implement a data-driven SEO strategy." />
-  <link rel="canonical" href="https://semrushseo.review/blog/seo-myths-2025.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="canonical" href="https://semrushseo.review/blog/seo-myths-2025.php" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
       </div>
     </nav>
 </header>
@@ -243,7 +232,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <p>The SEO landscape of 2025 demands a strategic, informed, and adaptive approach. Clinging to outdated myths not only wastes precious time and resources but can actively hinder your website's organic growth. By understanding and embracing the true dynamics of modern SEO – prioritizing user intent, content quality, legitimate link building, E-E-A-T, and continuous adaptation – you can build a robust and future-proof strategy.</p>
           <p>Don't let misinformation dictate your efforts. Stay curious, test your assumptions, and always rely on data-driven insights from reputable tools to guide your SEO journey.</p>
           <p class="text-center">
-            <a href="/affiliate.html" class="button primary-button">🚀 Ready to build an SEO strategy based on facts, not myths? Start your Semrush Free Trial and gain powerful insights today!</a>
+            <a href="/affiliate.php" class="button primary-button">🚀 Ready to build an SEO strategy based on facts, not myths? Start your Semrush Free Trial and gain powerful insights today!</a>
           </p>
           <p class="text-center">Which SEO myth have you encountered the most? Share your experiences and questions in the comments below!</p>
         </section>
@@ -253,6 +242,6 @@ header('Content-Type: text/html; charset=UTF-8');
 </div>
 
 </div>
-<?php include '../../includes/footer.php'; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>
 </html>

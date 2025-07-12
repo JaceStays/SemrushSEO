@@ -1,6 +1,17 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SemrushSEO Reviews</title>
+  <meta name="description" content="Real-world reviews and insights on Semrush from marketers and users." />
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
+  <!-- Page-specific styles/scripts can go here -->
+</head>
+<body>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
-<main class="reviews-page">
+  <main class="reviews-page">
   <section class="hero hero-reviews" style="background-color: #f5f5f5; padding: 80px 20px 40px 20px; text-align: center;">
     <div class="container">
       <h1>Semrush Reviews & Insights</h1>

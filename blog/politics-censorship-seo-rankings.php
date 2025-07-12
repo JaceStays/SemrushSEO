@@ -9,26 +9,13 @@ header('Content-Type: text/html; charset=UTF-8');
   <title>How Politics & Censorship Are Quietly Shaping Search Rankings</title>
   <meta name="description" content="Explore how politics and censorship are quietly influencing search engine rankings in 2025. Learn to adapt your SEO strategy to government pressures and maintain visibility without crossing dangerous lines." />
   <link rel="canonical" href="https://semrushseo.review/blog/politics-censorship-seo-rankings.php" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+
 
 <main>
 <section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/politics-seo-hero.webp');">
@@ -199,7 +186,7 @@ header('Content-Type: text/html; charset=UTF-8');
         <p>SEO is no longer politically neutral. Algorithms are increasingly shaped by <strong>government influence, social pressures, and platform policies</strong>.</p>
         <p>If you want sustainable, long-term rankings — especially internationally — you need to stay informed and agile. Your <strong>content, language, and strategy</strong> all matter.</p>
         <p class="text-center">
-          <a href="/affiliate.html" class="button primary-button">📈 Use Semrush to detect changes before your traffic disappears. Start Your Free Semrush Trial</a>
+          <a href="/affiliate.php" class="button primary-button">📈 Use Semrush to detect changes before your traffic disappears. Start Your Free Semrush Trial</a>
         </p>
       </section>
     </article>
@@ -207,7 +194,7 @@ header('Content-Type: text/html; charset=UTF-8');
 </div>
 
 <footer>
-  <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php'); ?>
+  <?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </footer>
 </body>
 </html>
