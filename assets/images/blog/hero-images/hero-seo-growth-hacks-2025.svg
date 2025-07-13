@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1920" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00c6ff"/>
+      <stop offset="1" stop-color="#0072ff"/>
+    </linearGradient>
+    <radialGradient id="radial1" cx="0.7" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#f5f7fa"/>
+      <stop offset="100%" stop-color="#00c6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial2" cx="0.3" cy="0.8" r="0.6">
+      <stop offset="0%" stop-color="#43e97b"/>
+      <stop offset="100%" stop-color="#0072ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#38f9d7"/>
+      <stop offset="100%" stop-color="#00c6ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="390" fill="url(#bgGradient)"/>
+  <ellipse cx="1500" cy="120" rx="320" ry="90" fill="url(#radial1)"/>
+  <ellipse cx="500" cy="320" rx="280" ry="80" fill="url(#radial2)"/>
+  <ellipse cx="960" cy="195" rx="500" ry="130" fill="url(#radial3)"/>
+  <!-- Abstract "growth" arrows and spark shapes -->
+  <g opacity="0.19">
+    <polygon points="400,320 415,290 430,320" fill="#43e97b"/>
+    <polygon points="700,180 715,150 730,180" fill="#38f9d7"/>
+    <polygon points="1200,120 1215,90 1230,120" fill="#f5f7fa"/>
+    <polygon points="1600,220 1615,190 1630,220" fill="#43e97b"/>
+  </g>
+  <!-- Decorative dashed lines for "hacks"/growth theme -->
+  <g stroke="#fff" stroke-width="3" opacity="0.14">
+    <polyline points="350,340 700,180 1200,120 1600,220" fill="none" stroke-dasharray="18 10"/>
+    <polyline points="700,180 960,195 1200,120" fill="none" stroke-dasharray="10 8"/>
+  </g>
+</svg>

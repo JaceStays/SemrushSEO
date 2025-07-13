@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/analytics/search-traffic-sources.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-semrush-vs-ahrefs.svg');">
   <div class="hero-content">
     <h1>Semrush vs. Ahrefs (2025): Which SEO Tool is Best for You?</h1>
     <p class="subtitle">A detailed, unbiased comparison of the top two SEO powerhouses, Semrush and Ahrefs, to help you choose the best tool for your digital marketing success in 2025.</p>

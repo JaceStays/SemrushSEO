@@ -21,7 +21,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-income-streams.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-to-make-money-seo.svg');">
   <div class="hero-content">
     <h1>How to Make Money with SEO in 2025: 8 Proven Strategies</h1>
     <p class="subtitle">Ready to turn rankings into revenue? Here’s how to turn your SEO knowledge into serious income streams—from client work to your own passive empire.</p>

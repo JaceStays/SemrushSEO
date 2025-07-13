@@ -22,7 +22,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/find-keywords.jpg');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-to-find-keywords.svg');">
   <div class="hero-content">
     <h1>How to Find & Rank for Untapped Keywords That Make You Money</h1>
     <p class="subtitle">Discover the secret to low-competition, high-conversion keywords to drive targeted traffic and boost your revenue in 2025.</p>

@@ -25,7 +25,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/analytics/search-traffic-sources.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-ppc-combo-strategy.svg');">
   <div class="hero-content">
     <h1>Hybrid SEO + PPC Strategy 2025: Maximize Your Search Visibility & ROI</h1>
     <p class="subtitle">Why choose between SEO and PPC when you can have both? Discover how integrating organic and paid search campaigns can create a powerful synergy, driving unparalleled traffic, conversions, and brand authority in 2025.</p>

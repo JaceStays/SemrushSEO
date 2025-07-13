@@ -22,7 +22,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-content-creation.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-to-create-seo-content.svg');">
   <div class="hero-content">
     <h1>How to Create SEO Content That Actually Ranks in 2025</h1>
     <p class="subtitle">Learn how to create content Google loves. This step-by-step SEO content guide helps you build topical authority, boost rankings, and drive real conversions with proven tools and strategies.</p>

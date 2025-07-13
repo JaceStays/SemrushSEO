@@ -21,7 +21,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/seo-tools-comparison.jpg');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-best-seo-tools-2025.svg');">
   <div class="hero-content">
     <h1>Best SEO Tools Compared for 2025: Unlock Your Growth Potential</h1>
     <p class="subtitle">Choosing the right SEO software can make or break your digital strategy. Dive into our comprehensive comparison of the top SEO tools for serious growth and rankings in 2025.</p>

@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/semrush-roi-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-to-use-semrush.svg');">
   <div class="hero-content">
     <h1>How to Use Semrush for Maximum ROI: A Step-by-Step Guide</h1>
     <p class="subtitle">Unlock the full power of Semrush to boost rankings, drive traffic, and outperform competitors with this comprehensive guide for 2025.</p>

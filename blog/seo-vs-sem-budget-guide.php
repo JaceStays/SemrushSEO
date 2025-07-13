@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-sem-budget-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-vs-sem-budget-guide.svg');">
   <div class="hero-content">
     <h1>SEO vs SEM Budget Toolkit: How to Allocate Your Marketing Spend in 2025</h1>
     <p class="subtitle">Stop guessing and start optimizing! This comprehensive guide provides actionable insights and strategies to help you effectively budget for SEO and SEM, ensuring maximum ROI for your digital marketing efforts.</p>

@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/stop-early-indexing-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-stop-indexing-guide-builders-bloggers.svg');">
   <div class="hero-content">
     <h1>Stop Indexing Your Site Too Early: A Guide for Builders & Bloggers</h1>
     <p class="subtitle">Launching soon? Don’t let Google index your unfinished site! Avoid costly SEO mistakes by controlling when and how search engines discover your content. This guide explains how to safely block search engine bots during development and how to control indexing once your site is ready to go live. Includes setup tips for major CMS platforms like WordPress, Shopify, Squarespace, Webflow, and more.</p>

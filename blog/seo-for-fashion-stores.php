@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/fashion-store-seo.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-for-fashion-stores.svg');">
   <div class="hero-content">
     <h1>SEO for Fashion Stores in 2025: The Complete Growth Strategy</h1>
     <p class="subtitle">Stand out in a saturated market. This guide covers everything your fashion brand needs to dominate search in 2025 — from trend-based keyword targeting to AI-generated product descriptions.</p>

@@ -25,7 +25,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/seo-recovery-plan-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-traffic-recovery-plan.svg');">
   <div class="hero-content">
     <h1>No Traffic? Now What? A Step-by-Step SEO Recovery Plan Using Semrush</h1>
     <p class="subtitle">Nothing is more frustrating than watching your website traffic flatline. Whether you're launching a new blog, running an eCommerce store, or trying to recover from a Google algorithm hit, it’s easy to panic when the numbers don’t move. This article walks you through a comprehensive, tool-backed recovery plan using Semrush. Step by step, you’ll diagnose the issue, optimize your strategy, and start rebuilding traffic — the smart, data-driven way.</p>

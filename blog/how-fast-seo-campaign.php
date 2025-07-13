@@ -21,7 +21,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/placeholders/seo-timeline-2025-intro.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-fast-seo-campaign.svg');">
   <div class="hero-content">
     <h1>How Fast Does SEO Work in 2025? Realistic Timelines & Tips</h1>
     <p class="subtitle">How long does it take for SEO to work in 2025? Learn what to expect, what affects ranking speed, and how to accelerate results using proven strategies and Semrush tools.</p>

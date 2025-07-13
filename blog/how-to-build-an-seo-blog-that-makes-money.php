@@ -25,7 +25,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-blog-build-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-to-build-an-seo-blog-that-makes-money.svg');">
   <div class="hero-content">
     <h1>How to Build an SEO Blog That Makes Money</h1>
     <p class="subtitle">A step-by-step guide to creating a high-traffic, profitable blog in 2025.</p>

@@ -22,7 +22,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/ai-tools-semrush-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-ai-tools-in-semrush-2025.svg');">
   <div class="hero-content">
     <h1>The AI Tools Built Into Semrush — And How to Use Them to Win SEO in 2025</h1>
     <p class="subtitle">SEO in 2025 is no longer just about data — it’s about what you do with it. And Semrush has quietly become one of the most advanced AI-powered SEO platforms on the market. Whether you’re creating content, auditing your site, or researching competitors, Semrush’s built-in AI tools can help you work smarter, not harder. This guide breaks down every major AI feature in Semrush and how to use it to gain real-world rankings, faster growth, and smarter strategy.</p>

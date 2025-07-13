@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/amazon-store-seo.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-for-amazon-stores.svg');">
   <div class="hero-content">
     <h1>SEO for Amazon Stores in 2025: Rank, Convert, Dominate</h1>
     <p class="subtitle">Amazon’s A10 algorithm is smarter than ever. Learn how to optimize listings, drive traffic, and win the buy box with elite SEO strategies that actually work.</p>

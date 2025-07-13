@@ -185,10 +185,18 @@
           </div>
         </div>
         <div class="blog-card" data-category="seo-strategy">
+          <img src="/assets/images/blog/thumbnails/politics-censorship-seo-rankings-alt-thumbnail.svg" alt="How Politics &amp; Censorship Are Quietly Shaping Search Rankings" />
+          <div class="blog-card-content">
+            <h3>How Politics &amp; Censorship Are Quietly Shaping Search Rankings</h3>
+            <p>Discover how government censorship and political pressure can directly impact what content ranks—or vanishes—in search results. Learn strategies to stay visible without crossing dangerous lines.</p>
+            <a href="/blog/politics-censorship-seo-rankings.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="seo-strategy">
           <img src="/assets/images/blog/thumbnails/politics-censorship-seo-rankings-thumbnail.webp" alt="How Politics & Global Events Impact SEO" />
           <div class="blog-card-content">
             <h3>How Politics & Global Events Are Quietly Shaping Search Rankings</h3>
-            <p>From content removals to algorithm shifts driven by government pressure, what ranks isn’t always about relevance anymore.</p>
+            <p>From global crises to shifting trade policies, see how world events are rewriting the SEO rulebook. Adapt your strategy to stay ahead in a rapidly changing landscape.</p>
             <a href="/blog/how-politics-global-events-impact-seo.php" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>

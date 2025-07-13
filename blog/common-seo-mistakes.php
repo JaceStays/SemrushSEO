@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/common-seo-mistakes.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-common-seo-mistakes.svg');">
   <div class="hero-content">
     <h1>10 Common SEO Mistakes to Avoid in 2025: Fix Your Rankings & Traffic!</h1>
     <p class="subtitle">Don't let these typical errors sink your rankings. Learn how to identify and fix the most common SEO mistakes to ensure better search engine performance and sustainable growth.</p>

@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-beginners.jpg');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-foundations-of-seo.svg');">
   <div class="hero-content">
     <h1>Foundations of SEO: How to Rank Smarter in 2025</h1>
     <p class="subtitle">Explore the core principles of search engine optimization and discover modern strategies to grow organic visibility in today’s competitive landscape.</p>

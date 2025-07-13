@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1920" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7971e"/>
+      <stop offset="1" stop-color="#ffd200"/>
+    </linearGradient>
+    <radialGradient id="radial1" cx="0.7" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#FFF6B7"/>
+      <stop offset="100%" stop-color="#ffd200" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial2" cx="0.2" cy="0.8" r="0.6">
+      <stop offset="0%" stop-color="#f7971e"/>
+      <stop offset="100%" stop-color="#f7971e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffd200"/>
+      <stop offset="100%" stop-color="#f7971e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="390" fill="url(#bgGradient)"/>
+  <ellipse cx="1500" cy="120" rx="320" ry="90" fill="url(#radial1)"/>
+  <ellipse cx="500" cy="320" rx="280" ry="80" fill="url(#radial2)"/>
+  <ellipse cx="960" cy="195" rx="500" ry="130" fill="url(#radial3)"/>
+  <!-- Abstract "fashion" themed shapes: hangers, shopping bags, and sparkles -->
+  <g opacity="0.17">
+    <rect x="350" y="140" width="60" height="60" rx="10" fill="#FFF6B7"/>
+    <polygon points="700,180 730,230 670,230" fill="#ffd200"/>
+    <ellipse cx="1100" cy="100" rx="45" ry="22" fill="#f7971e"/>
+    <rect x="1500" y="200" width="80" height="40" rx="8" fill="#FFF6B7"/>
+    <ellipse cx="1300" cy="300" rx="30" ry="14" fill="#ffd200"/>
+  </g>
+  <!-- Decorative sparkles for "fashion" vibe -->
+  <g opacity="0.13">
+    <circle cx="400" cy="80" r="8" fill="#FFF6B7"/>
+    <circle cx="1600" cy="340" r="6" fill="#ffd200"/>
+    <circle cx="900" cy="60" r="10" fill="#ffd200"/>
+    <circle cx="1200" cy="350" r="7" fill="#FFF6B7"/>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1920" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e3c72"/>
+      <stop offset="1" stop-color="#2a5298"/>
+    </linearGradient>
+    <radialGradient id="radial1" cx="0.7" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#1e3c72" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial2" cx="0.2" cy="0.8" r="0.6">
+      <stop offset="0%" stop-color="#ffd452"/>
+      <stop offset="100%" stop-color="#1e3c72" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#3ec6e0"/>
+      <stop offset="100%" stop-color="#1e3c72" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="390" fill="url(#bgGradient)"/>
+  <ellipse cx="1500" cy="120" rx="320" ry="90" fill="url(#radial1)"/>
+  <ellipse cx="500" cy="320" rx="280" ry="80" fill="url(#radial2)"/>
+  <ellipse cx="960" cy="195" rx="500" ry="130" fill="url(#radial3)"/>
+  <!-- Abstract "content creation" theme: document, pencil, sparkles -->
+  <g opacity="0.17">
+    <rect x="370" y="310" width="64" height="40" rx="8" fill="#ffd452"/>
+    <rect x="700" y="180" width="40" height="40" rx="8" fill="#fff"/>
+    <polygon points="1200,120 1230,180 1170,180" fill="#3ec6e0"/>
+    <ellipse cx="1600" cy="220" rx="45" ry="22" fill="#fff"/>
+  </g>
+  <!-- Decorative dashed lines for "content creation" theme -->
+  <g stroke="#fff" stroke-width="3" opacity="0.11">
+    <polyline points="350,340 700,180 1200,120 1600,220" fill="none" stroke-dasharray="18 10"/>
+    <polyline points="700,180 960,195 1200,120" fill="none" stroke-dasharray="10 8"/>
+  </g>
+</svg>

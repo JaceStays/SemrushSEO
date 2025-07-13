@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1920" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#283E51"/>
+      <stop offset="1" stop-color="#485563"/>
+    </linearGradient>
+    <radialGradient id="radial1" cx="0.8" cy="0.2" r="0.7">
+      <stop offset="0%" stop-color="#FFD452"/>
+      <stop offset="100%" stop-color="#283E51" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial2" cx="0.3" cy="0.8" r="0.6">
+      <stop offset="0%" stop-color="#A8FF78"/>
+      <stop offset="100%" stop-color="#485563" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#56CCF2"/>
+      <stop offset="100%" stop-color="#283E51" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="390" fill="url(#bgGradient)"/>
+  <ellipse cx="1500" cy="120" rx="320" ry="90" fill="url(#radial1)"/>
+  <ellipse cx="500" cy="320" rx="280" ry="80" fill="url(#radial2)"/>
+  <ellipse cx="960" cy="195" rx="500" ry="130" fill="url(#radial3)"/>
+  <!-- Abstract CMS platform icons as geometric shapes -->
+  <g opacity="0.18">
+    <rect x="320" y="110" width="60" height="60" rx="12" fill="#FFD452"/>
+    <circle cx="700" cy="180" r="30" fill="#A8FF78"/>
+    <polygon points="1100,90 1130,150 1070,150" fill="#56CCF2"/>
+    <rect x="1600" y="200" width="80" height="40" rx="8" fill="#FFD452"/>
+    <ellipse cx="1300" cy="300" rx="40" ry="20" fill="#A8FF78"/>
+  </g>
+  <!-- Decorative lines for "platform connections" -->
+  <g stroke="#FFF" stroke-width="2" opacity="0.11">
+    <line x1="350" y1="140" x2="700" y2="180"/>
+    <line x1="700" y1="180" x2="1100" y2="120"/>
+    <line x1="1100" y1="120" x2="1600" y2="220"/>
+    <line x1="1600" y1="220" x2="1300" y2="300"/>
+    <line x1="700" y1="180" x2="1300" y2="300"/>
+  </g>
+</svg>

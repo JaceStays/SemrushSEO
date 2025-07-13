@@ -23,7 +23,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-growth-hacks-2025.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-growth-hacks-2025.svg');">
   <div class="hero-content">
     <h1>15 Game-Changing SEO Growth Hacks for 2025</h1>
     <p class="subtitle">Discover what’s actually moving the needle this year — from real-time SERP shifts to AI-powered content strategies.</p>

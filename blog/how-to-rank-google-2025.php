@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/google-ranking-strategy.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-to-rank-google-2025.svg');">
   <div class="hero-content">
     <h1>How to Rank on Google in 2025: The Ultimate SEO Strategy</h1>
     <p class="subtitle">Master the latest SEO techniques, tools, and trends to stay visible in Google’s ever-evolving algorithm landscape.</p>

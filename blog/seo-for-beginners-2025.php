@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/placeholder-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-for-beginners-2025.svg');">
   <div class="hero-content">
     <h1>SEO for Beginners in 2025: A Complete Guide to Ranking and Growing Online</h1>
     <p class="subtitle">New to SEO? Learn the basics of how search engines work and exactly what to do to start ranking higher, driving organic traffic, and growing your site in 2025 — the right way.</p>

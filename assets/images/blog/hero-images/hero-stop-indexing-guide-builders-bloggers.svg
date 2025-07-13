@@ -1,0 +1,22 @@
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="390" fill="#F6F8FB"/>
+  <!-- Red warning shield left -->
+  <ellipse cx="540" cy="195" rx="220" ry="120" fill="#E53935" fill-opacity="0.85"/>
+  <rect x="410" y="110" width="260" height="170" rx="38" fill="#fff" fill-opacity="0.10"/>
+  <polygon points="540,130 590,230 490,230" fill="#fff" fill-opacity="0.18"/>
+  <!-- Padlock right -->
+  <rect x="1200" y="140" width="180" height="110" rx="30" fill="#1976D2" fill-opacity="0.88"/>
+  <rect x="1260" y="110" width="60" height="60" rx="30" fill="#1976D2"/>
+  <ellipse cx="1290" cy="170" rx="8" ry="15" fill="#fff" fill-opacity="0.7"/>
+  <!-- Divider line -->
+  <rect x="960" y="80" width="8" height="230" rx="4" fill="#222E3A" fill-opacity="0.10"/>
+  <!-- Dotted crawl line -->
+  <path d="M 760 300 Q 960 340 1160 300" stroke="#FFA000" stroke-width="8" stroke-dasharray="18 18" fill="none" opacity="0.23"/>
+  <!-- Bot icon left -->
+  <circle cx="420" cy="270" r="28" fill="#fff" fill-opacity="0.7"/>
+  <rect x="410" y="260" width="20" height="20" rx="5" fill="#E53935"/>
+  <rect x="415" y="265" width="10" height="10" rx="2" fill="#fff"/>
+  <!-- Site icon right -->
+  <rect x="1460" y="250" width="80" height="50" rx="12" fill="#fff" fill-opacity="0.7"/>
+  <rect x="1475" y="265" width="50" height="20" rx="5" fill="#1976D2" fill-opacity="0.4"/>
+</svg>

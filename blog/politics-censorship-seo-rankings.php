@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/politics-seo-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-politics-censorship-seo-rankings.svg');">
   <div class="hero-content">
     <h1>How Politics & Censorship Are Quietly Shaping Search Rankings</h1>
     <p class="subtitle">Think SEO is just about keywords and backlinks? Think again. Behind the scenes, <strong>politics and censorship</strong> are having a growing influence on what shows up in search — and what quietly disappears. From content removals to algorithm shifts driven by government pressure, what ranks isn’t always about relevance anymore. Here’s what every site owner, blogger, and marketer needs to know about the <strong>political side of SEO in 2025</strong>, and how to stay visible without crossing dangerous lines.</p>

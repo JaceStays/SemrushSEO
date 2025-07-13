@@ -1,0 +1,17 @@
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left: blue trade arrows -->
+  <rect x="0" y="0" width="960" height="390" fill="#1976D2"/>
+  <polygon points="200,195 400,120 400,270" fill="#fff" opacity="0.18"/>
+  <polygon points="500,195 700,120 700,270" fill="#fff" opacity="0.18"/>
+  <!-- Right: gold tariff barrier -->
+  <rect x="960" y="0" width="960" height="390" fill="#FBC02D"/>
+  <rect x="1300" y="80" width="100" height="230" rx="30" fill="#F44336" opacity="0.85"/>
+  <!-- Central globe for global SEO -->
+  <circle cx="960" cy="195" r="80" fill="#fff" opacity="0.95"/>
+  <circle cx="960" cy="195" r="65" fill="#1976D2" opacity="0.22"/>
+  <ellipse cx="960" cy="195" rx="55" ry="18" fill="#FBC02D" opacity="0.55"/>
+  <!-- Dotted trade route -->
+  <path d="M 600 300 Q 960 350 1320 300" stroke="#222E3A" stroke-width="6" stroke-dasharray="18 18" fill="none" opacity="0.25"/>
+  <!-- SEO upward arrow -->
+  <polygon points="960,230 980,270 940,270" fill="#43A047"/>
+</svg>

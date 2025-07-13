@@ -26,7 +26,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/seo/seo-vs-paid-ads.jpg');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-seo-myths-2025.svg');">
   <div class="hero-content">
     <h1>Top 10 SEO Myths Debunked in 2025: Stop Wasting Your Efforts!</h1>
     <p class="subtitle">Navigate the ever-changing SEO landscape with confidence. We expose the most persistent and damaging SEO myths of 2025, revealing what truly works to drive organic traffic and rankings.</p>

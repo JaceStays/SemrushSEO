@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/algorithm-shifts-seo-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-optimize-for-algorithm-shifts-2025.svg');">
   <div class="hero-content">
     <h1>How to Optimize for Algorithm Shifts in 2025</h1>
     <p class="subtitle">SEO That Moves With Google</p>

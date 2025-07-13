@@ -25,10 +25,11 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/politics-global-events-seo-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-how-politics-global-events-impact-seo.svg');">
   <div class="hero-content">
     <h1>How Politics & Global Events Impact SEO — From Rankings to Reach</h1>
-    <p class="subtitle">SEO is often seen as a neutral, technical discipline — keywords, links, and meta tags. But in today’s interconnected world, global politics and real-time events are quietly rewriting the rules of visibility, reach, and organic growth. This article explores how political shifts, censorship, trade policy, wars, and global crises affect everything from ranking algorithms to domain visibility — and what you can do to adapt using tools like Semrush.</p>
+    <p class="subtitle">SEO isn’t neutral anymore.
+    Global politics, censorship, and conflict now shape what ranks — and what disappears. Learn how to adapt your strategy with Semrush.</p>
   </div>
 </section>
 <!--

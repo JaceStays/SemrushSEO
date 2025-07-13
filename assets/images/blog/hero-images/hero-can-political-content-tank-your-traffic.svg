@@ -1,0 +1,21 @@
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: gradient blue/green for global feel -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1976D2"/>
+      <stop offset="1" stop-color="#43A047"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="390" fill="url(#bg)"/>
+  <!-- Abstract world map shapes, left to right, filling the image -->
+  <path d="M220 180 Q250 140 330 170 Q370 160 410 180 Q420 200 480 190 Q500 170 560 200 Q600 210 640 180 Q700 170 760 200 Q800 210 850 180 Q870 170 920 210 Q950 220 1000 190 Q1020 180 1100 210 Q1150 220 1200 200 Q1220 180 1310 210 Q1350 220 1400 200 Q1420 180 1510 210 Q1550 220 1600 200 Q1620 180 1700 210 Q1750 220 1800 200" stroke="#fff" stroke-width="12" opacity="0.35" fill="none"/>
+  <path d="M280 290 Q340 260 410 280 Q450 270 500 290 Q520 310 600 300 Q650 270 700 310 Q750 320 800 300 Q820 270 900 320 Q950 330 1000 310 Q1050 300 1120 320 Q1170 330 1240 310 Q1280 300 1340 320 Q1390 330 1460 310 Q1500 300 1580 320 Q1620 330 1700 310" stroke="#fff" stroke-width="10" opacity="0.25" fill="none"/>
+  <path d="M400 100 Q480 120 550 110 Q600 90 670 120 Q700 130 760 110 Q800 90 880 130 Q950 140 1020 120 Q1080 110 1150 130 Q1200 140 1270 120 Q1320 110 1400 130 Q1450 140 1520 120 Q1580 110 1640 130 Q1700 140 1780 120" stroke="#fff" stroke-width="8" opacity="0.18" fill="none"/>
+  <!-- Dots for major cities/regions -->
+  <circle cx="320" cy="170" r="9" fill="#43A047" opacity="0.6"/>
+  <circle cx="600" cy="300" r="9" fill="#1976D2" opacity="0.6"/>
+  <circle cx="900" cy="320" r="9" fill="#43A047" opacity="0.6"/>
+  <circle cx="1200" cy="140" r="9" fill="#1976D2" opacity="0.6"/>
+  <circle cx="1500" cy="300" r="9" fill="#43A047" opacity="0.6"/>
+  <circle cx="1700" cy="140" r="9" fill="#1976D2" opacity="0.6"/>
+</svg>

@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/top-cms-platforms-seo.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-top-cms-platforms-for-seo.svg');">
   <div class="hero-content">
     <h1>Top CMS Platforms for SEO in 2025</h1>
     <p class="subtitle">Not all CMS platforms are created equal—especially when it comes to SEO. Whether you’re building a content site, eCommerce store, or local service hub, your content management system plays a massive role in <strong>how fast you rank and how high you climb</strong>. This guide ranks the top CMS platforms for SEO in 2025 based on <strong>technical flexibility, speed, indexing control, plugin availability, and clean code output</strong>.</p>
@@ -182,10 +182,6 @@ header('Content-Type: text/html; charset=UTF-8');
       </section>
     </article>
   </div>
-</div>
-
-<div class="affiliate-disclaimer">
-  <p><strong>Affiliate Disclaimer:</strong> Some links on this page may be affiliate links. That means if you click and purchase, we may earn a small commission at no extra cost to you. We only recommend tools we genuinely trust.</p>
 </div>
 <?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
 </body>

@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
   Adjust the background-image, title, and subtitle per post.
   Height and layout are controlled in /assets/css/styles.css under .hero.blog-post-hero
 -->
-<section class="hero blog-post-hero" style="background-image: url('/assets/images/digital-marketing/generic-hero.webp');">
+<section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-todays-tariffs-seo-strategy.svg');">
   <div class="hero-content">
     <h1>Today’s Tariffs and What That Means for Your SEO Strategy</h1>
     <p class="subtitle">Tariffs aren’t just headlines for economists — they can quietly shape your entire SEO performance. Whether you’re running an international eCommerce store, dropshipping products, or managing content that relies on global traffic, shifting tariffs and trade regulations can change what you rank for, where you rank, and how fast your revenue grows. Let’s break down what today’s trade climate means for your site and how to adapt — before your competition does.</p>
