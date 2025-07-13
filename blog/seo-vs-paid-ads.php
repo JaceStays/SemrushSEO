@@ -15,20 +15,7 @@ header('Content-Type: text/html; charset=UTF-8');
 </head>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
-    <nav class="site-navigation">
-      <div class="container">
-        <a href="/index.html" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
-        <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/affiliate.html">Affiliate</a></li>
-          <li><a href="/reviews.html">Reviews</a></li>
-          <li><a href="/blog/index.php">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</header>
+
 
 <main>
 <!--

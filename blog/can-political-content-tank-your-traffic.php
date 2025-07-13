@@ -15,7 +15,6 @@ header('Content-Type: text/html; charset=UTF-8');
 </head>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
-</header>
 
 <main>
 <!--
