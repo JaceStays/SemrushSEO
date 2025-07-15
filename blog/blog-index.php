@@ -29,12 +29,12 @@
 <body>
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
-  <section class="blog-index-hero hero-image-section">
-    <div class="hero-content">
-      <h1 class="hero-title">Unlock Your SEO Edge</h1>
-      <p class="hero-description">Data-Driven Strategies for Maximum Growth</p>
-    </div>
-  </section>
+  <section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-blog-index.svg');">
+  <div class="hero-content">
+    <h1>Unlock Your SEO Edge</h1>
+    <p class="subtitle">Data-Driven Strategies for Maximum Growth</p>
+  </div>
+</section>
 
   <div class="container">
     <section class="blog-section">

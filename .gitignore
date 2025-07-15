@@ -1,0 +1,26 @@
+# Node
+node_modules/
+.env
+*.log
+
+# Mac
+.DS_Store
+
+# Build
+/dist
+/build
+.cache
+
+# Netlify
+.netlify/
+
+# Images (keep only assets/images/)
+assets/images/thumbnails/
+assets/images/tmp/
+assets/images/**/*.ai
+assets/images/**/*.psd
+assets/images/**/*.xcf
+
+# Misc
+*.bak
+*.swp
