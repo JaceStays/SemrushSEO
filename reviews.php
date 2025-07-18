@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SemrushSEO Reviews</title>
   <meta name="description" content="Real-world reviews and insights on Semrush from marketers and users." />
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
+  <?php $extraCss = '<link rel="stylesheet" href="/assets/css/blog-post.css">'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <!-- Page-specific styles/scripts can go here -->
 </head>
 <body>

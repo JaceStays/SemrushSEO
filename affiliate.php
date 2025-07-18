@@ -15,84 +15,86 @@
   <main>
     <section class="hero hero-homepage" style="background-image: url('/assets/images/heroes/semrush-transformation-hero.jpg');">
       <div class="hero-content">
-        <h1>💥 Why Semrush? Because It F*cking Changed Everything.</h1>
-        <p>I’m not here to pitch you. I’m here to tell you what actually made a difference when I was overwhelmed — and how I finally caught my breath.</p>
-        <a href="#my-story-sections" class="button primary-button hero-cta">Read My Unfiltered Story →</a>
+        <h1 style="font-size:2.6rem;">⚙️ About This Site</h1>
+        <p style="font-size:1.2rem; margin-top:20px;"><strong>SemrushSEO.review</strong> is a curated resource for real marketers, affiliates, and SEO pros who want results — not noise.</p>
+        <p style="margin-top:10px;">We break down tools like <strong>Semrush, Ahrefs, Ubersuggest</strong>, and more using tested strategies, honest comparisons, and actionable tutorials. No filler. No hype. Just strategy that works.</p>
       </div>
     </section>
 
-    <section id="my-story-sections" class="about-section">
-      <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 30px;">Risky Move: Quit My Job, Moved to Paris, No Real Plan (Naturally)</h2>
-        <p>
-          I once just quit my job and moved to Paris. No major savings. A working holiday visa. A credit card that was already giving me side-eye. And yeah… I didn’t speak French. But I had just enough freelance gigs and just enough grit to figure it out.
-        </p>
-        <p>
-          One client — a former lawyer turned badass professional coach — kept me afloat, sending me whatever digital work she could. I was doing my best to become a full-time digital nomad. It was not glamorous. It was just hard.
-        </p>
+    <!-- BEGIN: About & Affiliate Info Insert -->
+    <main class="page-content" style="margin: 0; padding: 0;">
+      <section style="background-color: #f6f9fc; padding: 80px 20px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h1 style="font-size: 2.6rem;">⚙️ About This Site</h1>
+          <p style="font-size: 1.2rem; margin-top: 20px;">
+            <strong>SemrushSEO.review</strong> is a curated resource for real marketers, affiliates, and SEO pros who want results — not noise.
+          </p>
+          <p style="margin-top: 10px;">We break down tools like <strong>Semrush, Ahrefs, Ubersuggest</strong>, and more using tested strategies, honest comparisons, and actionable tutorials. No filler. No hype. Just strategy that works.</p>
+        </div>
+      </section>
 
-        <h2 style="font-size: 2.2rem; margin-top: 60px; margin-bottom: 30px;">Then My Genius Friend Shows Up (Cue: Internet Magic)</h2>
-        <p>
-          Out of nowhere, my brilliant friend — the kind of guy who turns a $2K government-funded idea into a million-dollar business — came to Paris for 3 months. He said, “Let’s start an online presence company.” I said, “Hell yes.”
-        </p>
-        <p>
-          He covered rent, paid for everything, and we got to work. He was the affiliate + internet strategy wizard. I was operations, creative, build. We made a great team.
-        </p>
-        <p>
-          Then his affiliate program started expanding into New Zealand, Australia, and the UK — and he handed those markets over to me. Fully.
-        </p>
+      <section style="background-color: #ffffff; padding: 80px 20px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 2rem;">🧠 Why This Site Exists</h2>
+          <p style="margin-top: 20px;">The internet is overloaded with low-quality, AI-spun content. We built this site to cut through it.</p>
+          <ul style="margin-top: 20px; line-height: 2;">
+            <li>✅ Guides that actually help you rank</li>
+            <li>✅ Comparisons based on real-world use</li>
+            <li>✅ Strategies that work for affiliate marketers, agencies, bloggers, and pros</li>
+            <li>✅ Tools we’ve used, tested, and actually recommend</li>
+          </ul>
+        </div>
+      </section>
 
-        <h2 style="font-size: 2.2rem; margin-top: 60px; margin-bottom: 30px;">I Was Helping Affiliates With No Tools or Training</h2>
-        <p>
-          He didn’t train me. He didn’t give me a playbook. Just handed me the reins and said, “Go.”
-        </p>
-        <p>
-          So I did.
-        </p>
-        <p>
-          I wasn’t just trying to grow traffic — I was helping <strong>dozens</strong> of affiliates figure out how to write content, drive conversions, and build their own streams of income. Meanwhile, I was patching together my own systems just to keep the thing running.
-        </p>
-        <p>
-          I made it work — but damn, it was messy.
-        </p>
+      <section style="background-color: #e8f5e9; padding: 80px 20px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 2rem;">💸 Do We Use Affiliate Links?</h2>
+          <p style="margin-top: 20px;"><strong>Yes — and you should too.</strong></p>
+          <p>We use affiliate links for tools we genuinely trust. These companies offer commissions because their tools work, and sharing what works is how this industry grows.</p>
+          <p style="margin-top: 10px;">It’s not about pushing random products — it’s about highlighting what’s worth using.</p>
+          <p>If a tool sucks, we say so. If it delivers, we’ll show you exactly how to get the most out of it.</p>
+        </div>
+      </section>
 
-        <h2 style="font-size: 2.2rem; margin-top: 60px; margin-bottom: 30px;">Then I Found Semrush — and Everything Clicked</h2>
-        <p>
-          Years later, I found Semrush. And <strong>finally</strong> everything clicked.
-        </p>
-        <p>
-          I could actually <strong>see</strong> what was working — from keywords and backlinks to competitor strategy and technical issues. Semrush pulled all the chaos together into one place. It saved me hours. It gave me clarity. It made me better — fast.
-        </p>
-        <p>
-          Honestly? I wish I’d had it from day one.
-        </p>
+      <section style="background-color: #fef8e7; padding: 80px 20px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 2rem;">🔗 Affiliate Programs Worth Sharing</h2>
+          <p style="margin-top: 20px;">Want to share these tools yourself and earn from your audience too?  
+          Here’s where you can apply to each affiliate program directly:</p>
+          <p style="font-style: italic; margin-top: 10px;">
+            These are not paid or sponsored placements. Just genuine knowledge-sharing.  
+            We only list tools we trust and have used — because good tools deserve to be shared.
+          </p>
+          <table style="width: 100%; border-collapse: collapse; margin-top: 30px;">
+            <thead>
+              <tr style="background-color: #fff3cd;">
+                <th style="text-align: left; padding: 10px;">Tool</th>
+                <th style="text-align: left; padding: 10px;">Affiliate Sign-Up</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding: 10px;">Semrush</td><td><a href="https://www.semrush.com/affiliates/" target="_blank">Join here</a></td></tr>
+              <tr><td>Ahrefs</td><td><a href="https://ahrefs.com/affiliate-program" target="_blank">Apply here (invite-only)</a></td></tr>
+              <tr><td>Ubersuggest</td><td><a href="https://neilpatel.com/partners/" target="_blank">Sign up</a></td></tr>
+              <tr><td>Surfer SEO</td><td><a href="https://surferseo.com/affiliates/" target="_blank">Join here</a></td></tr>
+              <tr><td>Cloudways</td><td><a href="https://www.cloudways.com/en/partners/affiliate-program.php" target="_blank">Apply here</a></td></tr>
+              <tr><td>SiteGround</td><td><a href="https://www.siteground.com/affiliate-program.htm" target="_blank">Join here</a></td></tr>
+              <tr><td>WPX Hosting</td><td><a href="https://wpx.net/affiliate/" target="_blank">Affiliate info</a></td></tr>
+              <tr><td>Rank Math</td><td><a href="https://rankmath.com/affiliate-program/" target="_blank">Join here</a></td></tr>
+              <tr><td>ConvertKit</td><td><a href="https://convertkit.com/affiliate" target="_blank">Sign up</a></td></tr>
+              <tr><td>Jasper</td><td><a href="https://partners.jasper.ai/" target="_blank">Apply here</a></td></tr>
+              <tr><td>Zapier</td><td><a href="https://zapier.com/partners/affiliate" target="_blank">Apply here</a></td></tr>
+              <tr><td>Notion</td><td><a href="https://affiliate.notion.so/" target="_blank">Join here</a></td></tr>
+              <tr><td>OpusClip</td><td><a href="https://opus.pro/affiliate" target="_blank">Sign up</a></td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top: 30px;">Want us to add more? Email us: <a href="mailto:seo@semrush.review">seo@semrush.review</a></p>
+        </div>
+      </section>
+    </main>
+    <!-- END: About & Affiliate Info Insert -->
 
-        <h2 style="font-size: 2.2rem; margin-top: 60px; margin-bottom: 30px;">Okay Wait, This Is Turning Into a Therapy Session</h2>
-        <p>
-          You’re not here to hear my whole life story. You’re here for <strong>your</strong> story.
-        </p>
-        <p>
-          But if you <strong>do</strong> want the whole saga — the risks, the reinventions, the wild ride from Paris to passive income — I dropped the long version over at <a href="https://berichnotpoor.com" target="_blank" rel="noopener noreferrer" class="read-more-link">BeRichNotPoor.com</a> (and yeah, I own that).
-        </p>
-
-        <h2 style="font-size: 2.2rem; margin-top: 60px; margin-bottom: 30px;">So Why This Page?</h2>
-        <p>
-          Because I know what it’s like to be stuck, burnt out, and running blind. And if there’s one tool that actually made the difference — financially, mentally, operationally — it’s Semrush.
-        </p>
-        <p>
-          Yes, I’m an affiliate. (And let’s be honest — once you try it, you’ll probably want to be one too.) Yes, I get a commission if you sign up.
-        </p>
-        <p>
-          But I’m not into promoting junk. I only back tools I use and believe in. Period.
-        </p>
-        <p>
-          Semrush gives you time back. It helps you stop guessing and start growing — with one dashboard that handles keyword research, backlink analysis, content optimization, and AI-driven recommendations that adjust as the SEO landscape shifts.
-        </p>
-        <p>
-          We’re on the edge of an AI-powered marketing revolution. Semrush doesn’t just keep up — it leads the charge.
-        </p>
-      </div>
-    </section>
+    
 
     <section id="semrush-trial-cta" class="global-cta-section">
       <div class="container">
@@ -100,8 +102,7 @@
         <p>Let’s go.</p>
         <a href="https://www.semrush.com/signup/?ref=YOUR_AFFILIATE_ID" target="_blank" rel="noopener noreferrer" class="button primary-button global-cta-button">Claim Your FREE Semrush Trial! <i class="fas fa-arrow-right"></i></a>
         <p style="font-size: 0.9em; margin-top: 20px; color: rgba(255,255,255,0.7);">
-          *Full disclosure: This page contains affiliate links. If you sign up through my link, I may earn a commission, at no extra cost to you. I only recommend products I genuinely believe in and use myself, like Semrush.
-        </p>
+         </p>
       </div>
     </section>
   </main>

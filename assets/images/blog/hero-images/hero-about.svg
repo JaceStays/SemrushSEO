@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="390" viewBox="0 0 1920 390" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="about-bg-gradient" x1="0" y1="0" x2="1920" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A56D9"/>
+      <stop offset="0.6" stop-color="#21C87A"/>
+      <stop offset="1" stop-color="#FF8C1A"/>
+    </linearGradient>
+    <linearGradient id="about-fg-gradient" x1="0" y1="390" x2="1920" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Gradient -->
+  <rect width="1920" height="390" fill="url(#about-bg-gradient)"/>
+
+  <!-- Upward Graph Line (subtle, left to right) -->
+  <polyline points="100,320 380,270 650,290 900,200 1200,170 1500,120 1820,180" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+  <polyline points="120,350 420,320 700,330 950,250 1250,210 1600,170 1880,230" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="16 12" opacity="0.13"/>
+
+  <!-- Compass Rose (right side, semi-transparent, strategic) -->
+  <g opacity="0.18">
+    <circle cx="1620" cy="90" r="52" fill="#fff" fill-opacity="0.08"/>
+    <circle cx="1620" cy="90" r="40" stroke="#fff" stroke-width="2" fill="none"/>
+    <polygon points="1620,48 1630,90 1620,132 1610,90" fill="#21C87A"/>
+    <polygon points="1620,60 1628,90 1620,120 1612,90" fill="#FF8C1A"/>
+    <circle cx="1620" cy="90" r="6" fill="#1A56D9"/>
+  </g>
+
+  <!-- Analytics Bars (left, subtle) -->
+  <rect x="80" y="220" width="16" height="80" rx="6" fill="#fff" fill-opacity="0.22"/>
+  <rect x="110" y="250" width="16" height="50" rx="6" fill="#21C87A" fill-opacity="0.22"/>
+  <rect x="140" y="270" width="16" height="30" rx="6" fill="#FF8C1A" fill-opacity="0.22"/>
+
+  <!-- Layered Depth (waves, right side) -->
+  <path d="M1120 370 Q1350 340 1500 355 Q1700 375 1920 340 V390 H1120 Z" fill="#fff" fill-opacity="0.10"/>
+  <path d="M1200 390 Q1450 350 1700 370 Q1860 390 1920 370 V390 H1200 Z" fill="#21C87A" fill-opacity="0.09"/>
+
+  <!-- Foreground highlight (for subtle motion) -->
+  <ellipse cx="600" cy="120" rx="120" ry="32" fill="#fff" fill-opacity="0.12"/>
+  <ellipse cx="900" cy="70" rx="80" ry="18" fill="#21C87A" fill-opacity="0.10"/>
+
+  <!-- Left-center reserved space for text overlay (subtle highlight) -->
+  <rect x="180" y="60" width="700" height="170" rx="60" fill="#fff" fill-opacity="0.10"/>
+
+  <!-- Overlay for subtle depth -->
+  <rect width="1920" height="390" fill="url(#about-fg-gradient)"/>
+</svg>
