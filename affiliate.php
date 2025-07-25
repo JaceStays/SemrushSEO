@@ -13,46 +13,74 @@
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
   <main>
-    <section class="hero hero-homepage" style="background-image: url('/assets/images/heroes/semrush-transformation-hero.jpg');">
-      <div class="hero-content">
-        <h1 style="font-size:2.6rem;">⚙️ About This Site</h1>
-        <p style="font-size:1.2rem; margin-top:20px;"><strong>SemrushSEO.review</strong> is a curated resource for real marketers, affiliates, and SEO pros who want results — not noise.</p>
-        <p style="margin-top:10px;">Born from a successful partnership that expanded Semrush's affiliate program across the UK, Australia, and New Zealand, we bring you tested strategies, honest comparisons, and actionable tutorials for <strong>Semrush, Ahrefs, Ubersuggest</strong>, and more. No filler. No hype. Just strategy that works.</p>
+    <section class="hero hero-affiliate" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/heroes/affiliate-hero-cropped.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 120px 20px; background-attachment: fixed;">
+      <div class="hero-content" style="max-width: 900px; margin: 0 auto;">
+        <h1 style="font-size:2.8rem; margin-bottom: 20px;">💰 Earn More with Top SEO & Marketing Tools</h1>
+        <p style="font-size:1.3rem; line-height: 1.6; margin-bottom: 30px;">
+          Join our affiliate program and earn commissions by promoting the industry's most trusted SEO and marketing tools. We've helped thousands of affiliates succeed with premium tools like <strong>Semrush, Ahrefs, and Ubersuggest</strong>.
+        </p>
+        <a href="#affiliate-programs" class="button primary-button" style="font-size: 1.1rem; padding: 12px 30px; background-color: #FF6B35; border: none; border-radius: 4px; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+          View Affiliate Programs <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+        </a>
       </div>
     </section>
 
-    <!-- BEGIN: About & Affiliate Info Insert -->
+    <!-- BEGIN: Affiliate Value Proposition -->
     <main class="page-content" style="margin: 0; padding: 0;">
-      <section style="background-color: #f6f9fc; padding: 80px 20px;">
-        <div style="max-width: 900px; margin: 0 auto;">
-          <h1 style="font-size: 2.6rem;">⚙️ About This Site</h1>
-          <p style="font-size: 1.2rem; margin-top: 20px;">
-            <strong>SemrushSEO.review</strong> is a curated resource for real marketers, affiliates, and SEO pros who want results — not noise.
-          </p>
-          <p style="margin-top: 10px;">We break down tools like <strong>Semrush, Ahrefs, Ubersuggest</strong>, and more using tested strategies, honest comparisons, and actionable tutorials. No filler. No hype. Just strategy that works.</p>
-        </div>
-      </section>
-
       <section style="background-color: #ffffff; padding: 80px 20px;">
         <div style="max-width: 900px; margin: 0 auto;">
-          <h2 style="font-size: 2rem;">🧠 Why This Site Exists</h2>
-          <p style="margin-top: 20px;">The internet is overloaded with low-quality, AI-spun content. We built this site to cut through it with real, actionable insights from years of experience in the SEO tools space.</p>
-          <ul style="margin-top: 20px; line-height: 2;">
-            <li>✅ Guides that actually help you rank</li>
-            <li>✅ Comparisons based on real-world use</li>
-            <li>✅ Strategies that work for affiliate marketers, agencies, bloggers, and pros</li>
-            <li>✅ Tools we’ve used, tested, and actually recommend</li>
-          </ul>
+          <h2 style="font-size: 2.2rem; text-align: center; margin-bottom: 40px;">Why Partner With Us?</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+              <div style="font-size: 2rem; color: #FF6B35; margin-bottom: 15px;">💼</div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Premium Products</h3>
+              <p>Promote tools that marketers actually want and need, with high conversion rates and strong brand recognition.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+              <div style="font-size: 2rem; color: #4ECDC4; margin-bottom: 15px;">📈</div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Competitive Commissions</h3>
+              <p>Earn generous commissions for every sale you refer, with transparent tracking and timely payouts.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+              <div style="font-size: 2rem; color: #45B7D1; margin-bottom: 15px;">🎯</div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Marketing Support</h3>
+              <p>Get access to banners, text links, and other marketing materials to help you promote effectively.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section style="background-color: #e8f5e9; padding: 80px 20px;">
+      <section id="affiliate-programs" style="background-color: #f8f9fa; padding: 80px 20px;">
         <div style="max-width: 900px; margin: 0 auto;">
-          <h2 style="font-size: 2rem;">💸 Do We Use Affiliate Links?</h2>
-          <p style="margin-top: 20px;"><strong>Yes — and you should too.</strong></p>
-          <p>We use affiliate links for tools we genuinely trust. These companies offer commissions because their tools work, and sharing what works is how this industry grows.</p>
-          <p style="margin-top: 10px;">It’s not about pushing random products — it’s about highlighting what’s worth using.</p>
-          <p>If a tool sucks, we say so. If it delivers, we’ll show you exactly how to get the most out of it.</p>
+          <h2 style="font-size: 2.2rem; text-align: center; margin-bottom: 40px;">💼 Our Affiliate Programs</h2>
+          <p style="font-size: 1.1rem; text-align: center; max-width: 800px; margin: 0 auto 40px;">
+            We've partnered with the industry's leading SEO and marketing tools to bring you high-converting affiliate programs. 
+            Whether you're a blogger, YouTuber, or digital marketer, these programs offer excellent earning potential.
+          </p>
+          <div style="background-color: #ffffff; border-radius: 8px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.5rem; margin-bottom: 25px; color: #2c3e50;">💡 How Our Affiliate Program Works</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px;">
+              <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 4px solid #FF6B35;">
+                <h4 style="margin: 0 0 10px 0; font-size: 1.1rem;">1. Sign Up</h4>
+                <p style="margin: 0; color: #555;">Join any of the affiliate programs below</p>
+              </div>
+              <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 4px solid #4ECDC4;">
+                <h4 style="margin: 0 0 10px 0; font-size: 1.1rem;">2. Get Your Link</h4>
+                <p style="margin: 0; color: #555;">Use your unique tracking link</p>
+              </div>
+              <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 4px solid #45B7D1;">
+                <h4 style="margin: 0 0 10px 0; font-size: 1.1rem;">3. Earn Commissions</h4>
+                <p style="margin: 0; color: #555;">Get paid for every sale you refer</p>
+              </div>
+            </div>
+
+            <div style="margin: 40px 0; text-align: center;">
+              <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Featured Affiliate Programs</h3>
+              <p style="max-width: 700px; margin: 0 auto 30px; color: #555; line-height: 1.6;">
+                Below are our top-performing affiliate programs with the highest conversion rates and most reliable tracking.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
