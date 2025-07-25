@@ -17,7 +17,7 @@
       <div class="hero-content">
         <h1 style="font-size:2.6rem;">⚙️ About This Site</h1>
         <p style="font-size:1.2rem; margin-top:20px;"><strong>SemrushSEO.review</strong> is a curated resource for real marketers, affiliates, and SEO pros who want results — not noise.</p>
-        <p style="margin-top:10px;">We break down tools like <strong>Semrush, Ahrefs, Ubersuggest</strong>, and more using tested strategies, honest comparisons, and actionable tutorials. No filler. No hype. Just strategy that works.</p>
+        <p style="margin-top:10px;">Born from a successful partnership that expanded Semrush's affiliate program across the UK, Australia, and New Zealand, we bring you tested strategies, honest comparisons, and actionable tutorials for <strong>Semrush, Ahrefs, Ubersuggest</strong>, and more. No filler. No hype. Just strategy that works.</p>
       </div>
     </section>
 
@@ -36,7 +36,7 @@
       <section style="background-color: #ffffff; padding: 80px 20px;">
         <div style="max-width: 900px; margin: 0 auto;">
           <h2 style="font-size: 2rem;">🧠 Why This Site Exists</h2>
-          <p style="margin-top: 20px;">The internet is overloaded with low-quality, AI-spun content. We built this site to cut through it.</p>
+          <p style="margin-top: 20px;">The internet is overloaded with low-quality, AI-spun content. We built this site to cut through it with real, actionable insights from years of experience in the SEO tools space.</p>
           <ul style="margin-top: 20px; line-height: 2;">
             <li>✅ Guides that actually help you rank</li>
             <li>✅ Comparisons based on real-world use</li>
