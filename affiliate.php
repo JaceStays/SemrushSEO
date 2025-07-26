@@ -17,7 +17,7 @@
       <div class="hero-content" style="max-width: 900px; margin: 0 auto;">
         <h1 style="font-size:2.8rem; margin-bottom: 20px;">💰 Earn More with Top SEO & Marketing Tools</h1>
         <p style="font-size:1.3rem; line-height: 1.6; margin-bottom: 30px;">
-          Join our affiliate program and earn commissions by promoting the industry's most trusted SEO and marketing tools. We've helped thousands of affiliates succeed with premium tools like <strong>Semrush, Ahrefs, and Ubersuggest</strong>.
+          Discover high-quality affiliate programs for the industry's most trusted SEO and marketing tools. Thousands of marketers earn commissions by promoting premium tools like <strong>Semrush, Ahrefs, and Ubersuggest</strong>.
         </p>
         <a href="#affiliate-programs" class="button primary-button" style="font-size: 1.1rem; padding: 12px 30px; background-color: #FF6B35; border: none; border-radius: 4px; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
           View Affiliate Programs <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
@@ -29,7 +29,7 @@
     <main class="page-content" style="margin: 0; padding: 0;">
       <section style="background-color: #ffffff; padding: 80px 20px;">
         <div style="max-width: 900px; margin: 0 auto;">
-          <h2 style="font-size: 2.2rem; text-align: center; margin-bottom: 40px;">Why Partner With Us?</h2>
+          <h2 style="font-size: 2.2rem; text-align: center; margin-bottom: 40px;">Why These Affiliate Programs?</h2>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
             <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
               <div style="font-size: 2rem; color: #FF6B35; margin-bottom: 15px;">💼</div>
