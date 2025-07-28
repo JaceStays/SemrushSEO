@@ -10,7 +10,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="description" content="Turn your SEO skills into profit in 2025. Discover 8 powerful ways to make money with SEO—from client services to affiliate marketing and beyond.">
   <link rel="canonical" href="https://semrushseo.review/blog/how-to-make-money-seo.php" />
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>

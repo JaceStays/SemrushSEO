@@ -7,7 +7,7 @@
   <meta name="description" content="Discover my personal journey with Semrush: how it transformed my SEO, boosted productivity, eased financial burdens, and paved the way for passive income. Start your own transformation today." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>

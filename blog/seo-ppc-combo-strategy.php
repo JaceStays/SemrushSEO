@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <link rel="canonical" href="https://semrushseo.review/blog/seo-ppc-combo-strategy.php" />
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>

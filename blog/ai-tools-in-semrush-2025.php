@@ -10,7 +10,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="description" content="Discover Semrush's advanced built-in AI tools for SEO. Learn how AI assists with content creation, keyword strategy, site audits, and competitor analysis to help you win SEO in 2025." />
   <link rel="canonical" href="https://semrushseo.review/blog/ai-tools-in-semrush-2025.php" />
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>

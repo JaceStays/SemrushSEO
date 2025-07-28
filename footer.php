@@ -1,46 +1,105 @@
-<footer class="site-footer" style="margin-top: auto;">
-  <div class="footer-container" style="padding: 10px 10px 0px; margin-bottom: 0;">
-    <div class="footer-main" style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: start; gap: 20px; margin-bottom: 1px;">
-      <!-- Social icons on the left -->
-      <div class="footer-social-icons" style="display: flex; flex-direction: column; justify-content: center; gap: 10px;">
-        <div class="footer-socials-wrapper" style="display: flex; gap: 15px; margin-left: 50px;">
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" style="color:#007aff; font-size: 24px; padding-left: 4px;"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" style="color:#007aff; font-size: 24px; padding-left: 4px;"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube" style="color:#007aff; font-size: 24px; padding-left: 4px;"></i></a>
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-main">
+      <!-- Social Icons -->
+      <div class="footer-social">
+        <h3 class="footer-heading">Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
         </div>
       </div>
 
-      <!-- Centered branding and navigation -->
-      <div style="text-align: center;">
-        <div class="footer-branding" style="margin-bottom: 10px;">
-          <span style="font-size: 1.2rem; font-weight: bold; color: #fff;">SemrushSEO</span>
-          <p style="color: #ccc; margin: 5px 0; white-space: nowrap;">Your trusted resource for SEO & digital marketing insights.</p>
-        </div>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; font-size: 1rem;">
-          <li><a href="/index.php" style="text-decoration: none; color: #007aff;">Home</a></li>
-          <li><a href="/affiliate.php" style="text-decoration: none; color: #007aff;">Affiliate</a></li>
-          <li><a href="/reviews.php" style="text-decoration: none; color: #007aff;">Reviews</a></li>
-          <li><a href="/blog/blog-index.php" style="text-decoration: none; color: #007aff;">Blog</a></li>
-          <li><a href="/glossary.php" style="text-decoration: none; color: #007aff;">Glossary</a></li>
-          <li><a href="/about.php" style="text-decoration: none; color: #007aff;">About</a></li>
-          <li><a href="/contact.php" style="text-decoration: none; color: #007aff;">Contact</a></li>
+      <!-- Navigation Links -->
+      <div class="footer-nav">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="/index.php" class="footer-link">Home</a></li>
+          <li><a href="/affiliate.php" class="footer-link">Affiliate</a></li>
+          <li><a href="/reviews.php" class="footer-link">Reviews</a></li>
+          <li><a href="/blog/blog-index.php" class="footer-link">Blog</a></li>
+          <li><a href="/glossary.php" class="footer-link">Glossary</a></li>
+          <li><a href="/about.php" class="footer-link">About</a></li>
+          <li><a href="/contact.php" class="footer-link">Contact</a></li>
         </ul>
       </div>
 
-      <!-- Subscription form on the right -->
-      <div class="footer-subscribe" style="min-width: 170px;">
-        <div style="text-align: center;">
-          <h4 style="color:#fff; font-size: 1rem; margin-bottom: 10px;">Want the newest article updates<br> straight to your inbox?</h4>
-          <form style="display: inline-flex; gap: 10px; justify-content: center;">
-            <input type="email" placeholder="Your email address" style="width: 150px; padding: 6px; font-size: 0.8rem; border: none; border-radius: 4px;" />
-            <button type="submit" style="padding: 6px 12px; font-size: 0.8rem; background-color: #007aff; color: white; border: none; border-radius: 4px; cursor: pointer;">Subscribe</button>
-          </form>
+      <!-- Newsletter Subscription -->
+      <div class="footer-newsletter">
+        <h3 class="footer-heading">Stay Updated</h3>
+        <p class="newsletter-text">Get the latest SEO tips and insights delivered to your inbox</p>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input 
+              type="email" 
+              class="newsletter-input" 
+              placeholder="Your email address" 
+              aria-label="Your email address"
+              required
+            />
+            <button type="submit" class="newsletter-button">
+              <span>Subscribe</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright and Legal -->
+    <div class="footer-bottom">
+      <div class="footer-branding">
+        <span class="footer-logo">SemrushSEO</span>
+        <p class="footer-tagline">Your trusted resource for SEO & digital marketing insights.</p>
+      </div>
+      <div class="footer-legal">
+        <p class="copyright">© 2025 SemrushSEO.review. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="/privacy-policy.php" class="legal-link">Privacy Policy</a>
+          <span class="divider">|</span>
+          <a href="/terms-of-service.php" class="legal-link">Terms of Service</a>
+          <span class="divider">|</span>
+          <a href="/affiliate-disclosure.php" class="legal-link">Affiliate Disclosure</a>
         </div>
       </div>
     </div>
-    <div class="footer-disclaimer" style="margin-top: 0px; margin-bottom: 0px; text-align: center; color: #aaa; font-size: 0.9rem;">
-    <p>© 2025 SemrushSEO.review. Built for performance. Powered by clarity.</p>  
-    <p>This site contains affiliate links. If you purchase through them, we may earn a commission—at no extra cost to you. We only recommend tools we trust.</p>
-    </div>
   </div>
 </footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Back to Top Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const backToTopButton = document.getElementById('back-to-top');
+  
+  // Show/hide button on scroll
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.add('show');
+    } else {
+      backToTopButton.classList.remove('show');
+    }
+  });
+  
+  // Smooth scroll to top
+  backToTopButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+</script>

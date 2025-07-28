@@ -10,7 +10,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="description" content="Separate fact from fiction! Discover the top 10 outdated SEO myths that can sabotage your rankings in 2025. Learn what truly works and how to implement a data-driven SEO strategy." />
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="canonical" href="https://semrushseo.review/blog/seo-myths-2025.php" />
 </head>
 <body>

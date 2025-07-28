@@ -10,7 +10,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="description" content="Learn how to safely prevent search engines from indexing your website during development. This guide covers robots.txt, noindex meta tags, password protection, and CMS-specific settings for WordPress, Shopify, Webflow, and more." />
   <link rel="canonical" href="https://semrushseo.review/blog/stop-indexing-guide-builders-bloggers.php" />
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>

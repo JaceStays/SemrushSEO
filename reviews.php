@@ -13,7 +13,7 @@
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
   <main class="reviews-page">
-  <section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-semrush-reviews.webp');">
+  <section class="hero blog-post-hero" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
     <div class="hero-content">
       <h1>Semrush Reviews: Real Results. Real Marketers.</h1>
       <p class="subtitle">Unfiltered feedback, expert verdicts, and the inside scoop on Semrush from the people who actually use it to win.</p>

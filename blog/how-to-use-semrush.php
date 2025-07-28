@@ -10,7 +10,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <meta name="description" content="Unlock the full potential of Semrush with this step-by-step guide. Learn how to use Semrush for keyword research, competitor analysis, content optimization, and more to maximize your SEO ROI." />
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
