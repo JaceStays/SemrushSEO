@@ -25,6 +25,29 @@ header('Content-Type: text/html; charset=UTF-8');
     </div>
   </section>
   <div class="container">
+    <!-- Mobile Jump to Section Button -->
+    <button id="mobile-jump-button" class="mobile-jump-button" aria-expanded="false" aria-controls="mobile-jump-menu">
+      <span>Jump to Section</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    
+    <!-- Mobile Jump Menu (initially hidden) -->
+    <div id="mobile-jump-menu" class="mobile-jump-menu" aria-hidden="true">
+      <nav>
+        <ul>
+          <li><a href="#seo-acronyms">SEO Acronyms</a></li>
+          <li><a href="#sem-ppc">SEM & PPC Acronyms</a></li>
+          <li><a href="#content">Content & Blogging</a></li>
+          <li><a href="#data-tracking">Data & Analytics</a></li>
+          <li><a href="#email-crm">Email & CRM</a></li>
+          <li><a href="#conversion">Conversion Optimization</a></li>
+          <li><a href="#social">Social Media</a></li>
+        </ul>
+      </nav>
+    </div>
+    
     <div class="blog-content-wrapper">
       <aside class="quick-navigation" aria-label="Quick Navigation Sidebar">
         <nav>
@@ -172,5 +195,6 @@ header('Content-Type: text/html; charset=UTF-8');
 </main>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . "/footer.php"); ?>
+<script src="/assets/js/mobile-nav.js"></script>
 </body>
 </html>
