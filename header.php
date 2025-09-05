@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SemrushSEO - Professional SEO Tools & Resources</title>
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="/assets/css/styles.css" as="style">
-    <!-- Preload Font Awesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
+<!-- Header Content -->
 <header class="site-header">
-    <div class="container">
-        <a href="/index.php" class="logo" aria-label="SemrushSEO Home">SemrushSEO</a>
+    <div class="header-container">
+        <a href="/index.php" class="logo" aria-label="SemrushSEO Home">
+            <span class="logo-text">SemrushSEO</span>
+        </a>
         
         <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
             <span class="menu-icon"></span>

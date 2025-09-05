@@ -1,3 +1,11 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+// Build a canonical URL if one was not provided by the page
+if (empty($canonicalUrl)) {
+  $requestUri = $_SERVER['REQUEST_URI'] ?? '/';
+  $canonicalUrl = rtrim($siteBaseUrl ?? '', '/') . $requestUri;
+}
+?>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,6 +14,8 @@
   <?php if (!empty($canonicalUrl)): ?>
     <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>" />
   <?php endif; ?>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Open Graph Meta -->
   <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle ?? 'SemrushSEO Blog'); ?>" />
   <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription ?? 'Expert SEO guides, strategies, and reviews for 2025 and beyond.'); ?>" />

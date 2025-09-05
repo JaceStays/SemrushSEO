@@ -1,16 +1,12 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
+$pageTitle = 'Best SEO Tools 2025: Top Software Compared for Serious Growth';
+$pageDescription = 'Discover the best SEO tools for 2025, including Semrush, Ahrefs, Moz, and SpyFu, to boost your rankings and drive traffic.';
+$canonicalUrl = null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Best SEO Tools 2025: Top Software Compared for Serious Growth</title>
-  <meta name="description" content="Discover the best SEO tools for 2025, including Semrush, Ahrefs, Moz, and SpyFu, to boost your rankings and drive traffic." />
-  <link rel="canonical" href="https://semrushseo.review/blog/best-seo-tools-2025.php" />
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-</head>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
 <body>
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 

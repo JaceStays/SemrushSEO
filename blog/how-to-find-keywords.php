@@ -1,18 +1,12 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
+$pageTitle = 'How to Find Untapped Keywords That Rank & Convert (2025 Guide)';
+$pageDescription = 'Discover how to find untapped keywords with low competition and high conversion potential. Learn to rank faster and drive targeted traffic to your site in 2025.';
+$canonicalUrl = 'https://semrushseo.review/blog/how-to-find-keywords.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to Find Untapped Keywords That Rank & Convert (2025 Guide)</title>
-  <meta name="description" content="Discover how to find untapped keywords with low competition and high conversion potential. Learn to rank faster and drive targeted traffic to your site in 2025." />
-  <link rel="canonical" href="https://semrushseo.review/blog/how-to-find-keywords.php" />
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-</head>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 <main>

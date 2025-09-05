@@ -1,20 +1,13 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
+$pageTitle = 'SEO for Beginners in 2025: A Complete Guide to Ranking and Growing Online';
+$pageDescription = 'Learn SEO from scratch in 2025. This beginner’s guide walks you through everything from keywords to on-page SEO, backlinks, and modern ranking strategies using Semrush.';
+$canonicalUrl = null; // Let head.php build from $siteBaseUrl + request URI
+$extraCss = '<link rel="stylesheet" href="/assets/css/blog-post.css" />';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEO for Beginners in 2025: A Complete Guide to Ranking and Growing Online</title>
-  <meta name="description" content="Learn SEO from scratch in 2025. This beginner’s guide walks you through everything from keywords to on-page SEO, backlinks, and modern ranking strategies using Semrush.">
-  <link rel="canonical" href="https://semrushseo.review/blog/seo-for-beginners-2025.php" />
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="/assets/css/blog-post.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-</head>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 

@@ -1,18 +1,12 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
+$pageTitle = 'How to Create SEO Content That Actually Ranks in 2025';
+$pageDescription = 'Create high-ranking SEO content in 2025 with this expert guide. Learn content planning, keyword targeting, formatting, AI tools, and optimization best practices to dominate Google.';
+$canonicalUrl = null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to Create SEO Content That Actually Ranks in 2025</title>
-  <meta name="description" content="Create high-ranking SEO content in 2025 with this expert guide. Learn content planning, keyword targeting, formatting, AI tools, and optimization best practices to dominate Google." />
-  <link rel="canonical" href="https://semrushseo.review/blog/how-to-create-seo-content.php" />
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-</head>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
 <body>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
   <main>

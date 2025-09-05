@@ -7,6 +7,7 @@
   <meta name="description" content="Discover the best SEO tools, strategies, and guides to dominate search engine rankings. Get expert insights on keyword research, competitor analysis, content optimization, and more to grow your online presence." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="preload" as="image" href="/assets/images/analytics/analytics-hero.jpg" fetchpriority="high" imagesrcset="/assets/images/analytics/analytics-hero.jpg 1200w" imagesizes="100vw">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <style>
     .fade-in {
@@ -34,7 +35,7 @@
   </script>
 </head>
 <body>
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+  <?php include_once __DIR__ . '/header.php'; ?>
 
   <main>
     <div class="fade-in">
@@ -86,20 +87,20 @@
 
         <div class="grid-posts">
           <div class="post-preview">
-            <img src="/assets/images/seo/find-keywords.jpg" alt="How to Find Keywords" class="post-image" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
+            <img src="/assets/images/seo/find-keywords.jpg" alt="How to Find Keywords" class="post-image" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
             <h3>How to Find Untapped Keywords That Rank & Convert</h3>
             <p>Discover the secret to low-competition, high-conversion keywords to drive targeted traffic and boost your revenue in 2025.</p>
             <a href="/blog/how-to-find-keywords.php" class="read-more-link">Read More →</a>
           </div>
           <div class="post-preview">
             <!-- CORRECTED IMAGE PATH HERE -->
-            <img src="/assets/images/blog/thumbnails/how-to-make-money-seo-thumbnail.webp" alt="How to Make Money with SEO" class="post-image" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
+            <img src="/assets/images/blog/thumbnails/how-to-make-money-seo-thumbnail.webp" alt="How to Make Money with SEO" class="post-image" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
             <h3>How to Make Money with SEO: 8 Proven Strategies</h3>
             <p>Turn your SEO skills into a profitable venture. Explore 8 actionable strategies to generate income through search engine optimization.</p>
             <a href="/blog/how-to-make-money-seo.php" class="read-more-link">Read More →</a>
           </div>
           <div class="post-preview">
-            <img src="/assets/images/seo/seo-beginners.jpg" alt="SEO Beginner's Guide" class="post-image" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
+            <img src="/assets/images/seo/seo-beginners.jpg" alt="SEO Beginner's Guide" class="post-image" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/default-thumbnail.webp';" />
             <h3>SEO Beginner's Guide: Foundations to Rank Higher</h3>
             <p>Start your SEO journey with this comprehensive guide covering all the fundamental concepts and strategies for beginners.</p>
             <a href="/blog/seo-for-beginners-2025.php" class="read-more-link">Read More →</a>
@@ -121,25 +122,25 @@
         </p>
         <div class="tool-card-grid">
           <a href="/reviews.php" class="tool-card">
-            <img src="/assets/icons/wrench-icon.png" alt="SEO Tools" class="tool-icon" role="img">
+            <img src="/assets/icons/wrench-icon.png" alt="SEO Tools" class="tool-icon" role="img" loading="lazy">
             <h3>SEO Tool Reviews</h3>
             <p>Unbiased reviews of the best SEO software and platforms on the market.</p>
             <span class="tool-card-link">Explore Reviews →</span>
           </a>
           <a href="/blog/how-to-find-keywords.php" class="tool-card">
-            <img src="/assets/icons/keyword-icon.png" alt="Keyword Research" class="tool-icon" role="img">
+            <img src="/assets/icons/keyword-icon.png" alt="Keyword Research" class="tool-icon" role="img" loading="lazy">
             <h3>Keyword Research</h3>
             <p>Master the art of finding high-value keywords to drive targeted traffic.</p>
             <span class="tool-card-link">Learn Keyword Strategy →</span>
           </a>
           <a href="/blog/how-to-create-seo-content.php" class="tool-card">
-            <img src="/assets/icons/guide-icon.png" alt="SEO Guides" class="tool-icon" role="img">
+            <img src="/assets/icons/guide-icon.png" alt="SEO Guides" class="tool-icon" role="img" loading="lazy">
             <h3>Content Optimization</h3>
             <p>Craft compelling content that ranks high and converts your audience.</p>
             <span class="tool-card-link">Read Content Guides →</span>
           </a>
           <a href="/blog/how-to-make-money-seo.php" class="tool-card">
-            <img src="/assets/icons/money-icon.png" alt="SEO Monetization" class="tool-icon" role="img">
+            <img src="/assets/icons/money-icon.png" alt="SEO Monetization" class="tool-icon" role="img" loading="lazy">
             <h3>SEO Monetization</h3>
             <p>Turn your website's SEO traffic into a profitable revenue stream.</p>
             <span class="tool-card-link">Discover Monetization →</span>
@@ -249,6 +250,6 @@
     </div>
   </main>
 
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/footer.php'; ?>
+  <?php include_once __DIR__ . '/footer.php'; ?>
 </body>
 </html>
