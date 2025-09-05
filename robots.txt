@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://semrush.review/sitemap.xml
+# deploy test Fri Sep  5 15:23:18 NZST 2025
