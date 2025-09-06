@@ -13,7 +13,7 @@
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 
   <main>
-    <section class="hero hero-affiliate" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/heroes/affiliate-hero-cropped.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 120px 20px; background-attachment: fixed;">
+    <section class="hero hero-affiliate" style="background-image: url('/assets/images/heroes/affiliate-hero-cropped.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 120px 20px; background-attachment: fixed;">
       <div class="hero-content" style="max-width: 900px; margin: 0 auto;">
         <h1 style="font-size:2.8rem; margin-bottom: 20px;">💰 Earn More with Top SEO & Marketing Tools</h1>
         <p style="font-size:1.3rem; line-height: 1.6; margin-bottom: 30px;">

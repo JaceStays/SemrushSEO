@@ -16,7 +16,7 @@
     }
     
     .about-section {
-      margin-bottom: 60px;
+      margin-bottom: 5px;
     }
     
     .about-section:last-child {
@@ -31,21 +31,30 @@
     
     .about-section h2 {
       font-size: 1.8rem;
-      margin: 2.5rem 0 1.5rem;
+      margin: 1.25rem 0 0.75rem;
       color: var(--text-dark);
     }
     
     .about-section p {
       font-size: 1.1rem;
       line-height: 1.7;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
       color: var(--text-light);
     }
     
     .about-section ul {
+      list-style-type: none;
       margin: 1.5rem 0;
-      padding-left: 1.5rem;
+      padding-left: 0;
     }
+
+    /* Collapse extra space between sections */
+    .about-section p:last-child,
+    .about-section ul:last-child { margin-bottom: 0; }
+
+    /* Ensure the next section doesn't add extra top gap */
+    .about-section + .about-section { padding-top: 6px; }
+    .about-section + .about-section h2 { margin-top: 0; }
     
     .about-section li {
       margin-bottom: 0.8rem;
@@ -72,7 +81,7 @@
       }
       
       .about-section {
-        margin-bottom: 40px;
+        margin-bottom: 5px;
       }
     }
   </style>
@@ -94,13 +103,13 @@
       <section class="about-section">
         <h1>⚙️ Why This Site Exists</h1>
         <p>
-          SemrushSEO.review exists to make digital growth easier, faster, and smarter. We break down SEO and marketing tools like <strong>Semrush</strong>, <strong>Ahrefs</strong>, <strong>Ubersuggest</strong>, and others with real guides, in-depth comparisons, and zero fluff.
+          SemrushSEO.review exists to make digital growth easier, faster, and smarter. We break down SEO and marketing tools like <strong>Semrush</strong>, <strong>Ahrefs</strong>, <strong>Ubersuggest</strong>, and others with real guides, in-depth comparisons, and no filler.
         </p>
         <p>We built this site because we were tired of AI-written filler and jargon-heavy "guides" that help no one. Our content is made to actually help you:</p>
         <ul>
           <li>✅ Choose the right tools for SEO, content, PPC, and digital growth</li>
           <li>✅ Learn how to rank faster, write better, and scale smarter</li>
-          <li>✅ Skip the fluff and get straight to strategies that work</li>
+          <li>✅ Skip the filler and get straight to strategies that work</li>
         </ul>
       </section>
 
