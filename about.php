@@ -10,7 +10,7 @@
     .about-section h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-dark); }
     .about-section h2 { font-size: 1.8rem; margin: 0.75rem 0 0.5rem; color: var(--text-dark); }
     .about-section p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.6rem; color: var(--text-light); }
-    .about-section ul { list-style: none; padding-left: 0; margin: 0.75rem 0; }
+    .about-section ul { list-style: none !important; padding-left: 0; margin: 0.75rem 0; }
     .about-section li { margin: 0.55rem 0; line-height: 1.6; }
     .about-section + .about-section { padding-top: 8px; }
     @media (max-width: 768px) {
