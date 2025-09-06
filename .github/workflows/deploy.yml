@@ -20,7 +20,7 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           protocol: ftp
           local-dir: ./
-          server-dir: ${{ secrets.FTP_ROOT }}
+          server-dir: /public_html/
           state-name: .ftp-deploy-sync-state.json
           log-level: verbose
           exclude: |
