@@ -629,16 +629,9 @@ p {
     margin-bottom: 20px;
     transition: filter 0.3s;
 }
-.tool-icon-fa { /* Font Awesome fallback icons */
-  font-size: 40px;
-  color: var(--brand-primary);
-  margin-bottom: 20px;
-  transition: color 0.3s ease;
-}
 .tool-card:hover .tool-icon {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(249deg) brightness(102%) contrast(101%); /* Invert to white */
 }
-.tool-card:hover .tool-icon-fa { color: #fff; }
 .tool-card h3 {
     font-weight: 700;
     font-size: 1.4rem;

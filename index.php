@@ -122,25 +122,25 @@
         </p>
         <div class="tool-card-grid">
           <a href="/reviews.php" class="tool-card">
-            <i class="fas fa-wrench tool-icon-fa" aria-hidden="true"></i>
+            <img src="/assets/icons/wrench-icon.png" alt="SEO Tools" class="tool-icon" role="img" loading="lazy">
             <h3>SEO Tool Reviews</h3>
             <p>Unbiased reviews of the best SEO software and platforms on the market.</p>
             <span class="tool-card-link">Explore Reviews →</span>
           </a>
           <a href="/blog/how-to-find-keywords.php" class="tool-card">
-            <i class="fas fa-key tool-icon-fa" aria-hidden="true"></i>
+            <img src="/assets/icons/keyword-icon.png" alt="Keyword Research" class="tool-icon" role="img" loading="lazy">
             <h3>Keyword Research</h3>
             <p>Master the art of finding high-value keywords to drive targeted traffic.</p>
             <span class="tool-card-link">Learn Keyword Strategy →</span>
           </a>
           <a href="/blog/how-to-create-seo-content.php" class="tool-card">
-            <i class="fas fa-book-open tool-icon-fa" aria-hidden="true"></i>
+            <img src="/assets/icons/guide-icon.png" alt="SEO Guides" class="tool-icon" role="img" loading="lazy">
             <h3>Content Optimization</h3>
             <p>Craft compelling content that ranks high and converts your audience.</p>
             <span class="tool-card-link">Read Content Guides →</span>
           </a>
           <a href="/blog/how-to-make-money-seo.php" class="tool-card">
-            <i class="fas fa-dollar-sign tool-icon-fa" aria-hidden="true"></i>
+            <img src="/assets/icons/money-icon.png" alt="SEO Monetization" class="tool-icon" role="img" loading="lazy">
             <h3>SEO Monetization</h3>
             <p>Turn your website's SEO traffic into a profitable revenue stream.</p>
             <span class="tool-card-link">Discover Monetization →</span>
