@@ -22,6 +22,7 @@ jobs:
           local-dir: ./
           server-dir: ${{ secrets.FTP_ROOT }}
           state-name: .ftp-deploy-sync-state.json
+          log-level: verbose
           exclude: |
             **/.git**
             **/.github/**
