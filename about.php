@@ -1,93 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About SemrushSEO.review</title>
-  <meta name="description" content="Learn more about SemrushSEO, our mission, and the team behind the insights." />
-  <link rel="canonical" href="https://semrushseo.review/about.php" />
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <style>
-    .about-content {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    
-    .about-section {
-      margin-bottom: 5px;
-    }
-    
-    .about-section:last-child {
-      margin-bottom: 0;
-    }
-    
-    .about-section h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--text-dark);
-    }
-    
-    .about-section h2 {
-      font-size: 1.8rem;
-      margin: 1.25rem 0 0.75rem;
-      color: var(--text-dark);
-    }
-    
-    .about-section p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 0.75rem;
-      color: var(--text-light);
-    }
-    
-    .about-section ul {
-      list-style-type: none;
-      margin: 1.5rem 0;
-      padding-left: 0;
-    }
-
-    /* Collapse extra space between sections */
-    .about-section p:last-child,
-    .about-section ul:last-child { margin-bottom: 0; }
-
-    /* Ensure the next section doesn't add extra top gap */
-    .about-section + .about-section { padding-top: 6px; }
-    .about-section + .about-section h2 { margin-top: 0; }
-    
-    .about-section li {
-      margin-bottom: 0.8rem;
-      line-height: 1.6;
-    }
-    
-    .about-section a {
-      color: var(--brand-primary);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .about-section a:hover {
-      text-decoration: underline;
-    }
-    
+<?php
+  $pageTitle = 'About SemrushSEO.review';
+  $pageDescription = 'Learn more about SemrushSEO, our mission, and the team behind the insights.';
+  // Inject page-specific CSS to remove bullets and tighten spacing
+  $extraCss = '<style>
+    .about-content { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+    .about-section { padding: 16px 0; margin: 0; }
+    .about-section h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-dark); }
+    .about-section h2 { font-size: 1.8rem; margin: 0.75rem 0 0.5rem; color: var(--text-dark); }
+    .about-section p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.6rem; color: var(--text-light); }
+    .about-section ul { list-style: none; padding-left: 0; margin: 0.75rem 0; }
+    .about-section li { margin: 0.55rem 0; line-height: 1.6; }
+    .about-section + .about-section { padding-top: 8px; }
     @media (max-width: 768px) {
-      .about-section h1 {
-        font-size: 2rem;
-      }
-      
-      .about-section h2 {
-        font-size: 1.5rem;
-      }
-      
-      .about-section {
-        margin-bottom: 5px;
-      }
+      .about-section h1 { font-size: 2rem; }
+      .about-section h2 { font-size: 1.5rem; }
     }
-  </style>
-</head>
+  </style>';
+  include_once __DIR__ . '/head.php';
+?>
 <body>
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
+  <?php include_once __DIR__ . '/header.php'; ?>
 
   <main>
     <section class="hero blog-post-hero" style="background-image: url('/assets/images/blog/hero-images/hero-about.svg');">
@@ -127,6 +61,6 @@
     </div>
   </main>
 
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/footer.php'; ?>
+  <?php include_once __DIR__ . '/footer.php'; ?>
 </body>
 </html>
